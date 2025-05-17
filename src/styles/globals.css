@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@font-face {
+	font-family:'Pretendard';
+	src:url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight:400;
+	font-style:normal;
+}
+@layer components {
+	.font-pretendard {
+		font-family: 'Pretendard', sans-serif;
+	}
+	.badge {
+		@apply px-1 mr-1 rounded text-[11px];
+	}
+	.badge--PC {
+		@apply bg-blue-500;
+	}
+	.badge--PS {
+		@apply bg-blue-800;
+	}
+	.badge--Xbox {
+		@apply bg-lime-600;
+	}
+	.badge--NS {
+		@apply bg-red-600;
+	}
+}
