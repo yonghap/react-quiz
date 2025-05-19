@@ -1,12 +1,16 @@
 'use client';
-
 import { useQuery } from '@tanstack/react-query';
 
+// 데이터 받아오기
 async function fetchData() {
 	const result = await fetch(`/api/getCountry`);
 	if (!result.ok) throw new Error('국가 정보 로딩 실패');
 	const data = await result.json();
 	return data;
+}
+
+function setQuiz(data) {
+	console.log(data);
 }
 
 export default function Quiz() {
@@ -16,7 +20,7 @@ export default function Quiz() {
 	});
 	if (isLoading) return <p>로딩 중...</p>;
 	if (error) return <p>에러 발생: {(error as Error).message}</p>;
-	console.log(data);
+	setQuiz(data);
 	return (
 		<div>
 			test

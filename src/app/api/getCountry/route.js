@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 
 export async function GET(request) {
     try {
+
+      
         const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
         const query = new URLSearchParams({
