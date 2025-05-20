@@ -1,5 +1,5 @@
 "use client";
 
 export default function Footer() {
-  return <div class="mt-10 py-2 text-slate-400 text-center">gameb</div>;
+  return <div className="fixed bottom-0 left-0 w-full py-3 text-slate-400 text-center text-xs">gameb</div>;
 }
