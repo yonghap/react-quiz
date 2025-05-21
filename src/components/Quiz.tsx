@@ -41,14 +41,10 @@ function setMultipleQuiz(data: QuizItem[]): { selected: QuizItem, shuffled: Quiz
 /**
  * 다음 퀴즈로 이동
  */
-function handleClick() {
-	// setQuizData(setMultipleQuiz(quizData));
-}
-
 export default function Quiz() {
 	// 퀴즈 데이터 상태 추가
 	const [allQuizData, setAllQuizData] = useState<QuizItem[] | null>(null)
-	const [currentQuizData, setMultipleQuiz] = useState<{ selected: QuizItem, shuffled: QuizItem[] } | null>(null)
+	const [quizData, setCurrentQuizData] = useState<{ selected: QuizItem, shuffled: QuizItem[] } | null>(null)
 
 	// 퀴즈 데이터 가져오기
 	const { data, error, isLoading } = useQuery({
@@ -56,14 +52,20 @@ export default function Quiz() {
 		queryFn : () => fetchData(),
 	});	
 
-	if (isLoading) return <p>로딩 중...</p>;
-	if (error) return <p>에러 발생: {(error as Error).message}</p>;
-
 	useEffect(() => {
 		if (data && Array.isArray(data)) {
 			setAllQuizData(data);
+			setCurrentQuizData(setMultipleQuiz(data));
 		}
 	}, [data]);
+
+	if (isLoading) return <p>로딩 중...</p>;
+	if (error) return <p>에러 발생: {(error as Error).message}</p>;
+	if (!quizData) return <p>퀴즈 데이터를 불러오는 중...</p>;
+
+	function handleClick() {
+		setCurrentQuizData(setMultipleQuiz(allQuizData))
+	}
 
 	return (
 		<div>
