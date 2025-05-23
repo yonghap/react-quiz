@@ -43,6 +43,7 @@ function setMultipleQuiz(data: QuizItem[]): { selected: QuizItem, shuffled: Quiz
  */
 export default function Quiz() {
 	// 퀴즈 데이터 상태 추가
+	const [quizIndex , setQuizIndex] = useState(1)
 	const [allQuizData, setAllQuizData] = useState<QuizItem[] | null>(null)
 	const [quizData, setCurrentQuizData] = useState<{ selected: QuizItem, shuffled: QuizItem[] } | null>(null)
 
@@ -65,11 +66,15 @@ export default function Quiz() {
 
 	function handleClick() {
 		setCurrentQuizData(setMultipleQuiz(allQuizData))
+		setQuizIndex(quizIndex+1)
 	}
 
 	return (
 		<div>
-			<div className="p-4 text-center">				
+			<div className="p-4 text-center text-gray-500">
+				<div className="mb-2 text-xs">
+					<strong>{quizIndex}</strong> / 20
+				</div>
 				<div className="mb-8 pt-[55%] bg-size-[100%_100%]" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
 				<ul>
 					{quizData.shuffled.map((i) => {
