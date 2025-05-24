@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="ko">
 			<body className="bg-gray-200">
-				<div className="min-h-screen max-w-[760px] m-auto bg-white font-pretendard">
+				<div className="min-h-screen max-w-[768px] m-auto bg-white font-pretendard">
 					<Header></Header>
 					<QueryClientProvider client={queryClient}>
 						{children}

@@ -1,6 +1,7 @@
 'use client';
 import { useQuery } from '@tanstack/react-query';
 import { useState, useEffect, useMemo } from 'react';
+import { COMMON_CODE } from 'src/constants/code';
 
 // 데이터 받아오기
 async function fetchData() {
@@ -73,7 +74,7 @@ export default function Quiz() {
 		<div>
 			<div className="p-4 text-center text-gray-500">
 				<div className="mb-2 text-xs">
-					<strong>{quizIndex}</strong> / 20
+					<strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
 				</div>
 				<div className="mb-8 pt-[55%] bg-size-[100%_100%]" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
 				<ul>
