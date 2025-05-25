@@ -1,6 +1,8 @@
 'use client';
 import { useQuery } from '@tanstack/react-query';
-import { useState, useEffect, useMemo } from 'react';
+import { usePathname, useRouter  } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { generateMultipleQuiz } from 'src/utils/common';
 import { COMMON_CODE } from 'src/constants/code';
 
 // 데이터 받아오기
@@ -21,32 +23,15 @@ type QuizItem = {
 }
 
 /**
- * 배열 데이터로 정답과 보기3개 추출
- */
-function setMultipleQuiz(data: QuizItem[]): { selected: QuizItem, shuffled: QuizItem[] } {
-	// 정답과 보기
-	const selected = data[Math.floor(Math.random() * data.length)];
-	const sampled: Set<QuizItem> = new Set([selected]);
-
-	// 보기로 쓸 나라 2개 추출
-	while (sampled.size < 3) {
-    sampled.add(data[Math.floor(Math.random() * data.length)]);
-	}
-
-	// 랜덤하게 섞기
-	const shuffled = [...sampled].sort(() => Math.random() - 0.5);
-
-	return { selected, shuffled }
-}
-
-/**
  * 다음 퀴즈로 이동
  */
 export default function Quiz() {
+	const router = useRouter();
 	// 퀴즈 데이터 상태 추가
-	const [quizIndex , setQuizIndex] = useState(1)
-	const [allQuizData, setAllQuizData] = useState<QuizItem[] | null>(null)
-	const [quizData, setCurrentQuizData] = useState<{ selected: QuizItem, shuffled: QuizItem[] } | null>(null)
+	const [quizIndex , setQuizIndex] = useState(1); // 현재 퀴즈 번호
+	const [allQuizData, setAllQuizData] = useState<QuizItem[] | null>(null) // 모든 퀴즈 데이터
+	const [quizData, setCurrentQuizData] = useState<{ selected: QuizItem, shuffled: QuizItem[] } | null>(null) // 현재 퀴즈 데이터
+	const [oldQuizData, setOldQuizData] = useState([])
 
 	// 퀴즈 데이터 가져오기
 	const { data, error, isLoading } = useQuery({
@@ -57,7 +42,7 @@ export default function Quiz() {
 	useEffect(() => {
 		if (data && Array.isArray(data)) {
 			setAllQuizData(data);
-			setCurrentQuizData(setMultipleQuiz(data));
+			setCurrentQuizData(generateMultipleQuiz(data));
 		}
 	}, [data]);
 
@@ -65,9 +50,20 @@ export default function Quiz() {
 	if (error) return <p>에러 발생: {(error as Error).message}</p>;
 	if (!quizData) return <p>퀴즈 데이터를 불러오는 중...</p>;
 
-	function handleClick() {
-		setCurrentQuizData(setMultipleQuiz(allQuizData))
-		setQuizIndex(quizIndex+1)
+	function handleClick(idx:number):void {
+		const resultData = {
+			...quizData,
+			resultNumber : idx
+		}
+		setOldQuizData([...oldQuizData, resultData])
+		if (quizIndex === COMMON_CODE.QUIZ_COUNT) {
+			alert('퀴즈가 종료 되었습니다.');
+			router.push('/quiz/result')
+			return;
+		} else {
+			setCurrentQuizData(generateMultipleQuiz(allQuizData))
+			setQuizIndex(quizIndex+1)
+		}
 	}
 
 	return (
@@ -76,12 +72,12 @@ export default function Quiz() {
 				<div className="mb-2 text-xs">
 					<strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
 				</div>
-				<div className="mb-8 pt-[55%] bg-size-[100%_100%]" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
+				<div className="mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
 				<ul>
-					{quizData.shuffled.map((i) => {
+					{quizData.shuffled.map((i, idx) => {
 						return (
 							<div key={i.country_eng_nm}>
-								<button type="button" className={`block w-full my-4 text-2xl text-center ${quizData.selected.country_eng_nm === i.country_eng_nm ? 'text-red-500' : ''}`} onClick={handleClick}>
+								<button type="button" className={`block w-full my-4 text-2xl text-center ${quizData.selected.country_eng_nm === i.country_eng_nm ? 'text-red-500' : ''}`} onClick={() => handleClick(idx)}>
 									{i.country_nm}
 								</button>
 							</div>
