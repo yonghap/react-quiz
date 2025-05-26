@@ -1,9 +1,11 @@
 'use client';
+import { countryQuizItem } from 'src/types/quiz';
 import { useQuery } from '@tanstack/react-query';
 import { usePathname, useRouter  } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { generateMultipleQuiz } from 'src/utils/common';
 import { COMMON_CODE } from 'src/constants/code';
+import { useQuizStore } from 'src/store/quiz';
 
 // 데이터 받아오기
 async function fetchData() {
@@ -13,25 +15,17 @@ async function fetchData() {
 	return data;
 }
 
-type QuizItem = {
-	"content_ty": string,
-	"country_eng_nm": string,
-	"country_iso_alp2": string,
-	"country_nm": string,
-	"download_url": string,
-	"origin_file_nm": string,
-}
-
 /**
  * 다음 퀴즈로 이동
  */
 export default function Quiz() {
 	const router = useRouter();
+	const { quizResult, addQuiz } = useQuizStore();
+
 	// 퀴즈 데이터 상태 추가
 	const [quizIndex , setQuizIndex] = useState(1); // 현재 퀴즈 번호
-	const [allQuizData, setAllQuizData] = useState<QuizItem[] | null>(null) // 모든 퀴즈 데이터
-	const [quizData, setCurrentQuizData] = useState<{ selected: QuizItem, shuffled: QuizItem[] } | null>(null) // 현재 퀴즈 데이터
-	const [oldQuizData, setOldQuizData] = useState([])
+	const [allQuizData, setAllQuizData] = useState<countryQuizItem[] | null>(null) // 모든 퀴즈 데이터
+	const [quizData, setCurrentQuizData] = useState<{ selected: countryQuizItem, shuffled: countryQuizItem[] } | null>(null) // 현재 퀴즈 데이터
 
 	// 퀴즈 데이터 가져오기
 	const { data, error, isLoading } = useQuery({
@@ -50,12 +44,19 @@ export default function Quiz() {
 	if (error) return <p>에러 발생: {(error as Error).message}</p>;
 	if (!quizData) return <p>퀴즈 데이터를 불러오는 중...</p>;
 
-	function handleClick(idx:number):void {
-		const resultData = {
-			...quizData,
-			resultNumber : idx
+	// 채점해서 스토어에 집어 넣음
+	function gradingQuiz(name:string):void {
+		if (quizData.selected.country_eng_nm !== name) {
+			const resultData = {
+				...quizData,
+				choiceName : name
+			}
+		addQuiz(resultData);
 		}
-		setOldQuizData([...oldQuizData, resultData])
+	}
+
+	function handleClick(name:string):void {
+		gradingQuiz(name)		
 		if (quizIndex === COMMON_CODE.QUIZ_COUNT) {
 			alert('퀴즈가 종료 되었습니다.');
 			router.push('/quiz/result')
@@ -77,7 +78,7 @@ export default function Quiz() {
 					{quizData.shuffled.map((i, idx) => {
 						return (
 							<div key={i.country_eng_nm}>
-								<button type="button" className={`block w-full my-4 text-2xl text-center ${quizData.selected.country_eng_nm === i.country_eng_nm ? 'text-red-500' : ''}`} onClick={() => handleClick(idx)}>
+								<button type="button" className={`block w-full my-4 text-2xl text-center`} onClick={() => handleClick(i.country_eng_nm)}>
 									{i.country_nm}
 								</button>
 							</div>

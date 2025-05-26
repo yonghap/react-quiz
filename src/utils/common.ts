@@ -1,11 +1,4 @@
-type countryQuizItem = {
-	"content_ty": string,
-	"country_eng_nm": string,
-	"country_iso_alp2": string,
-	"country_nm": string,
-	"download_url": string,
-	"origin_file_nm": string,
-}
+import { countryQuizItem } from 'src/types/quiz';
 
 /**
  * 전체 퀴즈 데이터 중 정답과 보기 3개 추출

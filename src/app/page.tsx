@@ -1,7 +1,14 @@
+"use client";
+import { useEffect } from "react";
 import Link from "next/link";
+import { useQuizStore } from 'src/store/quiz';
 import IconGameNation from '@/assets/images/icon_game_nation.svg'
 
-export default async function Home() {
+export default function Home() {
+  const { reset } = useQuizStore();
+  useEffect(() => {
+    reset();
+  }, []);
   return (
     <main id="main">        
       <div className="p-6">
