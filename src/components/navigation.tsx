@@ -5,11 +5,11 @@ import Link from 'next/link';
 export default function Navigation() {
   return (
     <header id="header" className="border-b">
-      <div className="flex justify-between">
-        <h1 className="p-2 text-xl font-bold text-center text-3xl">          
+      <div className="flex justify-between items-center">
+        <h1 className="px-3 py-2 text-xl font-bold text-center text-3xl">          
            <Link href="/">ggYu</Link>
         </h1>
-        <button type="button" className="p-2 w-10 h-10">
+        <button type="button" className="px-3 py-2 w-12 h-12">
           <img src={MenuIcon.src} alt="MenuIcon" />
         </button>
       </div>

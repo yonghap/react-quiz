@@ -12,9 +12,9 @@ export default function QuizResult() {
         <ul>
           {quizResult.map((quiz, quizIdx) => (
             <li className="py-2 border-b border-slate-200" key={quizIdx}>
-              <div className="flex flex-1 justify-between">
+              <div className="flex flex-1 justify-between relative ">
                 {quiz.shuffled.map((option, optionIdx) => (
-                  <p className="relative w-[33%] py-4 text-center text-sm" key={optionIdx}>
+                  <p className="relative w-[33%] py-4 text-center text-sm" key={optionIdx}>                   
                     <span className={`relative z-10 ${option.country_eng_nm === quiz.selected.country_eng_nm && "text-white text-shadow-sm text-shadow-black"} ${quiz.choiceName === option.country_eng_nm && 'text-red-500'}`}>
                       {option.country_nm}
                     </span>
