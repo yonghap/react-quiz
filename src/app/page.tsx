@@ -25,7 +25,8 @@ export default function Home() {
           <li className="w-[25%]">
             <Link href="/quiz">
               <button type="button">
-                <img src={IconGameHan.src} alt="IconGameHan" />               
+                <img src={IconGameHan.src} alt="IconGameHan" />     
+                <span className="block mt-2 text-xs">한문 맞추기</span>          
               </button>
             </Link>
           </li>       
