@@ -1,2700 +1,2704 @@
 {
-  "main_sound": "감",
-  "level": "6급",
-  "hanja": "感",
-  "meaning": "[[['느낄'], ['감']]]",
-  "radical": "心",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "강",
-  "level": "6급",
-  "hanja": "強",
-  "meaning": "[[['강할'], ['강']]]",
-  "radical": "弓",
-  "strokes": 8,
-  "total_strokes": 11
-},
-{
-  "main_sound": "개",
-  "level": "6급",
-  "hanja": "開",
-  "meaning": "[[['열'], ['개']]]",
-  "radical": "門",
-  "strokes": 4,
-  "total_strokes": 12
-},
-{
-  "main_sound": "경",
-  "level": "6급",
-  "hanja": "京",
-  "meaning": "[[['서울'], ['경']]]",
-  "radical": "亠",
-  "strokes": 6,
-  "total_strokes": 8
-},
-{
-  "main_sound": "고",
-  "level": "6급",
-  "hanja": "古",
-  "meaning": "[[['예'], ['고']]]",
-  "radical": "口",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "고",
-  "level": "6급",
-  "hanja": "苦",
-  "meaning": "[[['쓸[味覺]'], ['고']]]",
-  "radical": "艸",
-  "strokes": 5,
-  "total_strokes": 9
-},
-{
-  "main_sound": "교",
-  "level": "6급",
-  "hanja": "交",
-  "meaning": "[[['사귈'], ['교']]]",
-  "radical": "亠",
-  "strokes": 4,
-  "total_strokes": 6
-},
-{
-  "main_sound": "구",
-  "level": "6급",
-  "hanja": "區",
-  "meaning": "[[['구분할', '지경'], ['구']]]",
-  "radical": "匸",
-  "strokes": 9,
-  "total_strokes": 11
-},
-{
-  "main_sound": "군",
-  "level": "6급",
-  "hanja": "郡",
-  "meaning": "[[['고을'], ['군']]]",
-  "radical": "邑",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "근",
-  "level": "6급",
-  "hanja": "根",
-  "meaning": "[[['뿌리'], ['근']]]",
-  "radical": "木",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "근",
-  "level": "6급",
-  "hanja": "近",
-  "meaning": "[[['가까울'], ['근']]]",
-  "radical": "辵",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "급",
-  "level": "6급",
-  "hanja": "級",
-  "meaning": "[[['등급'], ['급']]]",
-  "radical": "糸",
-  "strokes": 4,
-  "total_strokes": 10
-},
-{
-  "main_sound": "다",
-  "level": "6급",
-  "hanja": "多",
-  "meaning": "[[['많을'], ['다']]]",
-  "radical": "夕",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "대",
-  "level": "6급",
-  "hanja": "待",
-  "meaning": "[[['기다릴'], ['대']]]",
-  "radical": "彳",
-  "strokes": 6,
-  "total_strokes": 9
-},
-{
-  "main_sound": "도",
-  "level": "6급",
-  "hanja": "度",
-  "meaning": "[[['법도'], ['도']], [['헤아릴'], ['탁']]]",
-  "radical": "广",
-  "strokes": 6,
-  "total_strokes": 9
-},
-{
-  "main_sound": "두",
-  "level": "6급",
-  "hanja": "頭",
-  "meaning": "[[['머리'], ['두']]]",
-  "radical": "頁",
-  "strokes": 7,
-  "total_strokes": 16
-},
-{
-  "main_sound": "례",
-  "level": "6급",
-  "hanja": "例",
-  "meaning": "[[['법식'], ['례']]]",
-  "radical": "人",
-  "strokes": 6,
-  "total_strokes": 8
-},
-{
-  "main_sound": "례",
-  "level": "6급",
-  "hanja": "禮",
-  "meaning": "[[['예도'], ['례']]]",
-  "radical": "示",
-  "strokes": 13,
-  "total_strokes": 18
-},
-{
-  "main_sound": "로",
-  "level": "6급",
-  "hanja": "路",
-  "meaning": "[[['길'], ['로']]]",
-  "radical": "足",
-  "strokes": 6,
-  "total_strokes": 13
-},
-{
-  "main_sound": "록",
-  "level": "6급",
-  "hanja": "綠",
-  "meaning": "[[['푸를'], ['록']]]",
-  "radical": "糸",
-  "strokes": 8,
-  "total_strokes": 14
-},
-{
-  "main_sound": "리",
-  "level": "6급",
-  "hanja": "李",
-  "meaning": "[[['오얏', '성(姓)'], ['리']]]",
-  "radical": "木",
-  "strokes": 3,
-  "total_strokes": 7
-},
-{
-  "main_sound": "목",
-  "level": "6급",
-  "hanja": "目",
-  "meaning": "[[['눈'], ['목']]]",
-  "radical": "目",
-  "strokes": 0,
-  "total_strokes": 5
-},
-{
-  "main_sound": "미",
-  "level": "6급",
-  "hanja": "美",
-  "meaning": "[[['아름다울'], ['미']]]",
-  "radical": "羊",
-  "strokes": 3,
-  "total_strokes": 9
-},
-{
-  "main_sound": "미",
-  "level": "6급",
-  "hanja": "米",
-  "meaning": "[[['쌀'], ['미']]]",
-  "radical": "米",
-  "strokes": 0,
-  "total_strokes": 6
-},
-{
-  "main_sound": "박",
-  "level": "6급",
-  "hanja": "朴",
-  "meaning": "[[['성(姓)'], ['박']]]",
-  "radical": "木",
-  "strokes": 2,
-  "total_strokes": 6
-},
-{
-  "main_sound": "번",
-  "level": "6급",
-  "hanja": "番",
-  "meaning": "[[['차례'], ['번']]]",
-  "radical": "田",
-  "strokes": 7,
-  "total_strokes": 12
-},
-{
-  "main_sound": "별",
-  "level": "6급",
-  "hanja": "別",
-  "meaning": "[[['다를', '나눌'], ['별']]]",
-  "radical": "刀",
-  "strokes": 5,
-  "total_strokes": 7
-},
-{
-  "main_sound": "병",
-  "level": "6급",
-  "hanja": "病",
-  "meaning": "[[['병'], ['병']]]",
-  "radical": "疒",
-  "strokes": 5,
-  "total_strokes": 10
-},
-{
-  "main_sound": "복",
-  "level": "6급",
-  "hanja": "服",
-  "meaning": "[[['옷'], ['복']]]",
-  "radical": "月",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "본",
-  "level": "6급",
-  "hanja": "本",
-  "meaning": "[[['근본'], ['본']]]",
-  "radical": "木",
-  "strokes": 1,
-  "total_strokes": 5
-},
-{
-  "main_sound": "사",
-  "level": "6급",
-  "hanja": "使",
-  "meaning": "[[['하여금', '부릴'], ['사']]]",
-  "radical": "人",
-  "strokes": 6,
-  "total_strokes": 8
-},
-{
-  "main_sound": "사",
-  "level": "6급",
-  "hanja": "死",
-  "meaning": "[[['죽을'], ['사']]]",
-  "radical": "歹",
-  "strokes": 2,
-  "total_strokes": 6
-},
-{
-  "main_sound": "석",
-  "level": "6급",
-  "hanja": "席",
-  "meaning": "[[['자리'], ['석']]]",
-  "radical": "巾",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "석",
-  "level": "6급",
-  "hanja": "石",
-  "meaning": "[[['돌'], ['석']]]",
-  "radical": "石",
-  "strokes": 0,
-  "total_strokes": 5
-},
-{
-  "main_sound": "속",
-  "level": "6급",
-  "hanja": "速",
-  "meaning": "[[['빠를'], ['속']]]",
-  "radical": "辵",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "손",
-  "level": "6급",
-  "hanja": "孫",
-  "meaning": "[[['손자'], ['손']]]",
-  "radical": "子",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "수",
-  "level": "6급",
-  "hanja": "樹",
-  "meaning": "[[['나무'], ['수']]]",
-  "radical": "木",
-  "strokes": 12,
-  "total_strokes": 16
-},
-{
-  "main_sound": "습",
-  "level": "6급",
-  "hanja": "習",
-  "meaning": "[[['익힐'], ['습']]]",
-  "radical": "羽",
-  "strokes": 5,
-  "total_strokes": 11
-},
-{
-  "main_sound": "승",
-  "level": "6급",
-  "hanja": "勝",
-  "meaning": "[[['이길'], ['승']]]",
-  "radical": "力",
-  "strokes": 10,
-  "total_strokes": 12
-},
-{
-  "main_sound": "식",
-  "level": "6급",
-  "hanja": "式",
-  "meaning": "[[['법'], ['식']]]",
-  "radical": "弋",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "실",
-  "level": "6급",
-  "hanja": "失",
-  "meaning": "[[['잃을'], ['실']]]",
-  "radical": "大",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "애",
-  "level": "6급",
-  "hanja": "愛",
-  "meaning": "[[['사랑'], ['애']]]",
-  "radical": "心",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "야",
-  "level": "6급",
-  "hanja": "夜",
-  "meaning": "[[['밤'], ['야']]]",
-  "radical": "夕",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "야",
-  "level": "6급",
-  "hanja": "野",
-  "meaning": "[[['들[坪]'], ['야']]]",
-  "radical": "里",
-  "strokes": 4,
-  "total_strokes": 11
-},
-{
-  "main_sound": "양",
-  "level": "6급",
-  "hanja": "陽",
-  "meaning": "[[['볕'], ['양']]]",
-  "radical": "阜",
-  "strokes": 9,
-  "total_strokes": 12
-},
-{
-  "main_sound": "양",
-  "level": "6급",
-  "hanja": "洋",
-  "meaning": "[[['큰바다'], ['양']]]",
-  "radical": "水",
-  "strokes": 6,
-  "total_strokes": 9
-},
-{
-  "main_sound": "언",
-  "level": "6급",
-  "hanja": "言",
-  "meaning": "[[['말씀'], ['언']]]",
-  "radical": "言",
-  "strokes": 0,
-  "total_strokes": 7
-},
-{
-  "main_sound": "영",
-  "level": "6급",
-  "hanja": "英",
-  "meaning": "[[['꽃부리'], ['영']]]",
-  "radical": "艸",
-  "strokes": 5,
-  "total_strokes": 9
-},
-{
-  "main_sound": "영",
-  "level": "6급",
-  "hanja": "永",
-  "meaning": "[[['길'], ['영']]]",
-  "radical": "水",
-  "strokes": 1,
-  "total_strokes": 5
-},
-{
-  "main_sound": "온",
-  "level": "6급",
-  "hanja": "溫",
-  "meaning": "[[['따뜻할'], ['온']]]",
-  "radical": "水",
-  "strokes": 10,
-  "total_strokes": 13
-},
-{
-  "main_sound": "원",
-  "level": "6급",
-  "hanja": "園",
-  "meaning": "[[['동산'], ['원']]]",
-  "radical": "囗",
-  "strokes": 10,
-  "total_strokes": 13
-},
-{
-  "main_sound": "원",
-  "level": "6급",
-  "hanja": "遠",
-  "meaning": "[[['멀'], ['원']]]",
-  "radical": "辵",
-  "strokes": 10,
-  "total_strokes": 14
-},
-{
-  "main_sound": "유",
-  "level": "6급",
-  "hanja": "由",
-  "meaning": "[[['말미암을'], ['유']]]",
-  "radical": "田",
-  "strokes": 0,
-  "total_strokes": 5
-},
-{
-  "main_sound": "유",
-  "level": "6급",
-  "hanja": "油",
-  "meaning": "[[['기름'], ['유']]]",
-  "radical": "水",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "은",
-  "level": "6급",
-  "hanja": "銀",
-  "meaning": "[[['은'], ['은']]]",
-  "radical": "金",
-  "strokes": 6,
-  "total_strokes": 14
-},
-{
-  "main_sound": "의",
-  "level": "6급",
-  "hanja": "醫",
-  "meaning": "[[['의원'], ['의']]]",
-  "radical": "酉",
-  "strokes": 11,
-  "total_strokes": 18
-},
-{
-  "main_sound": "의",
-  "level": "6급",
-  "hanja": "衣",
-  "meaning": "[[['옷'], ['의']]]",
-  "radical": "衣",
-  "strokes": 0,
-  "total_strokes": 6
-},
-{
-  "main_sound": "자",
-  "level": "6급",
-  "hanja": "者",
-  "meaning": "[[['놈'], ['자']]]",
-  "radical": "老",
-  "strokes": 5,
-  "total_strokes": 9
-},
-{
-  "main_sound": "장",
-  "level": "6급",
-  "hanja": "章",
-  "meaning": "[[['글'], ['장']]]",
-  "radical": "立",
-  "strokes": 6,
-  "total_strokes": 11
-},
-{
-  "main_sound": "재",
-  "level": "6급",
-  "hanja": "在",
-  "meaning": "[[['있을'], ['재']]]",
-  "radical": "土",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "정",
-  "level": "6급",
-  "hanja": "定",
-  "meaning": "[[['정할'], ['정']]]",
-  "radical": "宀",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "조",
-  "level": "6급",
-  "hanja": "朝",
-  "meaning": "[[['아침'], ['조']]]",
-  "radical": "月",
-  "strokes": 8,
-  "total_strokes": 12
-},
-{
-  "main_sound": "족",
-  "level": "6급",
-  "hanja": "族",
-  "meaning": "[[['겨레'], ['족']]]",
-  "radical": "方",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "주",
-  "level": "6급",
-  "hanja": "晝",
-  "meaning": "[[['낮'], ['주']]]",
-  "radical": "日",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "친",
-  "level": "6급",
-  "hanja": "親",
-  "meaning": "[[['친할'], ['친']]]",
-  "radical": "見",
-  "strokes": 9,
-  "total_strokes": 16
-},
-{
-  "main_sound": "태",
-  "level": "6급",
-  "hanja": "太",
-  "meaning": "[[['클'], ['태']]]",
-  "radical": "大",
-  "strokes": 1,
-  "total_strokes": 4
-},
-{
-  "main_sound": "통",
-  "level": "6급",
-  "hanja": "通",
-  "meaning": "[[['통할'], ['통']]]",
-  "radical": "辵",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "특",
-  "level": "6급",
-  "hanja": "特",
-  "meaning": "[[['특별할'], ['특']]]",
-  "radical": "牛",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "합",
-  "level": "6급",
-  "hanja": "合",
-  "meaning": "[[['합할'], ['합']]]",
-  "radical": "口",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "행",
-  "level": "6급",
-  "hanja": "行",
-  "meaning": "[[['다닐'], ['행']], [['항렬'], ['항']]]",
-  "radical": "行",
-  "strokes": 0,
-  "total_strokes": 6
-},
-{
-  "main_sound": "향",
-  "level": "6급",
-  "hanja": "向",
-  "meaning": "[[['향할'], ['향']]]",
-  "radical": "口",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "호",
-  "level": "6급",
-  "hanja": "號",
-  "meaning": "[[['이름'], ['호']]]",
-  "radical": "虍",
-  "strokes": 7,
-  "total_strokes": 13
-},
-{
-  "main_sound": "화",
-  "level": "6급",
-  "hanja": "畫",
-  "meaning": "[[['그림'], ['화']], [['그을'], ['획(劃)']]]",
-  "radical": "田",
-  "strokes": 7,
-  "total_strokes": 12
-},
-{
-  "main_sound": "황",
-  "level": "6급",
-  "hanja": "黃",
-  "meaning": "[[['누를'], ['황']]]",
-  "radical": "黃",
-  "strokes": 0,
-  "total_strokes": 12
-},
-{
-  "main_sound": "훈",
-  "level": "6급",
-  "hanja": "訓",
-  "meaning": "[[['가르칠'], ['훈']]]",
-  "radical": "言",
-  "strokes": 3,
-  "total_strokes": 10
-},
-{
-  "main_sound": "각",
-  "level": "6급Ⅱ",
-  "hanja": "各",
-  "meaning": "[[['각각'], ['각']]]",
-  "radical": "口",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "각",
-  "level": "6급Ⅱ",
-  "hanja": "角",
-  "meaning": "[[['뿔'], ['각']]]",
-  "radical": "角",
-  "strokes": 0,
-  "total_strokes": 7
-},
-{
-  "main_sound": "계",
-  "level": "6급Ⅱ",
-  "hanja": "界",
-  "meaning": "[[['지경'], ['계']]]",
-  "radical": "田",
-  "strokes": 4,
-  "total_strokes": 9
-},
-{
-  "main_sound": "계",
-  "level": "6급Ⅱ",
-  "hanja": "計",
-  "meaning": "[[['셀'], ['계']]]",
-  "radical": "言",
-  "strokes": 2,
-  "total_strokes": 9
-},
-{
-  "main_sound": "고",
-  "level": "6급Ⅱ",
-  "hanja": "高",
-  "meaning": "[[['높을'], ['고']]]",
-  "radical": "高",
-  "strokes": 0,
-  "total_strokes": 10
-},
-{
-  "main_sound": "공",
-  "level": "6급Ⅱ",
-  "hanja": "公",
-  "meaning": "[[['공평할'], ['공']]]",
-  "radical": "八",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "공",
-  "level": "6급Ⅱ",
-  "hanja": "共",
-  "meaning": "[[['한가지'], ['공']]]",
-  "radical": "八",
-  "strokes": 4,
-  "total_strokes": 6
-},
-{
-  "main_sound": "공",
-  "level": "6급Ⅱ",
-  "hanja": "功",
-  "meaning": "[[['공[勳]'], ['공']]]",
-  "radical": "力",
-  "strokes": 3,
-  "total_strokes": 5
-},
-{
-  "main_sound": "과",
-  "level": "6급Ⅱ",
-  "hanja": "果",
-  "meaning": "[[['실과'], ['과']]]",
-  "radical": "木",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "과",
-  "level": "6급Ⅱ",
-  "hanja": "科",
-  "meaning": "[[['과목'], ['과']]]",
-  "radical": "禾",
-  "strokes": 4,
-  "total_strokes": 9
-},
-{
-  "main_sound": "광",
-  "level": "6급Ⅱ",
-  "hanja": "光",
-  "meaning": "[[['빛'], ['광']]]",
-  "radical": "儿",
-  "strokes": 4,
-  "total_strokes": 6
-},
-{
-  "main_sound": "구",
-  "level": "6급Ⅱ",
-  "hanja": "球",
-  "meaning": "[[['공'], ['구']]]",
-  "radical": "玉",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "금",
-  "level": "6급Ⅱ",
-  "hanja": "今",
-  "meaning": "[[['이제'], ['금']]]",
-  "radical": "人",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "급",
-  "level": "6급Ⅱ",
-  "hanja": "急",
-  "meaning": "[[['급할'], ['급']]]",
-  "radical": "心",
-  "strokes": 5,
-  "total_strokes": 9
-},
-{
-  "main_sound": "단",
-  "level": "6급Ⅱ",
-  "hanja": "短",
-  "meaning": "[[['짧을'], ['단']]]",
-  "radical": "矢",
-  "strokes": 7,
-  "total_strokes": 12
-},
-{
-  "main_sound": "당",
-  "level": "6급Ⅱ",
-  "hanja": "堂",
-  "meaning": "[[['집'], ['당']]]",
-  "radical": "土",
-  "strokes": 8,
-  "total_strokes": 11
-},
-{
-  "main_sound": "대",
-  "level": "6급Ⅱ",
-  "hanja": "代",
-  "meaning": "[[['대신할'], ['대']]]",
-  "radical": "人",
-  "strokes": 3,
-  "total_strokes": 5
-},
-{
-  "main_sound": "대",
-  "level": "6급Ⅱ",
-  "hanja": "對",
-  "meaning": "[[['대할'], ['대']]]",
-  "radical": "寸",
-  "strokes": 11,
-  "total_strokes": 14
-},
-{
-  "main_sound": "도",
-  "level": "6급Ⅱ",
-  "hanja": "圖",
-  "meaning": "[[['그림'], ['도']]]",
-  "radical": "囗",
-  "strokes": 11,
-  "total_strokes": 14
-},
-{
-  "main_sound": "독",
-  "level": "6급Ⅱ",
-  "hanja": "讀",
-  "meaning": "[[['읽을'], ['독']], [['구절'], ['두']]]",
-  "radical": "言",
-  "strokes": 15,
-  "total_strokes": 22
-},
-{
-  "main_sound": "동",
-  "level": "6급Ⅱ",
-  "hanja": "童",
-  "meaning": "[[['아이'], ['동']]]",
-  "radical": "立",
-  "strokes": 7,
-  "total_strokes": 12
-},
-{
-  "main_sound": "등",
-  "level": "6급Ⅱ",
-  "hanja": "等",
-  "meaning": "[[['무리'], ['등']]]",
-  "radical": "竹",
-  "strokes": 6,
-  "total_strokes": 12
-},
-{
-  "main_sound": "락",
-  "level": "6급Ⅱ",
-  "hanja": "樂",
-  "meaning": "[[['즐길'], ['락']], [['노래'], ['악']], [['좋아할'], ['요']]]",
-  "radical": "木",
-  "strokes": 11,
-  "total_strokes": 15
-},
-{
-  "main_sound": "리",
-  "level": "6급Ⅱ",
-  "hanja": "利",
-  "meaning": "[[['이할'], ['리']]]",
-  "radical": "刀",
-  "strokes": 5,
-  "total_strokes": 7
-},
-{
-  "main_sound": "리",
-  "level": "6급Ⅱ",
-  "hanja": "理",
-  "meaning": "[[['다스릴'], ['리']]]",
-  "radical": "玉",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "명",
-  "level": "6급Ⅱ",
-  "hanja": "明",
-  "meaning": "[[['밝을'], ['명']]]",
-  "radical": "日",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "문",
-  "level": "6급Ⅱ",
-  "hanja": "聞",
-  "meaning": "[[['들을'], ['문']]]",
-  "radical": "耳",
-  "strokes": 8,
-  "total_strokes": 14
-},
-{
-  "main_sound": "반",
-  "level": "6급Ⅱ",
-  "hanja": "半",
-  "meaning": "[[['반(半)'], ['반']]]",
-  "radical": "十",
-  "strokes": 3,
-  "total_strokes": 5
-},
-{
-  "main_sound": "반",
-  "level": "6급Ⅱ",
-  "hanja": "反",
-  "meaning": "[[['돌이킬', '돌아올'], ['반']]]",
-  "radical": "又",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "반",
-  "level": "6급Ⅱ",
-  "hanja": "班",
-  "meaning": "[[['나눌'], ['반']]]",
-  "radical": "玉",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "발",
-  "level": "6급Ⅱ",
-  "hanja": "發",
-  "meaning": "[[['필'], ['발']]]",
-  "radical": "癶",
-  "strokes": 7,
-  "total_strokes": 12
-},
-{
-  "main_sound": "방",
-  "level": "6급Ⅱ",
-  "hanja": "放",
-  "meaning": "[[['놓을'], ['방']]]",
-  "radical": "攴",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "부",
-  "level": "6급Ⅱ",
-  "hanja": "部",
-  "meaning": "[[['떼'], ['부']]]",
-  "radical": "邑",
-  "strokes": 8,
-  "total_strokes": 11
-},
-{
-  "main_sound": "분",
-  "level": "6급Ⅱ",
-  "hanja": "分",
-  "meaning": "[[['나눌'], ['분']]]",
-  "radical": "刀",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "사",
-  "level": "6급Ⅱ",
-  "hanja": "社",
-  "meaning": "[[['모일'], ['사']]]",
-  "radical": "示",
-  "strokes": 3,
-  "total_strokes": 8
-},
-{
-  "main_sound": "서",
-  "level": "6급Ⅱ",
-  "hanja": "書",
-  "meaning": "[[['글'], ['서']]]",
-  "radical": "曰",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "선",
-  "level": "6급Ⅱ",
-  "hanja": "線",
-  "meaning": "[[['줄'], ['선']]]",
-  "radical": "糸",
-  "strokes": 9,
-  "total_strokes": 15
-},
-{
-  "main_sound": "설",
-  "level": "6급Ⅱ",
-  "hanja": "雪",
-  "meaning": "[[['눈'], ['설']]]",
-  "radical": "雨",
-  "strokes": 3,
-  "total_strokes": 11
-},
-{
-  "main_sound": "성",
-  "level": "6급Ⅱ",
-  "hanja": "成",
-  "meaning": "[[['이룰'], ['성']]]",
-  "radical": "戈",
-  "strokes": 3,
-  "total_strokes": 7
-},
-{
-  "main_sound": "성",
-  "level": "6급Ⅱ",
-  "hanja": "省",
-  "meaning": "[[['살필'], ['성']], [['덜'], ['생']]]",
-  "radical": "目",
-  "strokes": 4,
-  "total_strokes": 9
-},
-{
-  "main_sound": "소",
-  "level": "6급Ⅱ",
-  "hanja": "消",
-  "meaning": "[[['사라질'], ['소']]]",
-  "radical": "水",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "술",
-  "level": "6급Ⅱ",
-  "hanja": "術",
-  "meaning": "[[['재주'], ['술']]]",
-  "radical": "行",
-  "strokes": 5,
-  "total_strokes": 11
-},
-{
-  "main_sound": "시",
-  "level": "6급Ⅱ",
-  "hanja": "始",
-  "meaning": "[[['비로소'], ['시']]]",
-  "radical": "女",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "신",
-  "level": "6급Ⅱ",
-  "hanja": "身",
-  "meaning": "[[['몸'], ['신']]]",
-  "radical": "身",
-  "strokes": 0,
-  "total_strokes": 7
-},
-{
-  "main_sound": "신",
-  "level": "6급Ⅱ",
-  "hanja": "神",
-  "meaning": "[[['귀신'], ['신']]]",
-  "radical": "示",
-  "strokes": 5,
-  "total_strokes": 10
-},
-{
-  "main_sound": "신",
-  "level": "6급Ⅱ",
-  "hanja": "信",
-  "meaning": "[[['믿을'], ['신']]]",
-  "radical": "人",
-  "strokes": 7,
-  "total_strokes": 9
-},
-{
-  "main_sound": "신",
-  "level": "6급Ⅱ",
-  "hanja": "新",
-  "meaning": "[[['새'], ['신']]]",
-  "radical": "斤",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "약",
-  "level": "6급Ⅱ",
-  "hanja": "弱",
-  "meaning": "[[['약할'], ['약']]]",
-  "radical": "弓",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "약",
-  "level": "6급Ⅱ",
-  "hanja": "藥",
-  "meaning": "[[['약'], ['약']]]",
-  "radical": "艸",
-  "strokes": 15,
-  "total_strokes": 19
-},
-{
-  "main_sound": "업",
-  "level": "6급Ⅱ",
-  "hanja": "業",
-  "meaning": "[[['업'], ['업']]]",
-  "radical": "木",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "용",
-  "level": "6급Ⅱ",
-  "hanja": "勇",
-  "meaning": "[[['날랠'], ['용']]]",
-  "radical": "力",
-  "strokes": 7,
-  "total_strokes": 9
-},
-{
-  "main_sound": "용",
-  "level": "6급Ⅱ",
-  "hanja": "用",
-  "meaning": "[[['쓸'], ['용']]]",
-  "radical": "用",
-  "strokes": 0,
-  "total_strokes": 5
-},
-{
-  "main_sound": "운",
-  "level": "6급Ⅱ",
-  "hanja": "運",
-  "meaning": "[[['옮길'], ['운']]]",
-  "radical": "辵",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "음",
-  "level": "6급Ⅱ",
-  "hanja": "音",
-  "meaning": "[[['소리'], ['음']]]",
-  "radical": "音",
-  "strokes": 0,
-  "total_strokes": 9
-},
-{
-  "main_sound": "음",
-  "level": "6급Ⅱ",
-  "hanja": "飮",
-  "meaning": "[[['마실'], ['음']]]",
-  "radical": "食",
-  "strokes": 4,
-  "total_strokes": 13
-},
-{
-  "main_sound": "의",
-  "level": "6급Ⅱ",
-  "hanja": "意",
-  "meaning": "[[['뜻'], ['의']]]",
-  "radical": "心",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "작",
-  "level": "6급Ⅱ",
-  "hanja": "作",
-  "meaning": "[[['지을'], ['작']]]",
-  "radical": "人",
-  "strokes": 5,
-  "total_strokes": 7
-},
-{
-  "main_sound": "작",
-  "level": "6급Ⅱ",
-  "hanja": "昨",
-  "meaning": "[[['어제'], ['작']]]",
-  "radical": "日",
-  "strokes": 5,
-  "total_strokes": 9
-},
-{
-  "main_sound": "재",
-  "level": "6급Ⅱ",
-  "hanja": "才",
-  "meaning": "[[['재주'], ['재']]]",
-  "radical": "手",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "전",
-  "level": "6급Ⅱ",
-  "hanja": "戰",
-  "meaning": "[[['싸움'], ['전']]]",
-  "radical": "戈",
-  "strokes": 12,
-  "total_strokes": 16
-},
-{
-  "main_sound": "정",
-  "level": "6급Ⅱ",
-  "hanja": "庭",
-  "meaning": "[[['뜰'], ['정']]]",
-  "radical": "广",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "제",
-  "level": "6급Ⅱ",
-  "hanja": "第",
-  "meaning": "[[['차례'], ['제']]]",
-  "radical": "竹",
-  "strokes": 5,
-  "total_strokes": 11
-},
-{
-  "main_sound": "제",
-  "level": "6급Ⅱ",
-  "hanja": "題",
-  "meaning": "[[['제목'], ['제']]]",
-  "radical": "頁",
-  "strokes": 9,
-  "total_strokes": 18
-},
-{
-  "main_sound": "주",
-  "level": "6급Ⅱ",
-  "hanja": "注",
-  "meaning": "[[['부을'], ['주']]]",
-  "radical": "水",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "집",
-  "level": "6급Ⅱ",
-  "hanja": "集",
-  "meaning": "[[['모을'], ['집']]]",
-  "radical": "隹",
-  "strokes": 4,
-  "total_strokes": 12
-},
-{
-  "main_sound": "창",
-  "level": "6급Ⅱ",
-  "hanja": "窓",
-  "meaning": "[[['창'], ['창']]]",
-  "radical": "穴",
-  "strokes": 6,
-  "total_strokes": 11
-},
-{
-  "main_sound": "청",
-  "level": "6급Ⅱ",
-  "hanja": "淸",
-  "meaning": "[[['맑을'], ['청']]]",
-  "radical": "水",
-  "strokes": 8,
-  "total_strokes": 11
-},
-{
-  "main_sound": "체",
-  "level": "6급Ⅱ",
-  "hanja": "體",
-  "meaning": "[[['몸'], ['체']]]",
-  "radical": "骨",
-  "strokes": 13,
-  "total_strokes": 23
-},
-{
-  "main_sound": "표",
-  "level": "6급Ⅱ",
-  "hanja": "表",
-  "meaning": "[[['겉'], ['표']]]",
-  "radical": "衣",
-  "strokes": 2,
-  "total_strokes": 8
-},
-{
-  "main_sound": "풍",
-  "level": "6급Ⅱ",
-  "hanja": "風",
-  "meaning": "[[['바람'], ['풍']]]",
-  "radical": "風",
-  "strokes": 0,
-  "total_strokes": 9
-},
-{
-  "main_sound": "행",
-  "level": "6급Ⅱ",
-  "hanja": "幸",
-  "meaning": "[[['다행'], ['행']]]",
-  "radical": "干",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "현",
-  "level": "6급Ⅱ",
-  "hanja": "現",
-  "meaning": "[[['나타날'], ['현']]]",
-  "radical": "玉",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "형",
-  "level": "6급Ⅱ",
-  "hanja": "形",
-  "meaning": "[[['모양'], ['형']]]",
-  "radical": "彡",
-  "strokes": 4,
-  "total_strokes": 7
-},
-{
-  "main_sound": "화",
-  "level": "6급Ⅱ",
-  "hanja": "和",
-  "meaning": "[[['화할'], ['화']]]",
-  "radical": "口",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "회",
-  "level": "6급Ⅱ",
-  "hanja": "會",
-  "meaning": "[[['모일'], ['회']]]",
-  "radical": "曰",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "가",
-  "level": "7급",
-  "hanja": "歌",
-  "meaning": "[[['노래'], ['가']]]",
-  "radical": "欠",
-  "strokes": 10,
-  "total_strokes": 14
-},
-{
-  "main_sound": "구",
-  "level": "7급",
-  "hanja": "口",
-  "meaning": "[[['입'], ['구']]]",
-  "radical": "口",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "기",
-  "level": "7급",
-  "hanja": "旗",
-  "meaning": "[[['기'], ['기']]]",
-  "radical": "方",
-  "strokes": 10,
-  "total_strokes": 14
-},
-{
-  "main_sound": "동",
-  "level": "7급",
-  "hanja": "同",
-  "meaning": "[[['한가지'], ['동']]]",
-  "radical": "口",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "동",
-  "level": "7급",
-  "hanja": "洞",
-  "meaning": "[[['골'], ['동']], [['밝을'], ['통']]]",
-  "radical": "水",
-  "strokes": 6,
-  "total_strokes": 9
-},
-{
-  "main_sound": "동",
-  "level": "7급",
-  "hanja": "冬",
-  "meaning": "[[['겨울'], ['동']]]",
-  "radical": "冫",
-  "strokes": 3,
-  "total_strokes": 5
-},
-{
-  "main_sound": "등",
-  "level": "7급",
-  "hanja": "登",
-  "meaning": "[[['오를'], ['등']]]",
-  "radical": "癶",
-  "strokes": 7,
-  "total_strokes": 12
-},
-{
-  "main_sound": "래",
-  "level": "7급",
-  "hanja": "來",
-  "meaning": "[[['올'], ['래']]]",
-  "radical": "人",
-  "strokes": 6,
-  "total_strokes": 8
-},
-{
-  "main_sound": "로",
-  "level": "7급",
-  "hanja": "老",
-  "meaning": "[[['늙을'], ['로']]]",
-  "radical": "老",
-  "strokes": 0,
-  "total_strokes": 6
-},
-{
-  "main_sound": "리",
-  "level": "7급",
-  "hanja": "里",
-  "meaning": "[[['마을'], ['리']]]",
-  "radical": "里",
-  "strokes": 0,
-  "total_strokes": 7
-},
-{
-  "main_sound": "림",
-  "level": "7급",
-  "hanja": "林",
-  "meaning": "[[['수풀'], ['림']]]",
-  "radical": "木",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "면",
-  "level": "7급",
-  "hanja": "面",
-  "meaning": "[[['낯'], ['면']]]",
-  "radical": "面",
-  "strokes": 0,
-  "total_strokes": 9
-},
-{
-  "main_sound": "명",
-  "level": "7급",
-  "hanja": "命",
-  "meaning": "[[['목숨'], ['명']]]",
-  "radical": "口",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "문",
-  "level": "7급",
-  "hanja": "文",
-  "meaning": "[[['글월'], ['문']]]",
-  "radical": "文",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "문",
-  "level": "7급",
-  "hanja": "問",
-  "meaning": "[[['물을'], ['문']]]",
-  "radical": "口",
-  "strokes": 8,
-  "total_strokes": 11
-},
-{
-  "main_sound": "백",
-  "level": "7급",
-  "hanja": "百",
-  "meaning": "[[['일백'], ['백']]]",
-  "radical": "白",
-  "strokes": 1,
-  "total_strokes": 6
-},
-{
-  "main_sound": "부",
-  "level": "7급",
-  "hanja": "夫",
-  "meaning": "[[['지아비'], ['부']]]",
-  "radical": "大",
-  "strokes": 1,
-  "total_strokes": 4
-},
-{
-  "main_sound": "산",
-  "level": "7급",
-  "hanja": "算",
-  "meaning": "[[['셈'], ['산']]]",
-  "radical": "竹",
-  "strokes": 8,
-  "total_strokes": 14
-},
-{
-  "main_sound": "색",
-  "level": "7급",
-  "hanja": "色",
-  "meaning": "[[['빛'], ['색']]]",
-  "radical": "色",
-  "strokes": 0,
-  "total_strokes": 6
-},
-{
-  "main_sound": "석",
-  "level": "7급",
-  "hanja": "夕",
-  "meaning": "[[['저녁'], ['석']]]",
-  "radical": "夕",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "소",
-  "level": "7급",
-  "hanja": "少",
-  "meaning": "[[['적을'], ['소']]]",
-  "radical": "小",
-  "strokes": 1,
-  "total_strokes": 4
-},
-{
-  "main_sound": "소",
-  "level": "7급",
-  "hanja": "所",
-  "meaning": "[[['바'], ['소']]]",
-  "radical": "戶",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "수",
-  "level": "7급",
-  "hanja": "數",
-  "meaning": "[[['셈'], ['수']]]",
-  "radical": "攴",
-  "strokes": 11,
-  "total_strokes": 15
-},
-{
-  "main_sound": "식",
-  "level": "7급",
-  "hanja": "植",
-  "meaning": "[[['심을'], ['식']]]",
-  "radical": "木",
-  "strokes": 8,
-  "total_strokes": 12
-},
-{
-  "main_sound": "심",
-  "level": "7급",
-  "hanja": "心",
-  "meaning": "[[['마음'], ['심']]]",
-  "radical": "心",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "어",
-  "level": "7급",
-  "hanja": "語",
-  "meaning": "[[['말씀'], ['어']]]",
-  "radical": "言",
-  "strokes": 7,
-  "total_strokes": 14
-},
-{
-  "main_sound": "연",
-  "level": "7급",
-  "hanja": "然",
-  "meaning": "[[['그럴'], ['연']]]",
-  "radical": "火",
-  "strokes": 8,
-  "total_strokes": 12
-},
-{
-  "main_sound": "유",
-  "level": "7급",
-  "hanja": "有",
-  "meaning": "[[['있을'], ['유']]]",
-  "radical": "月",
-  "strokes": 2,
-  "total_strokes": 6
-},
-{
-  "main_sound": "육",
-  "level": "7급",
-  "hanja": "育",
-  "meaning": "[[['기를'], ['육']]]",
-  "radical": "肉",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "읍",
-  "level": "7급",
-  "hanja": "邑",
-  "meaning": "[[['고을'], ['읍']]]",
-  "radical": "邑",
-  "strokes": 0,
-  "total_strokes": 7
-},
-{
-  "main_sound": "입",
-  "level": "7급",
-  "hanja": "入",
-  "meaning": "[[['들'], ['입']]]",
-  "radical": "入",
-  "strokes": 0,
-  "total_strokes": 2
-},
-{
-  "main_sound": "자",
-  "level": "7급",
-  "hanja": "字",
-  "meaning": "[[['글자'], ['자']]]",
-  "radical": "子",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "조",
-  "level": "7급",
-  "hanja": "祖",
-  "meaning": "[[['할아비'], ['조']]]",
-  "radical": "示",
-  "strokes": 5,
-  "total_strokes": 10
-},
-{
-  "main_sound": "주",
-  "level": "7급",
-  "hanja": "住",
-  "meaning": "[[['살'], ['주']]]",
-  "radical": "人",
-  "strokes": 5,
-  "total_strokes": 7
-},
-{
-  "main_sound": "주",
-  "level": "7급",
-  "hanja": "主",
-  "meaning": "[[['임금', '주인'], ['주']]]",
-  "radical": "丶",
-  "strokes": 4,
-  "total_strokes": 5
-},
-{
-  "main_sound": "중",
-  "level": "7급",
-  "hanja": "重",
-  "meaning": "[[['무거울'], ['중']]]",
-  "radical": "里",
-  "strokes": 2,
-  "total_strokes": 9
-},
-{
-  "main_sound": "지",
-  "level": "7급",
-  "hanja": "紙",
-  "meaning": "[[['종이'], ['지']]]",
-  "radical": "糸",
-  "strokes": 4,
-  "total_strokes": 10
-},
-{
-  "main_sound": "지",
-  "level": "7급",
-  "hanja": "地",
-  "meaning": "[[['따'], ['지']]]",
-  "radical": "土",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "천",
-  "level": "7급",
-  "hanja": "千",
-  "meaning": "[[['일천'], ['천']]]",
-  "radical": "十",
-  "strokes": 1,
-  "total_strokes": 3
-},
-{
-  "main_sound": "천",
-  "level": "7급",
-  "hanja": "天",
-  "meaning": "[[['하늘'], ['천']]]",
-  "radical": "大",
-  "strokes": 1,
-  "total_strokes": 4
-},
-{
-  "main_sound": "천",
-  "level": "7급",
-  "hanja": "川",
-  "meaning": "[[['내'], ['천']]]",
-  "radical": "巛",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "초",
-  "level": "7급",
-  "hanja": "草",
-  "meaning": "[[['풀'], ['초']]]",
-  "radical": "艸",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "촌",
-  "level": "7급",
-  "hanja": "村",
-  "meaning": "[[['마을'], ['촌']]]",
-  "radical": "木",
-  "strokes": 3,
-  "total_strokes": 7
-},
-{
-  "main_sound": "추",
-  "level": "7급",
-  "hanja": "秋",
-  "meaning": "[[['가을'], ['추']]]",
-  "radical": "禾",
-  "strokes": 4,
-  "total_strokes": 9
-},
-{
-  "main_sound": "춘",
-  "level": "7급",
-  "hanja": "春",
-  "meaning": "[[['봄'], ['춘']]]",
-  "radical": "日",
-  "strokes": 5,
-  "total_strokes": 9
-},
-{
-  "main_sound": "출",
-  "level": "7급",
-  "hanja": "出",
-  "meaning": "[[['날[生]'], ['출']]]",
-  "radical": "凵",
-  "strokes": 3,
-  "total_strokes": 5
-},
-{
-  "main_sound": "편",
-  "level": "7급",
-  "hanja": "便",
-  "meaning": "[[['편할'], ['편']], [['똥오줌'], ['변']]]",
-  "radical": "人",
-  "strokes": 7,
-  "total_strokes": 9
-},
-{
-  "main_sound": "하",
-  "level": "7급",
-  "hanja": "夏",
-  "meaning": "[[['여름'], ['하']]]",
-  "radical": "夊",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "화",
-  "level": "7급",
-  "hanja": "花",
-  "meaning": "[[['꽃'], ['화']]]",
-  "radical": "艸",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "휴",
-  "level": "7급",
-  "hanja": "休",
-  "meaning": "[[['쉴'], ['휴']]]",
-  "radical": "人",
-  "strokes": 4,
-  "total_strokes": 6
-},
-{
-  "main_sound": "가",
-  "level": "7급Ⅱ",
-  "hanja": "家",
-  "meaning": "[[['집'], ['가']]]",
-  "radical": "宀",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "간",
-  "level": "7급Ⅱ",
-  "hanja": "間",
-  "meaning": "[[['사이'], ['간']]]",
-  "radical": "門",
-  "strokes": 4,
-  "total_strokes": 12
-},
-{
-  "main_sound": "강",
-  "level": "7급Ⅱ",
-  "hanja": "江",
-  "meaning": "[[['강'], ['강']]]",
-  "radical": "水",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "거",
-  "level": "7급Ⅱ",
-  "hanja": "車",
-  "meaning": "[[['수레'], ['거']], [['수레'], ['차']]]",
-  "radical": "車",
-  "strokes": 0,
-  "total_strokes": 7
-},
-{
-  "main_sound": "공",
-  "level": "7급Ⅱ",
-  "hanja": "工",
-  "meaning": "[[['장인'], ['공']]]",
-  "radical": "工",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "공",
-  "level": "7급Ⅱ",
-  "hanja": "空",
-  "meaning": "[[['빌'], ['공']]]",
-  "radical": "穴",
-  "strokes": 3,
-  "total_strokes": 8
-},
-{
-  "main_sound": "기",
-  "level": "7급Ⅱ",
-  "hanja": "氣",
-  "meaning": "[[['기운'], ['기']]]",
-  "radical": "气",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "기",
-  "level": "7급Ⅱ",
-  "hanja": "記",
-  "meaning": "[[['기록할'], ['기']]]",
-  "radical": "言",
-  "strokes": 3,
-  "total_strokes": 10
-},
-{
-  "main_sound": "남",
-  "level": "7급Ⅱ",
-  "hanja": "男",
-  "meaning": "[[['사내'], ['남']]]",
-  "radical": "田",
-  "strokes": 2,
-  "total_strokes": 7
-},
-{
-  "main_sound": "내",
-  "level": "7급Ⅱ",
-  "hanja": "內",
-  "meaning": "[[['안'], ['내']]]",
-  "radical": "入",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "농",
-  "level": "7급Ⅱ",
-  "hanja": "農",
-  "meaning": "[[['농사'], ['농']]]",
-  "radical": "辰",
-  "strokes": 6,
-  "total_strokes": 13
-},
-{
-  "main_sound": "답",
-  "level": "7급Ⅱ",
-  "hanja": "答",
-  "meaning": "[[['대답'], ['답']]]",
-  "radical": "竹",
-  "strokes": 6,
-  "total_strokes": 12
-},
-{
-  "main_sound": "도",
-  "level": "7급Ⅱ",
-  "hanja": "道",
-  "meaning": "[[['길'], ['도']]]",
-  "radical": "辵",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "동",
-  "level": "7급Ⅱ",
-  "hanja": "動",
-  "meaning": "[[['움직일'], ['동']]]",
-  "radical": "力",
-  "strokes": 9,
-  "total_strokes": 11
-},
-{
-  "main_sound": "력",
-  "level": "7급Ⅱ",
-  "hanja": "力",
-  "meaning": "[[['힘'], ['력']]]",
-  "radical": "力",
-  "strokes": 0,
-  "total_strokes": 2
-},
-{
-  "main_sound": "립",
-  "level": "7급Ⅱ",
-  "hanja": "立",
-  "meaning": "[[['설'], ['립']]]",
-  "radical": "立",
-  "strokes": 0,
-  "total_strokes": 5
-},
-{
-  "main_sound": "매",
-  "level": "7급Ⅱ",
-  "hanja": "每",
-  "meaning": "[[['매양'], ['매']]]",
-  "radical": "毋",
-  "strokes": 3,
-  "total_strokes": 7
-},
-{
-  "main_sound": "명",
-  "level": "7급Ⅱ",
-  "hanja": "名",
-  "meaning": "[[['이름'], ['명']]]",
-  "radical": "口",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "물",
-  "level": "7급Ⅱ",
-  "hanja": "物",
-  "meaning": "[[['물건'], ['물']]]",
-  "radical": "牛",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "방",
-  "level": "7급Ⅱ",
-  "hanja": "方",
-  "meaning": "[[['모[棱]'], ['방']]]",
-  "radical": "方",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "불",
-  "level": "7급Ⅱ",
-  "hanja": "不",
-  "meaning": "[[['아닐'], ['불']]]",
-  "radical": "一",
-  "strokes": 3,
-  "total_strokes": 4
-},
-{
-  "main_sound": "사",
-  "level": "7급Ⅱ",
-  "hanja": "事",
-  "meaning": "[[['일'], ['사']]]",
-  "radical": "亅",
-  "strokes": 7,
-  "total_strokes": 8
-},
-{
-  "main_sound": "상",
-  "level": "7급Ⅱ",
-  "hanja": "上",
-  "meaning": "[[['윗'], ['상']]]",
-  "radical": "一",
-  "strokes": 2,
-  "total_strokes": 3
-},
-{
-  "main_sound": "성",
-  "level": "7급Ⅱ",
-  "hanja": "姓",
-  "meaning": "[[['성'], ['성']]]",
-  "radical": "女",
-  "strokes": 5,
-  "total_strokes": 8
-},
-{
-  "main_sound": "세",
-  "level": "7급Ⅱ",
-  "hanja": "世",
-  "meaning": "[[['인간'], ['세']]]",
-  "radical": "一",
-  "strokes": 4,
-  "total_strokes": 5
-},
-{
-  "main_sound": "수",
-  "level": "7급Ⅱ",
-  "hanja": "手",
-  "meaning": "[[['손'], ['수']]]",
-  "radical": "手",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "시",
-  "level": "7급Ⅱ",
-  "hanja": "時",
-  "meaning": "[[['때'], ['시']]]",
-  "radical": "日",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "시",
-  "level": "7급Ⅱ",
-  "hanja": "市",
-  "meaning": "[[['저자'], ['시']]]",
-  "radical": "巾",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "식",
-  "level": "7급Ⅱ",
-  "hanja": "食",
-  "meaning": "[[['밥', '먹을'], ['식']]]",
-  "radical": "食",
-  "strokes": 0,
-  "total_strokes": 9
-},
-{
-  "main_sound": "안",
-  "level": "7급Ⅱ",
-  "hanja": "安",
-  "meaning": "[[['편안'], ['안']]]",
-  "radical": "宀",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "오",
-  "level": "7급Ⅱ",
-  "hanja": "午",
-  "meaning": "[[['낮'], ['오']]]",
-  "radical": "十",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "우",
-  "level": "7급Ⅱ",
-  "hanja": "右",
-  "meaning": "[[['오를', '오른(쪽)'], ['우']]]",
-  "radical": "口",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "자",
-  "level": "7급Ⅱ",
-  "hanja": "子",
-  "meaning": "[[['아들'], ['자']]]",
-  "radical": "子",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "자",
-  "level": "7급Ⅱ",
-  "hanja": "自",
-  "meaning": "[[['스스로'], ['자']]]",
-  "radical": "自",
-  "strokes": 0,
-  "total_strokes": 6
-},
-{
-  "main_sound": "장",
-  "level": "7급Ⅱ",
-  "hanja": "場",
-  "meaning": "[[['마당'], ['장']]]",
-  "radical": "土",
-  "strokes": 9,
-  "total_strokes": 12
-},
-{
-  "main_sound": "전",
-  "level": "7급Ⅱ",
-  "hanja": "電",
-  "meaning": "[[['번개'], ['전']]]",
-  "radical": "雨",
-  "strokes": 5,
-  "total_strokes": 13
-},
-{
-  "main_sound": "전",
-  "level": "7급Ⅱ",
-  "hanja": "前",
-  "meaning": "[[['앞'], ['전']]]",
-  "radical": "刀",
-  "strokes": 7,
-  "total_strokes": 9
-},
-{
-  "main_sound": "전",
-  "level": "7급Ⅱ",
-  "hanja": "全",
-  "meaning": "[[['온전'], ['전']]]",
-  "radical": "入",
-  "strokes": 4,
-  "total_strokes": 6
-},
-{
-  "main_sound": "정",
-  "level": "7급Ⅱ",
-  "hanja": "正",
-  "meaning": "[[['바를'], ['정']]]",
-  "radical": "止",
-  "strokes": 1,
-  "total_strokes": 5
-},
-{
-  "main_sound": "족",
-  "level": "7급Ⅱ",
-  "hanja": "足",
-  "meaning": "[[['발'], ['족']]]",
-  "radical": "足",
-  "strokes": 0,
-  "total_strokes": 7
-},
-{
-  "main_sound": "좌",
-  "level": "7급Ⅱ",
-  "hanja": "左",
-  "meaning": "[[['왼'], ['좌']]]",
-  "radical": "工",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "직",
-  "level": "7급Ⅱ",
-  "hanja": "直",
-  "meaning": "[[['곧을'], ['직']]]",
-  "radical": "目",
-  "strokes": 3,
-  "total_strokes": 8
-},
-{
-  "main_sound": "평",
-  "level": "7급Ⅱ",
-  "hanja": "平",
-  "meaning": "[[['평평할'], ['평']]]",
-  "radical": "干",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "하",
-  "level": "7급Ⅱ",
-  "hanja": "下",
-  "meaning": "[[['아래'], ['하']]]",
-  "radical": "一",
-  "strokes": 2,
-  "total_strokes": 3
-},
-{
-  "main_sound": "한",
-  "level": "7급Ⅱ",
-  "hanja": "漢",
-  "meaning": "[[['한수', '한나라'], ['한']]]",
-  "radical": "水",
-  "strokes": 11,
-  "total_strokes": 14
-},
-{
-  "main_sound": "해",
-  "level": "7급Ⅱ",
-  "hanja": "海",
-  "meaning": "[[['바다'], ['해']]]",
-  "radical": "水",
-  "strokes": 7,
-  "total_strokes": 10
-},
-{
-  "main_sound": "화",
-  "level": "7급Ⅱ",
-  "hanja": "話",
-  "meaning": "[[['말씀'], ['화']]]",
-  "radical": "言",
-  "strokes": 6,
-  "total_strokes": 13
-},
-{
-  "main_sound": "활",
-  "level": "7급Ⅱ",
-  "hanja": "活",
-  "meaning": "[[['살'], ['활']]]",
-  "radical": "水",
-  "strokes": 6,
-  "total_strokes": 9
-},
-{
-  "main_sound": "효",
-  "level": "7급Ⅱ",
-  "hanja": "孝",
-  "meaning": "[[['효도'], ['효']]]",
-  "radical": "子",
-  "strokes": 4,
-  "total_strokes": 7
-},
-{
-  "main_sound": "후",
-  "level": "7급Ⅱ",
-  "hanja": "後",
-  "meaning": "[[['뒤'], ['후']]]",
-  "radical": "彳",
-  "strokes": 6,
-  "total_strokes": 9
-},
-{
-  "main_sound": "교",
-  "level": "8급",
-  "hanja": "校",
-  "meaning": "[[['학교'], ['교']]]",
-  "radical": "木",
-  "strokes": 6,
-  "total_strokes": 10
-},
-{
-  "main_sound": "교",
-  "level": "8급",
-  "hanja": "敎",
-  "meaning": "[[['가르칠'], ['교']]]",
-  "radical": "攴",
-  "strokes": 7,
-  "total_strokes": 11
-},
-{
-  "main_sound": "구",
-  "level": "8급",
-  "hanja": "九",
-  "meaning": "[[['아홉'], ['구']]]",
-  "radical": "乙",
-  "strokes": 1,
-  "total_strokes": 2
-},
-{
-  "main_sound": "국",
-  "level": "8급",
-  "hanja": "國",
-  "meaning": "[[['나라'], ['국']]]",
-  "radical": "囗",
-  "strokes": 8,
-  "total_strokes": 11
-},
-{
-  "main_sound": "군",
-  "level": "8급",
-  "hanja": "軍",
-  "meaning": "[[['군사'], ['군']]]",
-  "radical": "車",
-  "strokes": 2,
-  "total_strokes": 9
-},
-{
-  "main_sound": "금",
-  "level": "8급",
-  "hanja": "金",
-  "meaning": "[[['쇠'], ['금']], [['성(姓)'], ['김']]]",
-  "radical": "金",
-  "strokes": 0,
-  "total_strokes": 8
-},
-{
-  "main_sound": "남",
-  "level": "8급",
-  "hanja": "南",
-  "meaning": "[[['남녘'], ['남']]]",
-  "radical": "十",
-  "strokes": 7,
-  "total_strokes": 9
-},
-{
-  "main_sound": "녀",
-  "level": "8급",
-  "hanja": "女",
-  "meaning": "[[['계집'], ['녀']]]",
-  "radical": "女",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "년",
-  "level": "8급",
-  "hanja": "年",
-  "meaning": "[[['해'], ['년']]]",
-  "radical": "干",
-  "strokes": 3,
-  "total_strokes": 6
-},
-{
-  "main_sound": "대",
-  "level": "8급",
-  "hanja": "大",
-  "meaning": "[[['큰'], ['대']]]",
-  "radical": "大",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "동",
-  "level": "8급",
-  "hanja": "東",
-  "meaning": "[[['동녘'], ['동']]]",
-  "radical": "木",
-  "strokes": 4,
-  "total_strokes": 8
-},
-{
-  "main_sound": "륙",
-  "level": "8급",
-  "hanja": "六",
-  "meaning": "[[['여섯'], ['륙']]]",
-  "radical": "八",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "만",
-  "level": "8급",
-  "hanja": "萬",
-  "meaning": "[[['일만'], ['만']]]",
-  "radical": "艸",
-  "strokes": 9,
-  "total_strokes": 13
-},
-{
-  "main_sound": "모",
-  "level": "8급",
-  "hanja": "母",
-  "meaning": "[[['어미'], ['모']]]",
-  "radical": "毋",
-  "strokes": 1,
-  "total_strokes": 5
-},
-{
-  "main_sound": "목",
-  "level": "8급",
-  "hanja": "木",
-  "meaning": "[[['나무'], ['목']]]",
-  "radical": "木",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "문",
-  "level": "8급",
-  "hanja": "門",
-  "meaning": "[[['문'], ['문']]]",
-  "radical": "門",
-  "strokes": 0,
-  "total_strokes": 8
-},
-{
-  "main_sound": "민",
-  "level": "8급",
-  "hanja": "民",
-  "meaning": "[[['백성'], ['민']]]",
-  "radical": "氏",
-  "strokes": 1,
-  "total_strokes": 5
-},
-{
-  "main_sound": "백",
-  "level": "8급",
-  "hanja": "白",
-  "meaning": "[[['흰'], ['백']]]",
-  "radical": "白",
-  "strokes": 0,
-  "total_strokes": 5
-},
-{
-  "main_sound": "부",
-  "level": "8급",
-  "hanja": "父",
-  "meaning": "[[['아비'], ['부']]]",
-  "radical": "父",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "북",
-  "level": "8급",
-  "hanja": "北",
-  "meaning": "[[['북녘'], ['북']], [['달아날'], ['배']]]",
-  "radical": "匕",
-  "strokes": 3,
-  "total_strokes": 5
-},
-{
-  "main_sound": "사",
-  "level": "8급",
-  "hanja": "四",
-  "meaning": "[[['넉'], ['사']]]",
-  "radical": "囗",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "산",
-  "level": "8급",
-  "hanja": "山",
-  "meaning": "[[['메'], ['산']]]",
-  "radical": "山",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "삼",
-  "level": "8급",
-  "hanja": "三",
-  "meaning": "[[['석'], ['삼']]]",
-  "radical": "一",
-  "strokes": 2,
-  "total_strokes": 3
-},
-{
-  "main_sound": "생",
-  "level": "8급",
-  "hanja": "生",
-  "meaning": "[[['날'], ['생']]]",
-  "radical": "生",
-  "strokes": 0,
-  "total_strokes": 5
-},
-{
-  "main_sound": "서",
-  "level": "8급",
-  "hanja": "西",
-  "meaning": "[[['서녘'], ['서']]]",
-  "radical": "襾",
-  "strokes": 0,
-  "total_strokes": 6
-},
-{
-  "main_sound": "선",
-  "level": "8급",
-  "hanja": "先",
-  "meaning": "[[['먼저'], ['선']]]",
-  "radical": "儿",
-  "strokes": 4,
-  "total_strokes": 6
-},
-{
-  "main_sound": "소",
-  "level": "8급",
-  "hanja": "小",
-  "meaning": "[[['작을'], ['소']]]",
-  "radical": "小",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "수",
-  "level": "8급",
-  "hanja": "水",
-  "meaning": "[[['물'], ['수']]]",
-  "radical": "水",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "실",
-  "level": "8급",
-  "hanja": "室",
-  "meaning": "[[['집'], ['실']]]",
-  "radical": "宀",
-  "strokes": 6,
-  "total_strokes": 9
-},
-{
-  "main_sound": "십",
-  "level": "8급",
-  "hanja": "十",
-  "meaning": "[[['열'], ['십']]]",
-  "radical": "十",
-  "strokes": 0,
-  "total_strokes": 2
-},
-{
-  "main_sound": "오",
-  "level": "8급",
-  "hanja": "五",
-  "meaning": "[[['다섯'], ['오']]]",
-  "radical": "二",
-  "strokes": 2,
-  "total_strokes": 4
-},
-{
-  "main_sound": "왕",
-  "level": "8급",
-  "hanja": "王",
-  "meaning": "[[['임금'], ['왕']]]",
-  "radical": "玉",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "외",
-  "level": "8급",
-  "hanja": "外",
-  "meaning": "[[['바깥'], ['외']]]",
-  "radical": "夕",
-  "strokes": 2,
-  "total_strokes": 5
-},
-{
-  "main_sound": "월",
-  "level": "8급",
-  "hanja": "月",
-  "meaning": "[[['달'], ['월']]]",
-  "radical": "月",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "이",
-  "level": "8급",
-  "hanja": "二",
-  "meaning": "[[['두'], ['이']]]",
-  "radical": "二",
-  "strokes": 0,
-  "total_strokes": 2
-},
-{
-  "main_sound": "인",
-  "level": "8급",
-  "hanja": "人",
-  "meaning": "[[['사람'], ['인']]]",
-  "radical": "人",
-  "strokes": 0,
-  "total_strokes": 2
-},
-{
-  "main_sound": "일",
-  "level": "8급",
-  "hanja": "一",
-  "meaning": "[[['한'], ['일']]]",
-  "radical": "一",
-  "strokes": 0,
-  "total_strokes": 1
-},
-{
-  "main_sound": "일",
-  "level": "8급",
-  "hanja": "日",
-  "meaning": "[[['날'], ['일']]]",
-  "radical": "日",
-  "strokes": 0,
-  "total_strokes": 4
-},
-{
-  "main_sound": "장",
-  "level": "8급",
-  "hanja": "長",
-  "meaning": "[[['긴'], ['장']]]",
-  "radical": "長",
-  "strokes": 0,
-  "total_strokes": 8
-},
-{
-  "main_sound": "제",
-  "level": "8급",
-  "hanja": "弟",
-  "meaning": "[[['아우'], ['제']]]",
-  "radical": "弓",
-  "strokes": 4,
-  "total_strokes": 7
-},
-{
-  "main_sound": "중",
-  "level": "8급",
-  "hanja": "中",
-  "meaning": "[[['가운데'], ['중']]]",
-  "radical": "丨",
-  "strokes": 3,
-  "total_strokes": 4
-},
-{
-  "main_sound": "청",
-  "level": "8급",
-  "hanja": "靑",
-  "meaning": "[[['푸를'], ['청']]]",
-  "radical": "靑",
-  "strokes": 0,
-  "total_strokes": 8
-},
-{
-  "main_sound": "촌",
-  "level": "8급",
-  "hanja": "寸",
-  "meaning": "[[['마디'], ['촌']]]",
-  "radical": "寸",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "칠",
-  "level": "8급",
-  "hanja": "七",
-  "meaning": "[[['일곱'], ['칠']]]",
-  "radical": "一",
-  "strokes": 1,
-  "total_strokes": 2
-},
-{
-  "main_sound": "토",
-  "level": "8급",
-  "hanja": "土",
-  "meaning": "[[['흙'], ['토']]]",
-  "radical": "土",
-  "strokes": 0,
-  "total_strokes": 3
-},
-{
-  "main_sound": "팔",
-  "level": "8급",
-  "hanja": "八",
-  "meaning": "[[['여덟'], ['팔']]]",
-  "radical": "八",
-  "strokes": 0,
-  "total_strokes": 2
-},
-{
-  "main_sound": "학",
-  "level": "8급",
-  "hanja": "學",
-  "meaning": "[[['배울'], ['학']]]",
-  "radical": "子",
-  "strokes": 13,
-  "total_strokes": 16
-},
-{
-  "main_sound": "한",
-  "level": "8급",
-  "hanja": "韓",
-  "meaning": "[[['한국', '나라'], ['한']]]",
-  "radical": "韋",
-  "strokes": 8,
-  "total_strokes": 17
-},
-{
-  "main_sound": "형",
-  "level": "8급",
-  "hanja": "兄",
-  "meaning": "[[['형'], ['형']]]",
-  "radical": "儿",
-  "strokes": 3,
-  "total_strokes": 5
-},
-{
-  "main_sound": "화",
-  "level": "8급",
-  "hanja": "火",
-  "meaning": "[[['불'], ['화']]]",
-  "radical": "火",
-  "strokes": 0,
-  "total_strokes": 4
+  "data" : [
+    {
+      "main_sound": "감",
+      "level": "6급",
+      "hanja": "感",
+      "meaning": "[[['느낄'], ['감']]]",
+      "radical": "心",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "강",
+      "level": "6급",
+      "hanja": "強",
+      "meaning": "[[['강할'], ['강']]]",
+      "radical": "弓",
+      "strokes": 8,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "개",
+      "level": "6급",
+      "hanja": "開",
+      "meaning": "[[['열'], ['개']]]",
+      "radical": "門",
+      "strokes": 4,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "경",
+      "level": "6급",
+      "hanja": "京",
+      "meaning": "[[['서울'], ['경']]]",
+      "radical": "亠",
+      "strokes": 6,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "고",
+      "level": "6급",
+      "hanja": "古",
+      "meaning": "[[['예'], ['고']]]",
+      "radical": "口",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "고",
+      "level": "6급",
+      "hanja": "苦",
+      "meaning": "[[['쓸[味覺]'], ['고']]]",
+      "radical": "艸",
+      "strokes": 5,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "교",
+      "level": "6급",
+      "hanja": "交",
+      "meaning": "[[['사귈'], ['교']]]",
+      "radical": "亠",
+      "strokes": 4,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "구",
+      "level": "6급",
+      "hanja": "區",
+      "meaning": "[[['구분할', '지경'], ['구']]]",
+      "radical": "匸",
+      "strokes": 9,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "군",
+      "level": "6급",
+      "hanja": "郡",
+      "meaning": "[[['고을'], ['군']]]",
+      "radical": "邑",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "근",
+      "level": "6급",
+      "hanja": "根",
+      "meaning": "[[['뿌리'], ['근']]]",
+      "radical": "木",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "근",
+      "level": "6급",
+      "hanja": "近",
+      "meaning": "[[['가까울'], ['근']]]",
+      "radical": "辵",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "급",
+      "level": "6급",
+      "hanja": "級",
+      "meaning": "[[['등급'], ['급']]]",
+      "radical": "糸",
+      "strokes": 4,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "다",
+      "level": "6급",
+      "hanja": "多",
+      "meaning": "[[['많을'], ['다']]]",
+      "radical": "夕",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "대",
+      "level": "6급",
+      "hanja": "待",
+      "meaning": "[[['기다릴'], ['대']]]",
+      "radical": "彳",
+      "strokes": 6,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "도",
+      "level": "6급",
+      "hanja": "度",
+      "meaning": "[[['법도'], ['도']], [['헤아릴'], ['탁']]]",
+      "radical": "广",
+      "strokes": 6,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "두",
+      "level": "6급",
+      "hanja": "頭",
+      "meaning": "[[['머리'], ['두']]]",
+      "radical": "頁",
+      "strokes": 7,
+      "total_strokes": 16
+    },
+    {
+      "main_sound": "례",
+      "level": "6급",
+      "hanja": "例",
+      "meaning": "[[['법식'], ['례']]]",
+      "radical": "人",
+      "strokes": 6,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "례",
+      "level": "6급",
+      "hanja": "禮",
+      "meaning": "[[['예도'], ['례']]]",
+      "radical": "示",
+      "strokes": 13,
+      "total_strokes": 18
+    },
+    {
+      "main_sound": "로",
+      "level": "6급",
+      "hanja": "路",
+      "meaning": "[[['길'], ['로']]]",
+      "radical": "足",
+      "strokes": 6,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "록",
+      "level": "6급",
+      "hanja": "綠",
+      "meaning": "[[['푸를'], ['록']]]",
+      "radical": "糸",
+      "strokes": 8,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "리",
+      "level": "6급",
+      "hanja": "李",
+      "meaning": "[[['오얏', '성(姓)'], ['리']]]",
+      "radical": "木",
+      "strokes": 3,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "목",
+      "level": "6급",
+      "hanja": "目",
+      "meaning": "[[['눈'], ['목']]]",
+      "radical": "目",
+      "strokes": 0,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "미",
+      "level": "6급",
+      "hanja": "美",
+      "meaning": "[[['아름다울'], ['미']]]",
+      "radical": "羊",
+      "strokes": 3,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "미",
+      "level": "6급",
+      "hanja": "米",
+      "meaning": "[[['쌀'], ['미']]]",
+      "radical": "米",
+      "strokes": 0,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "박",
+      "level": "6급",
+      "hanja": "朴",
+      "meaning": "[[['성(姓)'], ['박']]]",
+      "radical": "木",
+      "strokes": 2,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "번",
+      "level": "6급",
+      "hanja": "番",
+      "meaning": "[[['차례'], ['번']]]",
+      "radical": "田",
+      "strokes": 7,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "별",
+      "level": "6급",
+      "hanja": "別",
+      "meaning": "[[['다를', '나눌'], ['별']]]",
+      "radical": "刀",
+      "strokes": 5,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "병",
+      "level": "6급",
+      "hanja": "病",
+      "meaning": "[[['병'], ['병']]]",
+      "radical": "疒",
+      "strokes": 5,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "복",
+      "level": "6급",
+      "hanja": "服",
+      "meaning": "[[['옷'], ['복']]]",
+      "radical": "月",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "본",
+      "level": "6급",
+      "hanja": "本",
+      "meaning": "[[['근본'], ['본']]]",
+      "radical": "木",
+      "strokes": 1,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "사",
+      "level": "6급",
+      "hanja": "使",
+      "meaning": "[[['하여금', '부릴'], ['사']]]",
+      "radical": "人",
+      "strokes": 6,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "사",
+      "level": "6급",
+      "hanja": "死",
+      "meaning": "[[['죽을'], ['사']]]",
+      "radical": "歹",
+      "strokes": 2,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "석",
+      "level": "6급",
+      "hanja": "席",
+      "meaning": "[[['자리'], ['석']]]",
+      "radical": "巾",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "석",
+      "level": "6급",
+      "hanja": "石",
+      "meaning": "[[['돌'], ['석']]]",
+      "radical": "石",
+      "strokes": 0,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "속",
+      "level": "6급",
+      "hanja": "速",
+      "meaning": "[[['빠를'], ['속']]]",
+      "radical": "辵",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "손",
+      "level": "6급",
+      "hanja": "孫",
+      "meaning": "[[['손자'], ['손']]]",
+      "radical": "子",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "수",
+      "level": "6급",
+      "hanja": "樹",
+      "meaning": "[[['나무'], ['수']]]",
+      "radical": "木",
+      "strokes": 12,
+      "total_strokes": 16
+    },
+    {
+      "main_sound": "습",
+      "level": "6급",
+      "hanja": "習",
+      "meaning": "[[['익힐'], ['습']]]",
+      "radical": "羽",
+      "strokes": 5,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "승",
+      "level": "6급",
+      "hanja": "勝",
+      "meaning": "[[['이길'], ['승']]]",
+      "radical": "力",
+      "strokes": 10,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "식",
+      "level": "6급",
+      "hanja": "式",
+      "meaning": "[[['법'], ['식']]]",
+      "radical": "弋",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "실",
+      "level": "6급",
+      "hanja": "失",
+      "meaning": "[[['잃을'], ['실']]]",
+      "radical": "大",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "애",
+      "level": "6급",
+      "hanja": "愛",
+      "meaning": "[[['사랑'], ['애']]]",
+      "radical": "心",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "야",
+      "level": "6급",
+      "hanja": "夜",
+      "meaning": "[[['밤'], ['야']]]",
+      "radical": "夕",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "야",
+      "level": "6급",
+      "hanja": "野",
+      "meaning": "[[['들[坪]'], ['야']]]",
+      "radical": "里",
+      "strokes": 4,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "양",
+      "level": "6급",
+      "hanja": "陽",
+      "meaning": "[[['볕'], ['양']]]",
+      "radical": "阜",
+      "strokes": 9,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "양",
+      "level": "6급",
+      "hanja": "洋",
+      "meaning": "[[['큰바다'], ['양']]]",
+      "radical": "水",
+      "strokes": 6,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "언",
+      "level": "6급",
+      "hanja": "言",
+      "meaning": "[[['말씀'], ['언']]]",
+      "radical": "言",
+      "strokes": 0,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "영",
+      "level": "6급",
+      "hanja": "英",
+      "meaning": "[[['꽃부리'], ['영']]]",
+      "radical": "艸",
+      "strokes": 5,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "영",
+      "level": "6급",
+      "hanja": "永",
+      "meaning": "[[['길'], ['영']]]",
+      "radical": "水",
+      "strokes": 1,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "온",
+      "level": "6급",
+      "hanja": "溫",
+      "meaning": "[[['따뜻할'], ['온']]]",
+      "radical": "水",
+      "strokes": 10,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "원",
+      "level": "6급",
+      "hanja": "園",
+      "meaning": "[[['동산'], ['원']]]",
+      "radical": "囗",
+      "strokes": 10,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "원",
+      "level": "6급",
+      "hanja": "遠",
+      "meaning": "[[['멀'], ['원']]]",
+      "radical": "辵",
+      "strokes": 10,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "유",
+      "level": "6급",
+      "hanja": "由",
+      "meaning": "[[['말미암을'], ['유']]]",
+      "radical": "田",
+      "strokes": 0,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "유",
+      "level": "6급",
+      "hanja": "油",
+      "meaning": "[[['기름'], ['유']]]",
+      "radical": "水",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "은",
+      "level": "6급",
+      "hanja": "銀",
+      "meaning": "[[['은'], ['은']]]",
+      "radical": "金",
+      "strokes": 6,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "의",
+      "level": "6급",
+      "hanja": "醫",
+      "meaning": "[[['의원'], ['의']]]",
+      "radical": "酉",
+      "strokes": 11,
+      "total_strokes": 18
+    },
+    {
+      "main_sound": "의",
+      "level": "6급",
+      "hanja": "衣",
+      "meaning": "[[['옷'], ['의']]]",
+      "radical": "衣",
+      "strokes": 0,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "자",
+      "level": "6급",
+      "hanja": "者",
+      "meaning": "[[['놈'], ['자']]]",
+      "radical": "老",
+      "strokes": 5,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "장",
+      "level": "6급",
+      "hanja": "章",
+      "meaning": "[[['글'], ['장']]]",
+      "radical": "立",
+      "strokes": 6,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "재",
+      "level": "6급",
+      "hanja": "在",
+      "meaning": "[[['있을'], ['재']]]",
+      "radical": "土",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "정",
+      "level": "6급",
+      "hanja": "定",
+      "meaning": "[[['정할'], ['정']]]",
+      "radical": "宀",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "조",
+      "level": "6급",
+      "hanja": "朝",
+      "meaning": "[[['아침'], ['조']]]",
+      "radical": "月",
+      "strokes": 8,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "족",
+      "level": "6급",
+      "hanja": "族",
+      "meaning": "[[['겨레'], ['족']]]",
+      "radical": "方",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "주",
+      "level": "6급",
+      "hanja": "晝",
+      "meaning": "[[['낮'], ['주']]]",
+      "radical": "日",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "친",
+      "level": "6급",
+      "hanja": "親",
+      "meaning": "[[['친할'], ['친']]]",
+      "radical": "見",
+      "strokes": 9,
+      "total_strokes": 16
+    },
+    {
+      "main_sound": "태",
+      "level": "6급",
+      "hanja": "太",
+      "meaning": "[[['클'], ['태']]]",
+      "radical": "大",
+      "strokes": 1,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "통",
+      "level": "6급",
+      "hanja": "通",
+      "meaning": "[[['통할'], ['통']]]",
+      "radical": "辵",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "특",
+      "level": "6급",
+      "hanja": "特",
+      "meaning": "[[['특별할'], ['특']]]",
+      "radical": "牛",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "합",
+      "level": "6급",
+      "hanja": "合",
+      "meaning": "[[['합할'], ['합']]]",
+      "radical": "口",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "행",
+      "level": "6급",
+      "hanja": "行",
+      "meaning": "[[['다닐'], ['행']], [['항렬'], ['항']]]",
+      "radical": "行",
+      "strokes": 0,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "향",
+      "level": "6급",
+      "hanja": "向",
+      "meaning": "[[['향할'], ['향']]]",
+      "radical": "口",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "호",
+      "level": "6급",
+      "hanja": "號",
+      "meaning": "[[['이름'], ['호']]]",
+      "radical": "虍",
+      "strokes": 7,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "화",
+      "level": "6급",
+      "hanja": "畫",
+      "meaning": "[[['그림'], ['화']], [['그을'], ['획(劃)']]]",
+      "radical": "田",
+      "strokes": 7,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "황",
+      "level": "6급",
+      "hanja": "黃",
+      "meaning": "[[['누를'], ['황']]]",
+      "radical": "黃",
+      "strokes": 0,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "훈",
+      "level": "6급",
+      "hanja": "訓",
+      "meaning": "[[['가르칠'], ['훈']]]",
+      "radical": "言",
+      "strokes": 3,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "각",
+      "level": "6급Ⅱ",
+      "hanja": "各",
+      "meaning": "[[['각각'], ['각']]]",
+      "radical": "口",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "각",
+      "level": "6급Ⅱ",
+      "hanja": "角",
+      "meaning": "[[['뿔'], ['각']]]",
+      "radical": "角",
+      "strokes": 0,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "계",
+      "level": "6급Ⅱ",
+      "hanja": "界",
+      "meaning": "[[['지경'], ['계']]]",
+      "radical": "田",
+      "strokes": 4,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "계",
+      "level": "6급Ⅱ",
+      "hanja": "計",
+      "meaning": "[[['셀'], ['계']]]",
+      "radical": "言",
+      "strokes": 2,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "고",
+      "level": "6급Ⅱ",
+      "hanja": "高",
+      "meaning": "[[['높을'], ['고']]]",
+      "radical": "高",
+      "strokes": 0,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "공",
+      "level": "6급Ⅱ",
+      "hanja": "公",
+      "meaning": "[[['공평할'], ['공']]]",
+      "radical": "八",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "공",
+      "level": "6급Ⅱ",
+      "hanja": "共",
+      "meaning": "[[['한가지'], ['공']]]",
+      "radical": "八",
+      "strokes": 4,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "공",
+      "level": "6급Ⅱ",
+      "hanja": "功",
+      "meaning": "[[['공[勳]'], ['공']]]",
+      "radical": "力",
+      "strokes": 3,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "과",
+      "level": "6급Ⅱ",
+      "hanja": "果",
+      "meaning": "[[['실과'], ['과']]]",
+      "radical": "木",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "과",
+      "level": "6급Ⅱ",
+      "hanja": "科",
+      "meaning": "[[['과목'], ['과']]]",
+      "radical": "禾",
+      "strokes": 4,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "광",
+      "level": "6급Ⅱ",
+      "hanja": "光",
+      "meaning": "[[['빛'], ['광']]]",
+      "radical": "儿",
+      "strokes": 4,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "구",
+      "level": "6급Ⅱ",
+      "hanja": "球",
+      "meaning": "[[['공'], ['구']]]",
+      "radical": "玉",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "금",
+      "level": "6급Ⅱ",
+      "hanja": "今",
+      "meaning": "[[['이제'], ['금']]]",
+      "radical": "人",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "급",
+      "level": "6급Ⅱ",
+      "hanja": "急",
+      "meaning": "[[['급할'], ['급']]]",
+      "radical": "心",
+      "strokes": 5,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "단",
+      "level": "6급Ⅱ",
+      "hanja": "短",
+      "meaning": "[[['짧을'], ['단']]]",
+      "radical": "矢",
+      "strokes": 7,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "당",
+      "level": "6급Ⅱ",
+      "hanja": "堂",
+      "meaning": "[[['집'], ['당']]]",
+      "radical": "土",
+      "strokes": 8,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "대",
+      "level": "6급Ⅱ",
+      "hanja": "代",
+      "meaning": "[[['대신할'], ['대']]]",
+      "radical": "人",
+      "strokes": 3,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "대",
+      "level": "6급Ⅱ",
+      "hanja": "對",
+      "meaning": "[[['대할'], ['대']]]",
+      "radical": "寸",
+      "strokes": 11,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "도",
+      "level": "6급Ⅱ",
+      "hanja": "圖",
+      "meaning": "[[['그림'], ['도']]]",
+      "radical": "囗",
+      "strokes": 11,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "독",
+      "level": "6급Ⅱ",
+      "hanja": "讀",
+      "meaning": "[[['읽을'], ['독']], [['구절'], ['두']]]",
+      "radical": "言",
+      "strokes": 15,
+      "total_strokes": 22
+    },
+    {
+      "main_sound": "동",
+      "level": "6급Ⅱ",
+      "hanja": "童",
+      "meaning": "[[['아이'], ['동']]]",
+      "radical": "立",
+      "strokes": 7,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "등",
+      "level": "6급Ⅱ",
+      "hanja": "等",
+      "meaning": "[[['무리'], ['등']]]",
+      "radical": "竹",
+      "strokes": 6,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "락",
+      "level": "6급Ⅱ",
+      "hanja": "樂",
+      "meaning": "[[['즐길'], ['락']], [['노래'], ['악']], [['좋아할'], ['요']]]",
+      "radical": "木",
+      "strokes": 11,
+      "total_strokes": 15
+    },
+    {
+      "main_sound": "리",
+      "level": "6급Ⅱ",
+      "hanja": "利",
+      "meaning": "[[['이할'], ['리']]]",
+      "radical": "刀",
+      "strokes": 5,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "리",
+      "level": "6급Ⅱ",
+      "hanja": "理",
+      "meaning": "[[['다스릴'], ['리']]]",
+      "radical": "玉",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "명",
+      "level": "6급Ⅱ",
+      "hanja": "明",
+      "meaning": "[[['밝을'], ['명']]]",
+      "radical": "日",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "문",
+      "level": "6급Ⅱ",
+      "hanja": "聞",
+      "meaning": "[[['들을'], ['문']]]",
+      "radical": "耳",
+      "strokes": 8,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "반",
+      "level": "6급Ⅱ",
+      "hanja": "半",
+      "meaning": "[[['반(半)'], ['반']]]",
+      "radical": "十",
+      "strokes": 3,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "반",
+      "level": "6급Ⅱ",
+      "hanja": "反",
+      "meaning": "[[['돌이킬', '돌아올'], ['반']]]",
+      "radical": "又",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "반",
+      "level": "6급Ⅱ",
+      "hanja": "班",
+      "meaning": "[[['나눌'], ['반']]]",
+      "radical": "玉",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "발",
+      "level": "6급Ⅱ",
+      "hanja": "發",
+      "meaning": "[[['필'], ['발']]]",
+      "radical": "癶",
+      "strokes": 7,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "방",
+      "level": "6급Ⅱ",
+      "hanja": "放",
+      "meaning": "[[['놓을'], ['방']]]",
+      "radical": "攴",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "부",
+      "level": "6급Ⅱ",
+      "hanja": "部",
+      "meaning": "[[['떼'], ['부']]]",
+      "radical": "邑",
+      "strokes": 8,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "분",
+      "level": "6급Ⅱ",
+      "hanja": "分",
+      "meaning": "[[['나눌'], ['분']]]",
+      "radical": "刀",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "사",
+      "level": "6급Ⅱ",
+      "hanja": "社",
+      "meaning": "[[['모일'], ['사']]]",
+      "radical": "示",
+      "strokes": 3,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "서",
+      "level": "6급Ⅱ",
+      "hanja": "書",
+      "meaning": "[[['글'], ['서']]]",
+      "radical": "曰",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "선",
+      "level": "6급Ⅱ",
+      "hanja": "線",
+      "meaning": "[[['줄'], ['선']]]",
+      "radical": "糸",
+      "strokes": 9,
+      "total_strokes": 15
+    },
+    {
+      "main_sound": "설",
+      "level": "6급Ⅱ",
+      "hanja": "雪",
+      "meaning": "[[['눈'], ['설']]]",
+      "radical": "雨",
+      "strokes": 3,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "성",
+      "level": "6급Ⅱ",
+      "hanja": "成",
+      "meaning": "[[['이룰'], ['성']]]",
+      "radical": "戈",
+      "strokes": 3,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "성",
+      "level": "6급Ⅱ",
+      "hanja": "省",
+      "meaning": "[[['살필'], ['성']], [['덜'], ['생']]]",
+      "radical": "目",
+      "strokes": 4,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "소",
+      "level": "6급Ⅱ",
+      "hanja": "消",
+      "meaning": "[[['사라질'], ['소']]]",
+      "radical": "水",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "술",
+      "level": "6급Ⅱ",
+      "hanja": "術",
+      "meaning": "[[['재주'], ['술']]]",
+      "radical": "行",
+      "strokes": 5,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "시",
+      "level": "6급Ⅱ",
+      "hanja": "始",
+      "meaning": "[[['비로소'], ['시']]]",
+      "radical": "女",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "신",
+      "level": "6급Ⅱ",
+      "hanja": "身",
+      "meaning": "[[['몸'], ['신']]]",
+      "radical": "身",
+      "strokes": 0,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "신",
+      "level": "6급Ⅱ",
+      "hanja": "神",
+      "meaning": "[[['귀신'], ['신']]]",
+      "radical": "示",
+      "strokes": 5,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "신",
+      "level": "6급Ⅱ",
+      "hanja": "信",
+      "meaning": "[[['믿을'], ['신']]]",
+      "radical": "人",
+      "strokes": 7,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "신",
+      "level": "6급Ⅱ",
+      "hanja": "新",
+      "meaning": "[[['새'], ['신']]]",
+      "radical": "斤",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "약",
+      "level": "6급Ⅱ",
+      "hanja": "弱",
+      "meaning": "[[['약할'], ['약']]]",
+      "radical": "弓",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "약",
+      "level": "6급Ⅱ",
+      "hanja": "藥",
+      "meaning": "[[['약'], ['약']]]",
+      "radical": "艸",
+      "strokes": 15,
+      "total_strokes": 19
+    },
+    {
+      "main_sound": "업",
+      "level": "6급Ⅱ",
+      "hanja": "業",
+      "meaning": "[[['업'], ['업']]]",
+      "radical": "木",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "용",
+      "level": "6급Ⅱ",
+      "hanja": "勇",
+      "meaning": "[[['날랠'], ['용']]]",
+      "radical": "力",
+      "strokes": 7,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "용",
+      "level": "6급Ⅱ",
+      "hanja": "用",
+      "meaning": "[[['쓸'], ['용']]]",
+      "radical": "用",
+      "strokes": 0,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "운",
+      "level": "6급Ⅱ",
+      "hanja": "運",
+      "meaning": "[[['옮길'], ['운']]]",
+      "radical": "辵",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "음",
+      "level": "6급Ⅱ",
+      "hanja": "音",
+      "meaning": "[[['소리'], ['음']]]",
+      "radical": "音",
+      "strokes": 0,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "음",
+      "level": "6급Ⅱ",
+      "hanja": "飮",
+      "meaning": "[[['마실'], ['음']]]",
+      "radical": "食",
+      "strokes": 4,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "의",
+      "level": "6급Ⅱ",
+      "hanja": "意",
+      "meaning": "[[['뜻'], ['의']]]",
+      "radical": "心",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "작",
+      "level": "6급Ⅱ",
+      "hanja": "作",
+      "meaning": "[[['지을'], ['작']]]",
+      "radical": "人",
+      "strokes": 5,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "작",
+      "level": "6급Ⅱ",
+      "hanja": "昨",
+      "meaning": "[[['어제'], ['작']]]",
+      "radical": "日",
+      "strokes": 5,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "재",
+      "level": "6급Ⅱ",
+      "hanja": "才",
+      "meaning": "[[['재주'], ['재']]]",
+      "radical": "手",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "전",
+      "level": "6급Ⅱ",
+      "hanja": "戰",
+      "meaning": "[[['싸움'], ['전']]]",
+      "radical": "戈",
+      "strokes": 12,
+      "total_strokes": 16
+    },
+    {
+      "main_sound": "정",
+      "level": "6급Ⅱ",
+      "hanja": "庭",
+      "meaning": "[[['뜰'], ['정']]]",
+      "radical": "广",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "제",
+      "level": "6급Ⅱ",
+      "hanja": "第",
+      "meaning": "[[['차례'], ['제']]]",
+      "radical": "竹",
+      "strokes": 5,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "제",
+      "level": "6급Ⅱ",
+      "hanja": "題",
+      "meaning": "[[['제목'], ['제']]]",
+      "radical": "頁",
+      "strokes": 9,
+      "total_strokes": 18
+    },
+    {
+      "main_sound": "주",
+      "level": "6급Ⅱ",
+      "hanja": "注",
+      "meaning": "[[['부을'], ['주']]]",
+      "radical": "水",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "집",
+      "level": "6급Ⅱ",
+      "hanja": "集",
+      "meaning": "[[['모을'], ['집']]]",
+      "radical": "隹",
+      "strokes": 4,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "창",
+      "level": "6급Ⅱ",
+      "hanja": "窓",
+      "meaning": "[[['창'], ['창']]]",
+      "radical": "穴",
+      "strokes": 6,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "청",
+      "level": "6급Ⅱ",
+      "hanja": "淸",
+      "meaning": "[[['맑을'], ['청']]]",
+      "radical": "水",
+      "strokes": 8,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "체",
+      "level": "6급Ⅱ",
+      "hanja": "體",
+      "meaning": "[[['몸'], ['체']]]",
+      "radical": "骨",
+      "strokes": 13,
+      "total_strokes": 23
+    },
+    {
+      "main_sound": "표",
+      "level": "6급Ⅱ",
+      "hanja": "表",
+      "meaning": "[[['겉'], ['표']]]",
+      "radical": "衣",
+      "strokes": 2,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "풍",
+      "level": "6급Ⅱ",
+      "hanja": "風",
+      "meaning": "[[['바람'], ['풍']]]",
+      "radical": "風",
+      "strokes": 0,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "행",
+      "level": "6급Ⅱ",
+      "hanja": "幸",
+      "meaning": "[[['다행'], ['행']]]",
+      "radical": "干",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "현",
+      "level": "6급Ⅱ",
+      "hanja": "現",
+      "meaning": "[[['나타날'], ['현']]]",
+      "radical": "玉",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "형",
+      "level": "6급Ⅱ",
+      "hanja": "形",
+      "meaning": "[[['모양'], ['형']]]",
+      "radical": "彡",
+      "strokes": 4,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "화",
+      "level": "6급Ⅱ",
+      "hanja": "和",
+      "meaning": "[[['화할'], ['화']]]",
+      "radical": "口",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "회",
+      "level": "6급Ⅱ",
+      "hanja": "會",
+      "meaning": "[[['모일'], ['회']]]",
+      "radical": "曰",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "가",
+      "level": "7급",
+      "hanja": "歌",
+      "meaning": "[[['노래'], ['가']]]",
+      "radical": "欠",
+      "strokes": 10,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "구",
+      "level": "7급",
+      "hanja": "口",
+      "meaning": "[[['입'], ['구']]]",
+      "radical": "口",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "기",
+      "level": "7급",
+      "hanja": "旗",
+      "meaning": "[[['기'], ['기']]]",
+      "radical": "方",
+      "strokes": 10,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "동",
+      "level": "7급",
+      "hanja": "同",
+      "meaning": "[[['한가지'], ['동']]]",
+      "radical": "口",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "동",
+      "level": "7급",
+      "hanja": "洞",
+      "meaning": "[[['골'], ['동']], [['밝을'], ['통']]]",
+      "radical": "水",
+      "strokes": 6,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "동",
+      "level": "7급",
+      "hanja": "冬",
+      "meaning": "[[['겨울'], ['동']]]",
+      "radical": "冫",
+      "strokes": 3,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "등",
+      "level": "7급",
+      "hanja": "登",
+      "meaning": "[[['오를'], ['등']]]",
+      "radical": "癶",
+      "strokes": 7,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "래",
+      "level": "7급",
+      "hanja": "來",
+      "meaning": "[[['올'], ['래']]]",
+      "radical": "人",
+      "strokes": 6,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "로",
+      "level": "7급",
+      "hanja": "老",
+      "meaning": "[[['늙을'], ['로']]]",
+      "radical": "老",
+      "strokes": 0,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "리",
+      "level": "7급",
+      "hanja": "里",
+      "meaning": "[[['마을'], ['리']]]",
+      "radical": "里",
+      "strokes": 0,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "림",
+      "level": "7급",
+      "hanja": "林",
+      "meaning": "[[['수풀'], ['림']]]",
+      "radical": "木",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "면",
+      "level": "7급",
+      "hanja": "面",
+      "meaning": "[[['낯'], ['면']]]",
+      "radical": "面",
+      "strokes": 0,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "명",
+      "level": "7급",
+      "hanja": "命",
+      "meaning": "[[['목숨'], ['명']]]",
+      "radical": "口",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "문",
+      "level": "7급",
+      "hanja": "文",
+      "meaning": "[[['글월'], ['문']]]",
+      "radical": "文",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "문",
+      "level": "7급",
+      "hanja": "問",
+      "meaning": "[[['물을'], ['문']]]",
+      "radical": "口",
+      "strokes": 8,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "백",
+      "level": "7급",
+      "hanja": "百",
+      "meaning": "[[['일백'], ['백']]]",
+      "radical": "白",
+      "strokes": 1,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "부",
+      "level": "7급",
+      "hanja": "夫",
+      "meaning": "[[['지아비'], ['부']]]",
+      "radical": "大",
+      "strokes": 1,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "산",
+      "level": "7급",
+      "hanja": "算",
+      "meaning": "[[['셈'], ['산']]]",
+      "radical": "竹",
+      "strokes": 8,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "색",
+      "level": "7급",
+      "hanja": "色",
+      "meaning": "[[['빛'], ['색']]]",
+      "radical": "色",
+      "strokes": 0,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "석",
+      "level": "7급",
+      "hanja": "夕",
+      "meaning": "[[['저녁'], ['석']]]",
+      "radical": "夕",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "소",
+      "level": "7급",
+      "hanja": "少",
+      "meaning": "[[['적을'], ['소']]]",
+      "radical": "小",
+      "strokes": 1,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "소",
+      "level": "7급",
+      "hanja": "所",
+      "meaning": "[[['바'], ['소']]]",
+      "radical": "戶",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "수",
+      "level": "7급",
+      "hanja": "數",
+      "meaning": "[[['셈'], ['수']]]",
+      "radical": "攴",
+      "strokes": 11,
+      "total_strokes": 15
+    },
+    {
+      "main_sound": "식",
+      "level": "7급",
+      "hanja": "植",
+      "meaning": "[[['심을'], ['식']]]",
+      "radical": "木",
+      "strokes": 8,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "심",
+      "level": "7급",
+      "hanja": "心",
+      "meaning": "[[['마음'], ['심']]]",
+      "radical": "心",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "어",
+      "level": "7급",
+      "hanja": "語",
+      "meaning": "[[['말씀'], ['어']]]",
+      "radical": "言",
+      "strokes": 7,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "연",
+      "level": "7급",
+      "hanja": "然",
+      "meaning": "[[['그럴'], ['연']]]",
+      "radical": "火",
+      "strokes": 8,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "유",
+      "level": "7급",
+      "hanja": "有",
+      "meaning": "[[['있을'], ['유']]]",
+      "radical": "月",
+      "strokes": 2,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "육",
+      "level": "7급",
+      "hanja": "育",
+      "meaning": "[[['기를'], ['육']]]",
+      "radical": "肉",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "읍",
+      "level": "7급",
+      "hanja": "邑",
+      "meaning": "[[['고을'], ['읍']]]",
+      "radical": "邑",
+      "strokes": 0,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "입",
+      "level": "7급",
+      "hanja": "入",
+      "meaning": "[[['들'], ['입']]]",
+      "radical": "入",
+      "strokes": 0,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "자",
+      "level": "7급",
+      "hanja": "字",
+      "meaning": "[[['글자'], ['자']]]",
+      "radical": "子",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "조",
+      "level": "7급",
+      "hanja": "祖",
+      "meaning": "[[['할아비'], ['조']]]",
+      "radical": "示",
+      "strokes": 5,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "주",
+      "level": "7급",
+      "hanja": "住",
+      "meaning": "[[['살'], ['주']]]",
+      "radical": "人",
+      "strokes": 5,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "주",
+      "level": "7급",
+      "hanja": "主",
+      "meaning": "[[['임금', '주인'], ['주']]]",
+      "radical": "丶",
+      "strokes": 4,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "중",
+      "level": "7급",
+      "hanja": "重",
+      "meaning": "[[['무거울'], ['중']]]",
+      "radical": "里",
+      "strokes": 2,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "지",
+      "level": "7급",
+      "hanja": "紙",
+      "meaning": "[[['종이'], ['지']]]",
+      "radical": "糸",
+      "strokes": 4,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "지",
+      "level": "7급",
+      "hanja": "地",
+      "meaning": "[[['따'], ['지']]]",
+      "radical": "土",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "천",
+      "level": "7급",
+      "hanja": "千",
+      "meaning": "[[['일천'], ['천']]]",
+      "radical": "十",
+      "strokes": 1,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "천",
+      "level": "7급",
+      "hanja": "天",
+      "meaning": "[[['하늘'], ['천']]]",
+      "radical": "大",
+      "strokes": 1,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "천",
+      "level": "7급",
+      "hanja": "川",
+      "meaning": "[[['내'], ['천']]]",
+      "radical": "巛",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "초",
+      "level": "7급",
+      "hanja": "草",
+      "meaning": "[[['풀'], ['초']]]",
+      "radical": "艸",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "촌",
+      "level": "7급",
+      "hanja": "村",
+      "meaning": "[[['마을'], ['촌']]]",
+      "radical": "木",
+      "strokes": 3,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "추",
+      "level": "7급",
+      "hanja": "秋",
+      "meaning": "[[['가을'], ['추']]]",
+      "radical": "禾",
+      "strokes": 4,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "춘",
+      "level": "7급",
+      "hanja": "春",
+      "meaning": "[[['봄'], ['춘']]]",
+      "radical": "日",
+      "strokes": 5,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "출",
+      "level": "7급",
+      "hanja": "出",
+      "meaning": "[[['날[生]'], ['출']]]",
+      "radical": "凵",
+      "strokes": 3,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "편",
+      "level": "7급",
+      "hanja": "便",
+      "meaning": "[[['편할'], ['편']], [['똥오줌'], ['변']]]",
+      "radical": "人",
+      "strokes": 7,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "하",
+      "level": "7급",
+      "hanja": "夏",
+      "meaning": "[[['여름'], ['하']]]",
+      "radical": "夊",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "화",
+      "level": "7급",
+      "hanja": "花",
+      "meaning": "[[['꽃'], ['화']]]",
+      "radical": "艸",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "휴",
+      "level": "7급",
+      "hanja": "休",
+      "meaning": "[[['쉴'], ['휴']]]",
+      "radical": "人",
+      "strokes": 4,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "가",
+      "level": "7급Ⅱ",
+      "hanja": "家",
+      "meaning": "[[['집'], ['가']]]",
+      "radical": "宀",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "간",
+      "level": "7급Ⅱ",
+      "hanja": "間",
+      "meaning": "[[['사이'], ['간']]]",
+      "radical": "門",
+      "strokes": 4,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "강",
+      "level": "7급Ⅱ",
+      "hanja": "江",
+      "meaning": "[[['강'], ['강']]]",
+      "radical": "水",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "거",
+      "level": "7급Ⅱ",
+      "hanja": "車",
+      "meaning": "[[['수레'], ['거']], [['수레'], ['차']]]",
+      "radical": "車",
+      "strokes": 0,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "공",
+      "level": "7급Ⅱ",
+      "hanja": "工",
+      "meaning": "[[['장인'], ['공']]]",
+      "radical": "工",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "공",
+      "level": "7급Ⅱ",
+      "hanja": "空",
+      "meaning": "[[['빌'], ['공']]]",
+      "radical": "穴",
+      "strokes": 3,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "기",
+      "level": "7급Ⅱ",
+      "hanja": "氣",
+      "meaning": "[[['기운'], ['기']]]",
+      "radical": "气",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "기",
+      "level": "7급Ⅱ",
+      "hanja": "記",
+      "meaning": "[[['기록할'], ['기']]]",
+      "radical": "言",
+      "strokes": 3,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "남",
+      "level": "7급Ⅱ",
+      "hanja": "男",
+      "meaning": "[[['사내'], ['남']]]",
+      "radical": "田",
+      "strokes": 2,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "내",
+      "level": "7급Ⅱ",
+      "hanja": "內",
+      "meaning": "[[['안'], ['내']]]",
+      "radical": "入",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "농",
+      "level": "7급Ⅱ",
+      "hanja": "農",
+      "meaning": "[[['농사'], ['농']]]",
+      "radical": "辰",
+      "strokes": 6,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "답",
+      "level": "7급Ⅱ",
+      "hanja": "答",
+      "meaning": "[[['대답'], ['답']]]",
+      "radical": "竹",
+      "strokes": 6,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "도",
+      "level": "7급Ⅱ",
+      "hanja": "道",
+      "meaning": "[[['길'], ['도']]]",
+      "radical": "辵",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "동",
+      "level": "7급Ⅱ",
+      "hanja": "動",
+      "meaning": "[[['움직일'], ['동']]]",
+      "radical": "力",
+      "strokes": 9,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "력",
+      "level": "7급Ⅱ",
+      "hanja": "力",
+      "meaning": "[[['힘'], ['력']]]",
+      "radical": "力",
+      "strokes": 0,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "립",
+      "level": "7급Ⅱ",
+      "hanja": "立",
+      "meaning": "[[['설'], ['립']]]",
+      "radical": "立",
+      "strokes": 0,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "매",
+      "level": "7급Ⅱ",
+      "hanja": "每",
+      "meaning": "[[['매양'], ['매']]]",
+      "radical": "毋",
+      "strokes": 3,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "명",
+      "level": "7급Ⅱ",
+      "hanja": "名",
+      "meaning": "[[['이름'], ['명']]]",
+      "radical": "口",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "물",
+      "level": "7급Ⅱ",
+      "hanja": "物",
+      "meaning": "[[['물건'], ['물']]]",
+      "radical": "牛",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "방",
+      "level": "7급Ⅱ",
+      "hanja": "方",
+      "meaning": "[[['모[棱]'], ['방']]]",
+      "radical": "方",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "불",
+      "level": "7급Ⅱ",
+      "hanja": "不",
+      "meaning": "[[['아닐'], ['불']]]",
+      "radical": "一",
+      "strokes": 3,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "사",
+      "level": "7급Ⅱ",
+      "hanja": "事",
+      "meaning": "[[['일'], ['사']]]",
+      "radical": "亅",
+      "strokes": 7,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "상",
+      "level": "7급Ⅱ",
+      "hanja": "上",
+      "meaning": "[[['윗'], ['상']]]",
+      "radical": "一",
+      "strokes": 2,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "성",
+      "level": "7급Ⅱ",
+      "hanja": "姓",
+      "meaning": "[[['성'], ['성']]]",
+      "radical": "女",
+      "strokes": 5,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "세",
+      "level": "7급Ⅱ",
+      "hanja": "世",
+      "meaning": "[[['인간'], ['세']]]",
+      "radical": "一",
+      "strokes": 4,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "수",
+      "level": "7급Ⅱ",
+      "hanja": "手",
+      "meaning": "[[['손'], ['수']]]",
+      "radical": "手",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "시",
+      "level": "7급Ⅱ",
+      "hanja": "時",
+      "meaning": "[[['때'], ['시']]]",
+      "radical": "日",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "시",
+      "level": "7급Ⅱ",
+      "hanja": "市",
+      "meaning": "[[['저자'], ['시']]]",
+      "radical": "巾",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "식",
+      "level": "7급Ⅱ",
+      "hanja": "食",
+      "meaning": "[[['밥', '먹을'], ['식']]]",
+      "radical": "食",
+      "strokes": 0,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "안",
+      "level": "7급Ⅱ",
+      "hanja": "安",
+      "meaning": "[[['편안'], ['안']]]",
+      "radical": "宀",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "오",
+      "level": "7급Ⅱ",
+      "hanja": "午",
+      "meaning": "[[['낮'], ['오']]]",
+      "radical": "十",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "우",
+      "level": "7급Ⅱ",
+      "hanja": "右",
+      "meaning": "[[['오를', '오른(쪽)'], ['우']]]",
+      "radical": "口",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "자",
+      "level": "7급Ⅱ",
+      "hanja": "子",
+      "meaning": "[[['아들'], ['자']]]",
+      "radical": "子",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "자",
+      "level": "7급Ⅱ",
+      "hanja": "自",
+      "meaning": "[[['스스로'], ['자']]]",
+      "radical": "自",
+      "strokes": 0,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "장",
+      "level": "7급Ⅱ",
+      "hanja": "場",
+      "meaning": "[[['마당'], ['장']]]",
+      "radical": "土",
+      "strokes": 9,
+      "total_strokes": 12
+    },
+    {
+      "main_sound": "전",
+      "level": "7급Ⅱ",
+      "hanja": "電",
+      "meaning": "[[['번개'], ['전']]]",
+      "radical": "雨",
+      "strokes": 5,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "전",
+      "level": "7급Ⅱ",
+      "hanja": "前",
+      "meaning": "[[['앞'], ['전']]]",
+      "radical": "刀",
+      "strokes": 7,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "전",
+      "level": "7급Ⅱ",
+      "hanja": "全",
+      "meaning": "[[['온전'], ['전']]]",
+      "radical": "入",
+      "strokes": 4,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "정",
+      "level": "7급Ⅱ",
+      "hanja": "正",
+      "meaning": "[[['바를'], ['정']]]",
+      "radical": "止",
+      "strokes": 1,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "족",
+      "level": "7급Ⅱ",
+      "hanja": "足",
+      "meaning": "[[['발'], ['족']]]",
+      "radical": "足",
+      "strokes": 0,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "좌",
+      "level": "7급Ⅱ",
+      "hanja": "左",
+      "meaning": "[[['왼'], ['좌']]]",
+      "radical": "工",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "직",
+      "level": "7급Ⅱ",
+      "hanja": "直",
+      "meaning": "[[['곧을'], ['직']]]",
+      "radical": "目",
+      "strokes": 3,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "평",
+      "level": "7급Ⅱ",
+      "hanja": "平",
+      "meaning": "[[['평평할'], ['평']]]",
+      "radical": "干",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "하",
+      "level": "7급Ⅱ",
+      "hanja": "下",
+      "meaning": "[[['아래'], ['하']]]",
+      "radical": "一",
+      "strokes": 2,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "한",
+      "level": "7급Ⅱ",
+      "hanja": "漢",
+      "meaning": "[[['한수', '한나라'], ['한']]]",
+      "radical": "水",
+      "strokes": 11,
+      "total_strokes": 14
+    },
+    {
+      "main_sound": "해",
+      "level": "7급Ⅱ",
+      "hanja": "海",
+      "meaning": "[[['바다'], ['해']]]",
+      "radical": "水",
+      "strokes": 7,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "화",
+      "level": "7급Ⅱ",
+      "hanja": "話",
+      "meaning": "[[['말씀'], ['화']]]",
+      "radical": "言",
+      "strokes": 6,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "활",
+      "level": "7급Ⅱ",
+      "hanja": "活",
+      "meaning": "[[['살'], ['활']]]",
+      "radical": "水",
+      "strokes": 6,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "효",
+      "level": "7급Ⅱ",
+      "hanja": "孝",
+      "meaning": "[[['효도'], ['효']]]",
+      "radical": "子",
+      "strokes": 4,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "후",
+      "level": "7급Ⅱ",
+      "hanja": "後",
+      "meaning": "[[['뒤'], ['후']]]",
+      "radical": "彳",
+      "strokes": 6,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "교",
+      "level": "8급",
+      "hanja": "校",
+      "meaning": "[[['학교'], ['교']]]",
+      "radical": "木",
+      "strokes": 6,
+      "total_strokes": 10
+    },
+    {
+      "main_sound": "교",
+      "level": "8급",
+      "hanja": "敎",
+      "meaning": "[[['가르칠'], ['교']]]",
+      "radical": "攴",
+      "strokes": 7,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "구",
+      "level": "8급",
+      "hanja": "九",
+      "meaning": "[[['아홉'], ['구']]]",
+      "radical": "乙",
+      "strokes": 1,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "국",
+      "level": "8급",
+      "hanja": "國",
+      "meaning": "[[['나라'], ['국']]]",
+      "radical": "囗",
+      "strokes": 8,
+      "total_strokes": 11
+    },
+    {
+      "main_sound": "군",
+      "level": "8급",
+      "hanja": "軍",
+      "meaning": "[[['군사'], ['군']]]",
+      "radical": "車",
+      "strokes": 2,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "금",
+      "level": "8급",
+      "hanja": "金",
+      "meaning": "[[['쇠'], ['금']], [['성(姓)'], ['김']]]",
+      "radical": "金",
+      "strokes": 0,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "남",
+      "level": "8급",
+      "hanja": "南",
+      "meaning": "[[['남녘'], ['남']]]",
+      "radical": "十",
+      "strokes": 7,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "녀",
+      "level": "8급",
+      "hanja": "女",
+      "meaning": "[[['계집'], ['녀']]]",
+      "radical": "女",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "년",
+      "level": "8급",
+      "hanja": "年",
+      "meaning": "[[['해'], ['년']]]",
+      "radical": "干",
+      "strokes": 3,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "대",
+      "level": "8급",
+      "hanja": "大",
+      "meaning": "[[['큰'], ['대']]]",
+      "radical": "大",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "동",
+      "level": "8급",
+      "hanja": "東",
+      "meaning": "[[['동녘'], ['동']]]",
+      "radical": "木",
+      "strokes": 4,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "륙",
+      "level": "8급",
+      "hanja": "六",
+      "meaning": "[[['여섯'], ['륙']]]",
+      "radical": "八",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "만",
+      "level": "8급",
+      "hanja": "萬",
+      "meaning": "[[['일만'], ['만']]]",
+      "radical": "艸",
+      "strokes": 9,
+      "total_strokes": 13
+    },
+    {
+      "main_sound": "모",
+      "level": "8급",
+      "hanja": "母",
+      "meaning": "[[['어미'], ['모']]]",
+      "radical": "毋",
+      "strokes": 1,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "목",
+      "level": "8급",
+      "hanja": "木",
+      "meaning": "[[['나무'], ['목']]]",
+      "radical": "木",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "문",
+      "level": "8급",
+      "hanja": "門",
+      "meaning": "[[['문'], ['문']]]",
+      "radical": "門",
+      "strokes": 0,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "민",
+      "level": "8급",
+      "hanja": "民",
+      "meaning": "[[['백성'], ['민']]]",
+      "radical": "氏",
+      "strokes": 1,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "백",
+      "level": "8급",
+      "hanja": "白",
+      "meaning": "[[['흰'], ['백']]]",
+      "radical": "白",
+      "strokes": 0,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "부",
+      "level": "8급",
+      "hanja": "父",
+      "meaning": "[[['아비'], ['부']]]",
+      "radical": "父",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "북",
+      "level": "8급",
+      "hanja": "北",
+      "meaning": "[[['북녘'], ['북']], [['달아날'], ['배']]]",
+      "radical": "匕",
+      "strokes": 3,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "사",
+      "level": "8급",
+      "hanja": "四",
+      "meaning": "[[['넉'], ['사']]]",
+      "radical": "囗",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "산",
+      "level": "8급",
+      "hanja": "山",
+      "meaning": "[[['메'], ['산']]]",
+      "radical": "山",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "삼",
+      "level": "8급",
+      "hanja": "三",
+      "meaning": "[[['석'], ['삼']]]",
+      "radical": "一",
+      "strokes": 2,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "생",
+      "level": "8급",
+      "hanja": "生",
+      "meaning": "[[['날'], ['생']]]",
+      "radical": "生",
+      "strokes": 0,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "서",
+      "level": "8급",
+      "hanja": "西",
+      "meaning": "[[['서녘'], ['서']]]",
+      "radical": "襾",
+      "strokes": 0,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "선",
+      "level": "8급",
+      "hanja": "先",
+      "meaning": "[[['먼저'], ['선']]]",
+      "radical": "儿",
+      "strokes": 4,
+      "total_strokes": 6
+    },
+    {
+      "main_sound": "소",
+      "level": "8급",
+      "hanja": "小",
+      "meaning": "[[['작을'], ['소']]]",
+      "radical": "小",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "수",
+      "level": "8급",
+      "hanja": "水",
+      "meaning": "[[['물'], ['수']]]",
+      "radical": "水",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "실",
+      "level": "8급",
+      "hanja": "室",
+      "meaning": "[[['집'], ['실']]]",
+      "radical": "宀",
+      "strokes": 6,
+      "total_strokes": 9
+    },
+    {
+      "main_sound": "십",
+      "level": "8급",
+      "hanja": "十",
+      "meaning": "[[['열'], ['십']]]",
+      "radical": "十",
+      "strokes": 0,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "오",
+      "level": "8급",
+      "hanja": "五",
+      "meaning": "[[['다섯'], ['오']]]",
+      "radical": "二",
+      "strokes": 2,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "왕",
+      "level": "8급",
+      "hanja": "王",
+      "meaning": "[[['임금'], ['왕']]]",
+      "radical": "玉",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "외",
+      "level": "8급",
+      "hanja": "外",
+      "meaning": "[[['바깥'], ['외']]]",
+      "radical": "夕",
+      "strokes": 2,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "월",
+      "level": "8급",
+      "hanja": "月",
+      "meaning": "[[['달'], ['월']]]",
+      "radical": "月",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "이",
+      "level": "8급",
+      "hanja": "二",
+      "meaning": "[[['두'], ['이']]]",
+      "radical": "二",
+      "strokes": 0,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "인",
+      "level": "8급",
+      "hanja": "人",
+      "meaning": "[[['사람'], ['인']]]",
+      "radical": "人",
+      "strokes": 0,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "일",
+      "level": "8급",
+      "hanja": "一",
+      "meaning": "[[['한'], ['일']]]",
+      "radical": "一",
+      "strokes": 0,
+      "total_strokes": 1
+    },
+    {
+      "main_sound": "일",
+      "level": "8급",
+      "hanja": "日",
+      "meaning": "[[['날'], ['일']]]",
+      "radical": "日",
+      "strokes": 0,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "장",
+      "level": "8급",
+      "hanja": "長",
+      "meaning": "[[['긴'], ['장']]]",
+      "radical": "長",
+      "strokes": 0,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "제",
+      "level": "8급",
+      "hanja": "弟",
+      "meaning": "[[['아우'], ['제']]]",
+      "radical": "弓",
+      "strokes": 4,
+      "total_strokes": 7
+    },
+    {
+      "main_sound": "중",
+      "level": "8급",
+      "hanja": "中",
+      "meaning": "[[['가운데'], ['중']]]",
+      "radical": "丨",
+      "strokes": 3,
+      "total_strokes": 4
+    },
+    {
+      "main_sound": "청",
+      "level": "8급",
+      "hanja": "靑",
+      "meaning": "[[['푸를'], ['청']]]",
+      "radical": "靑",
+      "strokes": 0,
+      "total_strokes": 8
+    },
+    {
+      "main_sound": "촌",
+      "level": "8급",
+      "hanja": "寸",
+      "meaning": "[[['마디'], ['촌']]]",
+      "radical": "寸",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "칠",
+      "level": "8급",
+      "hanja": "七",
+      "meaning": "[[['일곱'], ['칠']]]",
+      "radical": "一",
+      "strokes": 1,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "토",
+      "level": "8급",
+      "hanja": "土",
+      "meaning": "[[['흙'], ['토']]]",
+      "radical": "土",
+      "strokes": 0,
+      "total_strokes": 3
+    },
+    {
+      "main_sound": "팔",
+      "level": "8급",
+      "hanja": "八",
+      "meaning": "[[['여덟'], ['팔']]]",
+      "radical": "八",
+      "strokes": 0,
+      "total_strokes": 2
+    },
+    {
+      "main_sound": "학",
+      "level": "8급",
+      "hanja": "學",
+      "meaning": "[[['배울'], ['학']]]",
+      "radical": "子",
+      "strokes": 13,
+      "total_strokes": 16
+    },
+    {
+      "main_sound": "한",
+      "level": "8급",
+      "hanja": "韓",
+      "meaning": "[[['한국', '나라'], ['한']]]",
+      "radical": "韋",
+      "strokes": 8,
+      "total_strokes": 17
+    },
+    {
+      "main_sound": "형",
+      "level": "8급",
+      "hanja": "兄",
+      "meaning": "[[['형'], ['형']]]",
+      "radical": "儿",
+      "strokes": 3,
+      "total_strokes": 5
+    },
+    {
+      "main_sound": "화",
+      "level": "8급",
+      "hanja": "火",
+      "meaning": "[[['불'], ['화']]]",
+      "radical": "火",
+      "strokes": 0,
+      "total_strokes": 4
+    }
+  ]
 }

@@ -12,3 +12,17 @@ export type countryQuizResult = {
   shuffled : countryQuizItem[],
   choiceName : string
 }
+export type hanjaQuizItem = {
+	main_sound: string,
+	level: string,
+	hanja: string,
+	meaning: string,
+	radical: string,
+	strokes: number,
+	total_strokes: number
+}
+export type hanjsQuizResult = {
+  selected : hanjaQuizItem,
+  shuffled : hanjaQuizItem[],
+  choiceName : string
+}
