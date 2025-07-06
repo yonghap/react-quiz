@@ -58,7 +58,7 @@ export default function Quiz() {
 	function handleClick(name:string):void {
 		gradingQuiz(name)		
 		if (quizIndex === COMMON_CODE.QUIZ_COUNT) {
-			alert('퀴즈가 종료 되었습니다.');
+			alert('퀴즈가 종료 되었습니다.\n결과 화면으로 이동합니다.');
 			router.push('/quiz/result')
 			return;
 		} else {
