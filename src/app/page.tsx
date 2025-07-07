@@ -15,7 +15,7 @@ export default function Home() {
       <div className="p-6">
         <ul className="flex gap-8">
           <li className="w-[25%]">
-            <Link href="/quiz">
+             <Link href={{ pathname: '/quiz', query: { name: 'country' } }}>
               <button type="button">
                 <img src={IconGameNation.src} alt="IconGameNation" />
                 <span className="block mt-2 text-xs">나라 맞추기</span>
@@ -23,7 +23,7 @@ export default function Home() {
             </Link>
           </li>  
           <li className="w-[25%]">
-            <Link href="/quiz">
+            <Link href={{ pathname: '/quiz', query: { name: 'hanja' } }}>
               <button type="button">
                 <img src={IconGameHan.src} alt="IconGameHan" />     
                 <span className="block mt-2 text-xs">한문 맞추기</span>          

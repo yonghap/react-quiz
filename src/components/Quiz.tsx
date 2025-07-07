@@ -1,5 +1,5 @@
 'use client';
-import { countryQuizItem } from 'src/types/quiz';
+import { countryQuizItem, hanjaQuizItem } from 'src/types/quiz';
 import { useQuery } from '@tanstack/react-query';
 import { usePathname, useRouter  } from 'next/navigation';
 import { useState, useEffect } from 'react';
@@ -20,11 +20,12 @@ async function fetchData() {
  */
 export default function Quiz() {
 	const router = useRouter();
-	const { quizResult, addQuiz } = useQuizStore();
+	console.log('isReady:', router.isReady);
+	const { quizResult, setName, addQuiz } = useQuizStore();
 
 	// 퀴즈 데이터 상태 추가
 	const [quizIndex , setQuizIndex] = useState(1); // 현재 퀴즈 번호
-	const [allQuizData, setAllQuizData] = useState<countryQuizItem[] | null>(null) // 모든 퀴즈 데이터
+	const [allQuizData, setAllQuizData] = useState<countryQuizItem[] | hanjaQuizItem[] | null>(null) // 모든 퀴즈 데이터
 	const [quizData, setCurrentQuizData] = useState<{ selected: countryQuizItem, shuffled: countryQuizItem[] } | null>(null) // 현재 퀴즈 데이터
 
 	// 퀴즈 데이터 가져오기
@@ -38,6 +39,7 @@ export default function Quiz() {
 			setAllQuizData(data);
 			setCurrentQuizData(generateMultipleQuiz(data));
 		}
+
 	}, [data]);
 
 	if (isLoading) return <p>로딩 중...</p>;
@@ -51,7 +53,7 @@ export default function Quiz() {
 				...quizData,
 				choiceName : name
 			}
-		addQuiz(resultData);
+		addQuiz(resultData);		
 		}
 	}
 
