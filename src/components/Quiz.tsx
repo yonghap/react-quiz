@@ -1,18 +1,25 @@
 'use client';
 import { countryQuizItem, hanjaQuizItem } from 'src/types/quiz';
 import { useQuery } from '@tanstack/react-query';
-import { usePathname, useRouter  } from 'next/navigation';
+import { useSearchParams , useRouter  } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { generateMultipleQuiz } from 'src/utils/common';
 import { COMMON_CODE } from 'src/constants/code';
 import { useQuizStore } from 'src/store/quiz';
 
 // 데이터 받아오기
-async function fetchData() {
-	const result = await fetch(`/api/getCountry`);
-	if (!result.ok) throw new Error('국가 정보 로딩 실패');
-	const data = await result.json();
-	return data;
+async function fetchData(name: string | null) {
+  if (name === 'hanja') {
+    const result = await fetch('/assets/hanja.json');
+    if (!result.ok) throw new Error('hanja.json 로딩 실패');
+		const data = await result.json();
+		return data.data;
+  }
+
+  // 기본은 country
+  const result = await fetch('/api/getCountry');
+  if (!result.ok) throw new Error('국가 정보 로딩 실패');
+  return await result.json();
 }
 
 /**
@@ -20,26 +27,29 @@ async function fetchData() {
  */
 export default function Quiz() {
 	const router = useRouter();
-	console.log('isReady:', router.isReady);
 	const { quizResult, setName, addQuiz } = useQuizStore();
+  const searchParams = useSearchParams();
+  const name = searchParams.get('name');
 
 	// 퀴즈 데이터 상태 추가
 	const [quizIndex , setQuizIndex] = useState(1); // 현재 퀴즈 번호
 	const [allQuizData, setAllQuizData] = useState<countryQuizItem[] | hanjaQuizItem[] | null>(null) // 모든 퀴즈 데이터
-	const [quizData, setCurrentQuizData] = useState<{ selected: countryQuizItem, shuffled: countryQuizItem[] } | null>(null) // 현재 퀴즈 데이터
+	const [quizData, setCurrentQuizData] = useState<{ selected: countryQuizItem | hanjaQuizItem, shuffled: countryQuizItem[] | hanjaQuizItem[] } | null>(null) // 현재 퀴즈 데이터
 
 	// 퀴즈 데이터 가져오기
-	const { data, error, isLoading } = useQuery({
-		queryKey : ['country'],
-		queryFn : () => fetchData(),
-	});	
+  const { data, error, isLoading } = useQuery({
+    queryKey: ['quizData', name], // name을 queryKey에 포함해야 refetch됨
+    queryFn: () => fetchData(name),
+    enabled: !!name, // name이 null이 아닐 때만 실행
+  });
 
 	useEffect(() => {
+		setName(name)
+
 		if (data && Array.isArray(data)) {
 			setAllQuizData(data);
 			setCurrentQuizData(generateMultipleQuiz(data));
 		}
-
 	}, [data]);
 
 	if (isLoading) return <p>로딩 중...</p>;

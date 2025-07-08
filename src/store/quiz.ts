@@ -24,5 +24,3 @@ export const useQuizStore = create<QuizState>()(
     }
   )
 );
-
-console.log(useQuizStore.getState());
