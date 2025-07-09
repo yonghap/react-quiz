@@ -48,6 +48,7 @@ export default function Quiz() {
 
 		if (data && Array.isArray(data)) {
 			setAllQuizData(data);
+			console.log(data)
 			setCurrentQuizData(generateMultipleQuiz(data));
 		}
 	}, [data]);
