@@ -27,7 +27,7 @@ async function fetchData(name: string | null) {
  */
 export default function Quiz() {
 	const router = useRouter();
-	const { quizResult, setName, addQuiz } = useQuizStore();
+	const { quizResult, quizName, setName, addQuiz } = useQuizStore();
   const searchParams = useSearchParams();
   const name = searchParams.get('name');
 
@@ -45,10 +45,8 @@ export default function Quiz() {
 
 	useEffect(() => {
 		setName(name)
-
 		if (data && Array.isArray(data)) {
 			setAllQuizData(data);
-			console.log(data)
 			setCurrentQuizData(generateMultipleQuiz(data));
 		}
 	}, [data]);
@@ -79,7 +77,6 @@ export default function Quiz() {
 			setQuizIndex(quizIndex+1)
 		}
 	}
-
 	return (
 		<div>
 			<div className="p-4 text-center text-gray-500">
