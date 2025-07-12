@@ -86,7 +86,7 @@ function renderCountryQuiz(quizData) {
       <ul>
         {quizData.shuffled.map((i) => (
           <div key={i.country_eng_nm}>
-            <button onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
+            <button  className={`block w-full my-4 text-2xl text-center`} onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
           </div>
         ))}
       </ul>
@@ -97,13 +97,13 @@ function renderCountryQuiz(quizData) {
 function renderHanjaQuiz(quizData) {
   return (
     <div>
-      <div className="mb-8">
+      <div className="mb-8 py-8 text-center text-8xl">
 				{quizData.selected.hanja}
 			</div>
       <ul>
         {quizData.shuffled.map((i) => (
           <div key={i.country_eng_nm}>
-            <button onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
+            <button className={`block w-full my-4 text-2xl text-center`} onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
           </div>
         ))}
       </ul>
