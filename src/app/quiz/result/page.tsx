@@ -6,8 +6,9 @@ import { useQuizStore } from 'src/store/quiz';
 export default function QuizResult() {
   const router = useRouter();
   const { quizResult, addQuiz } = useQuizStore();
+  console.log(quizResult)
   return (
-    <div id="quizResult">
+    <div id="quizResult">      
       <div className="p-4">        
         <ul>
           {quizResult.map((quiz, quizIdx) => (
