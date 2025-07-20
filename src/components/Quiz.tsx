@@ -85,9 +85,9 @@ function renderCountryQuiz(quizData) {
       <div className="mx-2 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
       <ul>
         {quizData.shuffled.map((i) => (
-          <div key={i.country_eng_nm}>
+          <li key={i.country_eng_nm}>
             <button  className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
-          </div>
+          </li>
         ))}
       </ul>
     </div>
@@ -102,9 +102,9 @@ function renderHanjaQuiz(quizData) {
 			</div>
       <ul>
         {quizData.shuffled.map((i) => (
-          <div key={i.country_eng_nm}>
+          <li key={i.meaning}>
             <button className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
-          </div>
+          </li>
         ))}
       </ul>
     </div>
