@@ -42,6 +42,11 @@ export default function Quiz() {
     queryFn: () => fetchData(name),
     enabled: !!name, // name이 null이 아닐 때만 실행
   });
+	// 
+	const ANSWER_COLUMN = {
+		country : "country_eng_nm",
+		hanja : "meaning",
+	}
 
 	useEffect(() => {
 		setName(name)
@@ -57,7 +62,7 @@ export default function Quiz() {
 
 	// 채점해서 스토어에 집어 넣음
 	function gradingQuiz(name:string):void {
-		if (quizData.selected.country_eng_nm !== name) {
+		if (quizData.selected[ANSWER_COLUMN[quizName]] !== name) {
 			const resultData = {
 				...quizData,
 				choiceName : name
