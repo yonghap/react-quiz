@@ -5,9 +5,9 @@ import { useQuizStore } from 'src/store/quiz';
 
 export default function QuizResult() {
   const router = useRouter();
-	const { quizResult, quizName, setName, addQuiz } = useQuizStore();
+	const { quizResult, quizName, setName, addQuiz, reset } = useQuizStore();
   console.log(quizResult)
-
+  
   const renderByType = {
     country: renderCountryQuiz,
     hanja: renderHanjaQuiz,
@@ -68,7 +68,7 @@ export default function QuizResult() {
 		    {renderQuiz ? renderQuiz(quizResult) : <p>퀴즈 타입이 올바르지 않습니다.</p>}      
         <div className="flex justify-center text-center mt-8 gap-2">
           <Link className="rounded-sm bg-slate-300 text-slate-500 text-sm py-2 px-4" href="/">HOME</Link>
-          <Link className="rounded-sm bg-slate-600 text-white text-sm py-2 px-4" href="/quiz">다시하기</Link>
+          <Link className="rounded-sm bg-slate-600 text-white text-sm py-2 px-4" href={{ pathname: '/quiz', query: { name: quizName } }}>다시하기</Link>
         </div>
       </div>
     </div>
