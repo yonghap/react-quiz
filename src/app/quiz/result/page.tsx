@@ -14,7 +14,7 @@ export default function QuizResult() {
   };
   const renderQuiz = renderByType[quizName];
 
-  // 나라 맞추기 퀴즈
+  // 나라 맞추기 
   function renderCountryQuiz(quiz) {
     return (
       <ul>
@@ -41,7 +41,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 한자 맞추기 퀴즈
+  // 한자 맞추기 
   function renderHanjaQuiz(quiz) {
     return (
       <ul>
