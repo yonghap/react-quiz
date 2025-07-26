@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname, useRouter  } from 'next/navigation';
 import { useQuizStore } from 'src/store/quiz';
 
+// 퀴즈 결과 페이지
 export default function QuizResult() {
   const router = useRouter();
 	const { quizResult, quizName, setName, addQuiz, reset } = useQuizStore();
