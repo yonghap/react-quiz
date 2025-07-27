@@ -124,7 +124,7 @@ const renderQuiz = renderByType[quizName];
 return (
 	<div>
 		<div className="p-6 text-center text-gray-500">
-			<div className="text-xs">
+			<div className="text-sm">
 				<strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
 			</div>
 		</div>
