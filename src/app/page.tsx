@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useQuizStore } from 'src/store/quiz';
 import IconGameNation from '@/assets/images/icon_game_nation.svg'
 import IconGameHan from '@/assets/images/icon_game_han.png'
+import IconGameCapital from '@/assets/images/icon_game_capital.png'
 
 export default function Home() {
   const { reset } = useQuizStore();
@@ -27,6 +28,14 @@ export default function Home() {
               <button type="button">
                 <img src={IconGameHan.src} alt="IconGameHan" />     
                 <span className="block mt-2 text-xs">한문 맞추기</span>          
+              </button>
+            </Link>
+          </li>  
+          <li className="w-[25%]">
+            <Link href={{ pathname: '/quiz', query: { name: 'capital' } }}>
+              <button type="button">
+                <img src={IconGameCapital.src} alt="IconGameCapital" />     
+                <span className="block mt-2 text-xs">수도 맞추기</span>          
               </button>
             </Link>
           </li>       

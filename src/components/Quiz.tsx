@@ -15,6 +15,12 @@ async function fetchData(name: string | null) {
 		const data = await result.json();
 		return data.data;
   }
+  if (name === 'capital') {
+    const result = await fetch('/assets/capital.json');
+    if (!result.ok) throw new Error('capital.json 로딩 실패');
+		const data = await result.json();
+		return data.data;
+  }
 
   // 기본은 country
   const result = await fetch('/api/getCountry');
@@ -46,6 +52,7 @@ export default function Quiz() {
 	const ANSWER_COLUMN = {
 		country : "country_eng_nm",
 		hanja : "meaning",
+		capital : "capital",
 	}
 
 	useEffect(() => {
@@ -115,10 +122,29 @@ function renderHanjaQuiz(quizData) {
     </div>
   );
 }
+// 수도 퀴즈
+function renderCapitalQuiz(quizData) {
+  return (
+    <div>
+      <div className="mx-2 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200" style={{ backgroundImage: `url(${quizData.selected.flag})` }} />
+			<h2 className={`block w-full my-6 text-3xl text-center`}>
+				{quizData.selected.country}
+			</h2>
+      <ul>
+        {quizData.shuffled.map((i) => (
+          <li key={i.country}>
+            <button  className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.capital)}>{i.capital}</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 const renderByType = {
   country: renderCountryQuiz,
   hanja: renderHanjaQuiz,
+  capital: renderCapitalQuiz,
 };
 const renderQuiz = renderByType[quizName];
 return (
