@@ -128,7 +128,7 @@ function renderCapitalQuiz(quizData) {
     <div>
       <div className="mx-2 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200" style={{ backgroundImage: `url(${quizData.selected.flag})` }} />
 			<h2 className={`block w-full my-6 text-3xl text-center`}>
-				{quizData.selected.country}
+				[{quizData.selected.country}]
 			</h2>
       <ul>
         {quizData.shuffled.map((i) => (
