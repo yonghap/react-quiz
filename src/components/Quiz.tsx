@@ -105,7 +105,7 @@ function renderCountryQuiz(quizData) {
     </div>
   );
 }
-// 한자 퀴즈
+// 한자 퀴즈 
 function renderHanjaQuiz(quizData) {
   return (
     <div>
