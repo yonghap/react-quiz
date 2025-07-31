@@ -45,12 +45,12 @@ export default function QuizResult() {
   // 한자 맞추기 
   function renderHanjaQuiz(quiz) {
     return (
-      <ul>
+      <ul className="flex flex-wrap gap-2">
         {quiz.map((quiz, quizIdx) => (
-          <li className="py-2 border-b border-slate-200" key={quizIdx}>
-            <div className="flex flex-1 items-center justify-between relative text-xs">
+          <li className="w-[48%] p-2 border-b border-slate-200" key={quizIdx}>
+            <div className="relative text-md">
               <span className="text-2xl font-bold">{quiz.selected.hanja}</span>
-              <span>
+              <span className="mx-3">
                 {quiz.selected.meaning}
               </span>
               <span className="text-red-500 line-through opacity-80">
@@ -67,9 +67,9 @@ export default function QuizResult() {
     <div id="quizResult">      
       <div className="p-4">        
 		    {renderQuiz ? renderQuiz(quizResult) : <p>퀴즈 타입이 올바르지 않습니다.</p>}      
-        <div className="flex justify-center text-center mt-8 gap-2">
-          <Link className="rounded-sm bg-slate-300 text-slate-500 text-sm py-2 px-4" href="/">HOME</Link>
-          <Link className="rounded-sm bg-slate-600 text-white text-sm py-2 px-4" href={{ pathname: '/quiz', query: { name: quizName } }}>다시하기</Link>
+        <div className="flex justify-center text-center mt-10 gap-2">
+          <Link className="rounded-sm bg-slate-300 text-slate-500 text-sm py-3 px-5" href="/">HOME</Link>
+          <Link className="rounded-sm bg-slate-600 text-white text-sm py-3 px-5" href={{ pathname: '/quiz', query: { name: quizName } }}>다시하기</Link>
         </div>
       </div>
     </div>
