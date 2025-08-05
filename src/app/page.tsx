@@ -7,10 +7,6 @@ import IconGameHan from '@/assets/images/icon_game_han.png'
 import IconGameCapital from '@/assets/images/icon_game_capital.png'
 
 export default function Home() {
-  const { reset } = useQuizStore();
-  useEffect(() => {
-    reset();
-  }, []);
   return (
     <main id="main">        
       <div className="p-6">

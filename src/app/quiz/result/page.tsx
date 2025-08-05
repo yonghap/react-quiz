@@ -6,12 +6,13 @@ import { useQuizStore } from 'src/store/quiz';
 // 퀴즈 결과 페이지
 export default function QuizResult() {
   const router = useRouter();
-	const { quizResult, quizName, setName, addQuiz, reset } = useQuizStore();
+	const { quizResult, quizName, addQuiz } = useQuizStore();
   console.log(quizResult)
   
   const renderByType = {
     country: renderCountryQuiz,
     hanja: renderHanjaQuiz,
+    capital: renderCapitalQuiz,
   };
   const renderQuiz = renderByType[quizName];
 
@@ -23,7 +24,7 @@ export default function QuizResult() {
           <li className="py-2 border-b border-slate-200" key={quizIdx}>
             <div className="flex flex-1 justify-between relative ">
               {quiz.shuffled.map((option, optionIdx) => (
-                <p className="relative w-[33%] py-4 text-center text-sm" key={optionIdx}>                   
+                <div className="relative w-[33%] py-4 text-center text-sm" key={optionIdx}>                   
                   <span className={`relative z-10 ${option.country_eng_nm === quiz.selected.country_eng_nm && "text-white text-shadow-sm text-shadow-black"} ${quiz.choiceName === option.country_eng_nm && 'text-red-500'}`}>
                     {option.country_nm}
                   </span>
@@ -34,7 +35,7 @@ export default function QuizResult() {
                       style={{ backgroundImage: `url(${quiz.selected.download_url})` }} 
                     />
                   }
-                </p>
+                </div>
               ))}
             </div>
           </li>
@@ -62,11 +63,38 @@ export default function QuizResult() {
       </ul>
     );
   }
-
+  // 수도 맞추기 
+  function renderCapitalQuiz(quiz) {
+    return (
+      <ul>
+        {quiz.map((quiz, quizIdx) => (
+          <li className="py-2 pt-6 border-b border-slate-200" key={quizIdx}>
+            <h3 className="font-bold text-center">{quiz.selected.country}</h3>
+            <div className="flex flex-1 justify-between relative ">
+              {quiz.shuffled.map((option, optionIdx) => (
+                <p className="relative w-[33%] py-4 text-center text-sm" key={optionIdx}>                   
+                  <span className={`relative z-10 ${option.capital === quiz.selected.capital && "text-white text-shadow-sm text-shadow-black"} ${quiz.choiceName === option.capital && 'text-red-500'}`}>
+                    {option.capital}
+                  </span>
+                  { 
+                    option.capital === quiz.selected.capital && 
+                    <div 
+                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%] h-[100%] bg-size-[100%_100%] border border-slate-200 rounded-xl" 
+                      style={{ backgroundImage: `url(${quiz.selected.flag})` }} 
+                    />
+                  }
+                </p>
+              ))}
+            </div>
+          </li>
+        ))}
+      </ul>
+    );
+  }
   return (
     <div id="quizResult">      
       <div className="p-4">        
-		    {renderQuiz ? renderQuiz(quizResult) : <p>퀴즈 타입이 올바르지 않습니다.</p>}      
+		    {renderQuiz ? renderQuiz(quizResult) : <p className='py-5 text-center'>퀴즈 타입이 올바르지 않습니다.</p>}      
         <div className="flex justify-center text-center mt-10 gap-2">
           <Link className="rounded-sm bg-slate-300 text-slate-500 text-sm py-3 px-5" href="/">HOME</Link>
           <Link className="rounded-sm bg-slate-600 text-white text-sm py-3 px-5" href={{ pathname: '/quiz', query: { name: quizName } }}>다시하기</Link>

@@ -6,7 +6,7 @@ interface QuizState {
   quizName: string,
   quizResult: countryQuizResult[];
   addQuiz: (newResult:countryQuizResult) => void;
-  reset: () => void;
+  resetQuiz: () => void;
 }
 
 export const useQuizStore = create<QuizState>()(
@@ -16,7 +16,7 @@ export const useQuizStore = create<QuizState>()(
       quizResult: [], 
       setName: (newName) => set((state) => ({ quizName: newName })),
       addQuiz: (newResult) => set((state) => ({ quizResult: [...state.quizResult, newResult] })),
-      reset: () => set(() => ({ quizResult: [] })),
+      resetQuiz: () => set(() => ({ quizResult: [] })),
     }),
     {
       name: "zustand-store",

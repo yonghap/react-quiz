@@ -33,7 +33,7 @@ async function fetchData(name: string | null) {
  */
 export default function Quiz() {
 	const router = useRouter();
-	const { quizResult, quizName, setName, addQuiz } = useQuizStore();
+	const { quizResult, quizName, setName, addQuiz, resetQuiz } = useQuizStore();
   const searchParams = useSearchParams();
   const name = searchParams.get('name');
 
@@ -56,6 +56,7 @@ export default function Quiz() {
 	}
 
 	useEffect(() => {
+		resetQuiz()
 		setName(name)
 		if (data && Array.isArray(data)) {
 			setAllQuizData(data);
@@ -64,7 +65,7 @@ export default function Quiz() {
 	}, [data]);
 
 	if (isLoading) return <p className='py-5 text-center'>Loading...</p>;
-	if (error) return <p lassName='py-5 text-center'>에러 발생: {(error as Error).message}</p>;
+	if (error) return <p className='py-5 text-center'>에러 발생: {(error as Error).message}</p>;
 	if (!quizData) return <p className='py-5 text-center'>퀴즈 데이터를 불러오는 중...</p>;
 
 	// 채점해서 스토어에 집어 넣음
