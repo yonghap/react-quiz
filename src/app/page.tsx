@@ -15,7 +15,7 @@ export default function Home() {
              <Link href={{ pathname: '/quiz', query: { name: 'country' } }}>
               <button type="button">
                 <img src={IconGameNation.src} alt="IconGameNation" />
-                <span className="block mt-2 text-md">나라 퀴즈</span>
+                <span className="block mt-2 text-sm">나라 퀴즈</span>
               </button>
             </Link>
           </li>  
@@ -23,7 +23,7 @@ export default function Home() {
             <Link href={{ pathname: '/quiz', query: { name: 'hanja' } }}>
               <button type="button">
                 <img src={IconGameHan.src} alt="IconGameHan" />     
-                <span className="block mt-2 text-md">한문 퀴즈</span>          
+                <span className="block mt-2 text-sm">한문 퀴즈</span>          
               </button>
             </Link>
           </li>  
@@ -31,7 +31,7 @@ export default function Home() {
             <Link href={{ pathname: '/quiz', query: { name: 'capital' } }}>
               <button type="button">
                 <img src={IconGameCapital.src} alt="IconGameCapital" />     
-                <span className="block mt-2 text-md">수도 퀴즈</span>          
+                <span className="block mt-2 text-sm">수도 퀴즈</span>          
               </button>
             </Link>
           </li>  
@@ -39,7 +39,7 @@ export default function Home() {
             <Link href={{ pathname: '/quiz', query: { name: 'capital' } }}>
               <button type="button">
                 <img src={IconGameCapital.src} alt="IconGameCapital" />     
-                <span className="block mt-2 text-md">수도 퀴즈</span>          
+                <span className="block mt-2 text-sm">수도 퀴즈</span>          
               </button>
             </Link>
           </li> 
