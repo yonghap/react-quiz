@@ -46,12 +46,12 @@ export default function QuizResult() {
   // 한자 맞추기 
   function renderHanjaQuiz(quiz) {
     return (
-      <ul className="flex flex-wrap gap-2">
+      <ul>
         {quiz.map((quiz, quizIdx) => (
-          <li className="w-[48%] p-2 border-b border-slate-200" key={quizIdx}>
+          <li className="p-2 pl-10 border-b border-slate-200" key={quizIdx}>
             <div className="relative text-md">
               <span className="text-2xl font-bold">{quiz.selected.hanja}</span>
-              <span className="mx-3">
+              <span className="mx-5">
                 {quiz.selected.meaning}
               </span>
               <span className="text-red-500 line-through opacity-80">

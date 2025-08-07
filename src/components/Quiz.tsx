@@ -54,6 +54,11 @@ export default function Quiz() {
 		hanja : "meaning",
 		capital : "capital",
 	}
+	const GUIDE_TEXT = {
+		country : "어느 나라일까요?",
+		hanja : "무슨 뜻일까요?",
+		capital : "수도는 어디일까요?"
+	}
 
 	useEffect(() => {
 		resetQuiz()
@@ -95,11 +100,11 @@ export default function Quiz() {
 function renderCountryQuiz(quizData) {
   return (
     <div>
-      <div className="mx-2 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
+      <div className="mx-4 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200 rounded-md" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
       <ul>
-        {quizData.shuffled.map((i) => (
+        {quizData.shuffled.map((i,idx) => (
           <li key={i.country_eng_nm}>
-            <button  className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
+            <button  className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.country_eng_nm)}>{(idx + 1) +'. ' +i.country_nm}</button>
           </li>
         ))}
       </ul>
@@ -150,8 +155,11 @@ const renderByType = {
 const renderQuiz = renderByType[quizName];
 return (
 	<div>
-		<div className="p-6 text-center text-gray-500">
-			<div className="text-sm">
+		<div className="flex items-center justify-between p-5 text-center">
+			<div className="text-md font-bold">
+				{GUIDE_TEXT[name]}
+			</div>
+			<div className="text-xs text-gray-500">
 				<strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
 			</div>
 		</div>
