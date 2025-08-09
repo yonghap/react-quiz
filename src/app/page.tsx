@@ -34,15 +34,7 @@ export default function Home() {
                 <span className="block mt-2 text-sm">수도 퀴즈</span>          
               </button>
             </Link>
-          </li>  
-          <li className="w-[25%]">
-            <Link href={{ pathname: '/quiz', query: { name: 'capital' } }}>
-              <button type="button">
-                <img src={IconGameCapital.src} alt="IconGameCapital" />     
-                <span className="block mt-2 text-sm">수도 퀴즈</span>          
-              </button>
-            </Link>
-          </li> 
+          </li>           
         </ul>
       </div>
     </main>
