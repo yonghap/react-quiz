@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { generateMultipleQuiz } from 'src/utils/common';
 import { COMMON_CODE } from 'src/constants/code';
 import { useQuizStore } from 'src/store/quiz';
+import scratch1 from 'src/assets/images/bg_scratch1.png'
 
 // 데이터 받아오기
 async function fetchData(name: string | null) {
@@ -72,7 +73,6 @@ export default function Quiz() {
 	if (isLoading) return <p className='py-5 text-center'>Loading...</p>;
 	if (error) return <p className='py-5 text-center'>에러 발생: {(error as Error).message}</p>;
 	if (!quizData) return <p className='py-5 text-center'>퀴즈 데이터를 불러오는 중...</p>;
-
 	// 채점해서 스토어에 집어 넣음
 	function gradingQuiz(name:string):void {
 		if (quizData.selected[ANSWER_COLUMN[quizName]] !== name) {
@@ -132,7 +132,7 @@ function renderHanjaQuiz(quizData) {
 function renderCapitalQuiz(quizData) {
   return (
     <div>
-      <div className="mx-2 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200" style={{ backgroundImage: `url(${quizData.selected.flag})` }} />
+      <div className="mx-4 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200" style={{ backgroundImage: `url(${quizData.selected.flag})` }} />
 			<h2 className={`block w-full my-6 text-3xl text-center`}>
 				[{quizData.selected.country}]
 			</h2>
@@ -156,10 +156,17 @@ const renderQuiz = renderByType[quizName];
 return (
 	<div>
 		<div className="flex items-center justify-between p-5 text-center">
-			<div className="text-md font-bold">
+			<div className="relative pb-2 text-md font-bold">
+				<div className="absolute inset-0 opacity-80" style={{
+					backgroundImage: `url(${scratch1.src})`,
+					backgroundSize: '100% auto',
+					backgroundRepeat: 'no-repeat',
+					backgroundPosition: 'bottom',
+				}}>
+				</div>
 				{GUIDE_TEXT[name]}
 			</div>
-			<div className="text-xs text-gray-500">
+			<div className="text-xs text-gray-400">
 				<strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
 			</div>
 		</div>
