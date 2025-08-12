@@ -101,10 +101,10 @@ function renderCountryQuiz(quizData) {
   return (
     <div>
       <div className="mx-4 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200 rounded-md" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
-      <ul>
+      <ul className="px-5 text-center">
         {quizData.shuffled.map((i,idx) => (
           <li key={i.country_eng_nm}>
-            <button  className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.country_eng_nm)}>{(idx + 1) +'. ' +i.country_nm}</button>
+            <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
           </li>
         ))}
       </ul>
@@ -118,10 +118,10 @@ function renderHanjaQuiz(quizData) {
       <div className="mb-8 py-8 text-center text-8xl">
 				{quizData.selected.hanja}
 			</div>
-      <ul>
+      <ul className="px-5 text-center">
         {quizData.shuffled.map((i) => (
           <li key={i.meaning}>
-            <button className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
+            <button className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
           </li>
         ))}
       </ul>
@@ -136,10 +136,10 @@ function renderCapitalQuiz(quizData) {
 			<h2 className={`block w-full my-6 text-3xl text-center`}>
 				[{quizData.selected.country}]
 			</h2>
-      <ul>
+      <ul className="px-5 text-center">
         {quizData.shuffled.map((i) => (
           <li key={i.country}>
-            <button  className={`block w-full my-6 text-2xl text-center`} onClick={() => handleClick(i.capital)}>{i.capital}</button>
+            <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.capital)}>{i.capital}</button>
           </li>
         ))}
       </ul>
@@ -155,9 +155,9 @@ const renderByType = {
 const renderQuiz = renderByType[quizName];
 return (
 	<div>
-		<div className="flex items-center justify-between p-5 text-center">
-			<div className="relative pb-2 text-md font-bold">
-				<div className="absolute inset-0 opacity-80" style={{
+		<div className="flex items-center justify-between px-5 py-7 text-center">
+			<div className="relative pb-3 text-xl font-bold">
+				<div className="absolute inset-0 opacity-70" style={{
 					backgroundImage: `url(${scratch1.src})`,
 					backgroundSize: '100% auto',
 					backgroundRepeat: 'no-repeat',
