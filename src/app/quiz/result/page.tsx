@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { usePathname, useRouter  } from 'next/navigation';
 import { useQuizStore } from 'src/store/quiz';
+import answerImage from 'src/assets/images/bg_scratch2.png'
+import wrongImage from 'src/assets/images/bg_scratch3.png'
 
 // 퀴즈 결과 페이지
 export default function QuizResult() {
@@ -15,14 +17,26 @@ export default function QuizResult() {
     capital: renderCapitalQuiz,
   };
   const renderQuiz = renderByType[quizName];
-
+  const wrongLength = quizResult.filter(item => item.choiceName === item.selected.country_eng_nm).length;
   // 나라 맞추기 
   function renderCountryQuiz(quiz) {
     return (
       <ul>
         {quiz.map((quiz, quizIdx) => (
           <li className="py-2 border-b border-slate-200" key={quizIdx}>
-            <div className="flex flex-1 justify-between relative ">
+            <div className="flex flex-1 justify-between relative items-center">
+              <div className="relative w-[20px] text-center">
+                {
+                  quiz.selected.country_eng_nm === quiz.choiceName ?
+                  <div className="absolute w-[50px] -bottom-4 -left-2 z-10">
+                    <img src={`${answerImage.src}`}></img>
+                  </div> :
+                  <div className="absolute w-[42px] -bottom-1 -left-2 z-10">
+                    <img src={`${wrongImage.src}`}></img>
+                  </div>
+                }
+                {quizIdx + 1}
+              </div>
               {quiz.shuffled.map((option, optionIdx) => (
                 <div className="relative w-[33%] py-4 text-center text-sm" key={optionIdx}>                   
                   <span className={`relative z-10 ${option.country_eng_nm === quiz.selected.country_eng_nm && "text-white text-shadow-sm text-shadow-black"} ${quiz.choiceName === option.country_eng_nm && 'text-red-500'}`}>
@@ -31,7 +45,7 @@ export default function QuizResult() {
                   { 
                     option.country_eng_nm === quiz.selected.country_eng_nm && 
                     <div 
-                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%] h-[100%] bg-size-[100%_100%] border border-slate-200 rounded-xl" 
+                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%] h-[100%] bg-size-[100%_100%] border border-slate-200 rounded-md" 
                       style={{ backgroundImage: `url(${quiz.selected.download_url})` }} 
                     />
                   }
@@ -95,7 +109,7 @@ export default function QuizResult() {
     <div id="quizResult">      
       <div className="p-4">
         <div className="py-5 text-center text-2xl font-bold">
-          10개중 <strong className="text-blue-700">{10 - quizResult.length}</strong>개를 맞췄어요!
+          10개중 <strong className="text-blue-700">{wrongLength}</strong>개를 맞췄어요!
         </div>        
 		    {renderQuiz ? renderQuiz(quizResult) : <p className='py-5 text-center'>퀴즈 타입이 올바르지 않습니다.</p>}      
         <div className="flex justify-center text-center mt-10 gap-2">

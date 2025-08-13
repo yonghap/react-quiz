@@ -10,6 +10,12 @@ const queryClient = new QueryClient();
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="ko">
+			<head>
+        <meta
+          name="viewport"
+          content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"
+        />
+      </head>
 			<body className="bg-gray-200">
 				<div className="min-h-screen max-w-[640px] m-auto bg-white font-pretendard">
 					<Header></Header>

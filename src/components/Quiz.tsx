@@ -75,15 +75,14 @@ export default function Quiz() {
 	if (!quizData) return <p className='py-5 text-center'>퀴즈 데이터를 불러오는 중...</p>;
 	// 채점해서 스토어에 집어 넣음
 	function gradingQuiz(name:string):void {
-		if (quizData.selected[ANSWER_COLUMN[quizName]] !== name) {
-			const resultData = {
-				...quizData,
-				choiceName : name
-			}
-		addQuiz(resultData);		
+		const resultData = {
+			...quizData,
+			choiceName : name
 		}
+		addQuiz(resultData);		
 	}
 
+	// 정답선택
 	function handleClick(name:string):void {
 		gradingQuiz(name)		
 		if (quizIndex === COMMON_CODE.QUIZ_COUNT) {
