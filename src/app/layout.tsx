@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
 			<body className="bg-gray-200">
-				<div className="min-h-screen max-w-[640px] m-auto bg-white font-pretendard">
+				<div className="overflow-hidden min-h-screen max-w-[640px] m-auto bg-white font-pretendard">
 					<Header></Header>
 					<QueryClientProvider client={queryClient}>
 						{children}
