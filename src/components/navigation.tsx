@@ -1,14 +1,22 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname  } from 'next/navigation';
 import Link from 'next/link';
 import MenuIcon from '@/assets/images/btn_menu.svg';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname(); // 현재 경로
 
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
   };
+
+
+  // 경로 변경 시 메뉴 닫기
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header id="header" className="border-b relative z-50">
@@ -34,19 +42,19 @@ export default function Header() {
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <h2 className="pt-10 px-4 text-right text-3xl mb-10">ggYu</h2>
+        <h2 className="pt-10 px-4 text-right text-3xl mb-10 font-bold">ggYu</h2>
         <ul className="text-right">
           <li className="border-y border-slate-300">
             <Link className="block leading-10 px-4" href="/">HOME</Link>
           </li>
           <li className="border-b border-slate-300">
-            <Link className="block leading-10 px-4" href="/">나라 퀴즈</Link>
+            <Link className="block leading-10 px-4" href={{ pathname: '/quiz', query: { name: 'country' } }}>나라 퀴즈</Link>
           </li>
           <li className="border-b border-slate-300">
-            <Link className="block leading-10 px-4" href="/">한문 퀴즈</Link>
+            <Link className="block leading-10 px-4" href={{ pathname: '/quiz', query: { name: 'hanja' } }}>한문 퀴즈</Link>
           </li>
           <li className="border-b border-slate-300">
-            <Link className="block leading-10 px-4" href="/">수도 퀴즈</Link>
+            <Link className="block leading-10 px-4" href={{ pathname: '/quiz', query: { name: 'capital' } }}>수도 퀴즈</Link>
           </li>
         </ul>
       </div>
