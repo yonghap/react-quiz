@@ -1,12 +1,13 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { usePathname  } from 'next/navigation';
+import { usePathname,useSearchParams  } from 'next/navigation';
 import Link from 'next/link';
 import MenuIcon from '@/assets/images/btn_menu.svg';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname(); // 현재 경로
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
@@ -16,7 +17,7 @@ export default function Header() {
   // 경로 변경 시 메뉴 닫기
   useEffect(() => {
     setMenuOpen(false);
-  }, [pathname]);
+  }, [pathname, searchParams.toString()]);
 
   return (
     <header id="header" className="border-b relative z-50">

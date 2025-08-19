@@ -102,7 +102,7 @@ function renderCountryQuiz(quizData) {
       <div className="mx-4 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200 rounded-md" style={{ backgroundImage: `url(${quizData.selected.download_url})` }} />
       <ul className="px-5 text-center">
         {quizData.shuffled.map((i,idx) => (
-          <li key={i.country_eng_nm}>
+          <li key={idx}>
             <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
           </li>
         ))}
@@ -118,8 +118,8 @@ function renderHanjaQuiz(quizData) {
 				{quizData.selected.hanja}
 			</div>
       <ul className="px-5 text-center">
-        {quizData.shuffled.map((i) => (
-          <li key={i.meaning}>
+        {quizData.shuffled.map((i,idx) => (
+          <li key={idx}>
             <button className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
           </li>
         ))}
@@ -136,8 +136,8 @@ function renderCapitalQuiz(quizData) {
 				[{quizData.selected.country}]
 			</h2>
       <ul className="px-5 text-center">
-        {quizData.shuffled.map((i) => (
-          <li key={i.country}>
+        {quizData.shuffled.map((i,idx) => (
+          <li key={idx}>
             <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.capital)}>{i.capital}</button>
           </li>
         ))}
