@@ -5,6 +5,7 @@ import { useQuizStore } from 'src/store/quiz';
 import IconGameNation from '@/assets/images/icon_game_nation.png'
 import IconGameHan from '@/assets/images/icon_game_han.png'
 import IconGameCapital from '@/assets/images/icon_game_capital.png'
+import IconGameSense from '@/assets/images/icon_game_sense.png'
 
 export default function Home() {
   return (
@@ -34,7 +35,15 @@ export default function Home() {
                 <span className="block mt-2 text-sm">수도 퀴즈</span>          
               </button>
             </Link>
-          </li>           
+          </li>
+          <li className="w-[25%]">
+            <Link href={{ pathname: '/quiz', query: { name: 'sense' } }}>
+              <button type="button">
+                <img src={IconGameSense.src} alt="IconGameCapital" />     
+                <span className="block mt-2 text-sm">상식 퀴즈</span>          
+              </button>
+            </Link>
+          </li>  
         </ul>
       </div>
     </main>

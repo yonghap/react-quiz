@@ -22,7 +22,12 @@ async function fetchData(name: string | null) {
 		const data = await result.json();
 		return data.data;
   }
-
+  if (name === 'sense') {
+    const result = await fetch('/assets/sense.json');
+    if (!result.ok) throw new Error('sense.json 로딩 실패');
+		const data = await result.json();
+		return data.data;
+  }
   // 기본은 country
   const result = await fetch('/api/getCountry');
   if (!result.ok) throw new Error('국가 정보 로딩 실패');
@@ -145,11 +150,29 @@ function renderCapitalQuiz(quizData) {
     </div>
   );
 }
+// 상식 퀴즈
+function renderSenseQuiz(quizData) {
+  return (
+    <div>
+      <div className="mb-8 py-8 text-center text-2xl">
+				{quizData.selected.question}
+			</div>
+      <ul className="px-5 text-center">
+        {quizData.selected.options.map((i,idx) => (
+          <li key={idx}>
+            <button className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i)}>{i}</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 const renderByType = {
   country: renderCountryQuiz,
   hanja: renderHanjaQuiz,
   capital: renderCapitalQuiz,
+  sense: renderSenseQuiz,
 };
 const renderQuiz = renderByType[quizName];
 return (
