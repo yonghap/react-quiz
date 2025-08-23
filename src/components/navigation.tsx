@@ -57,6 +57,9 @@ export default function Header() {
           <li className="border-b border-slate-300">
             <Link className="block leading-10 px-4" href={{ pathname: '/quiz', query: { name: 'capital' } }}>수도 퀴즈</Link>
           </li>
+          <li className="border-b border-slate-300">
+            <Link className="block leading-10 px-4" href={{ pathname: '/quiz', query: { name: 'sense' } }}>상식 퀴즈</Link>
+          </li>
         </ul>
       </div>
     </header>
