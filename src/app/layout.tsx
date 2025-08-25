@@ -5,7 +5,9 @@ import { ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Header from "@/components/navigation";
 import Footer from "@/components/footer";
+import logo from '@/assets/images/bg_main.png'
 const queryClient = new QueryClient();
+
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
@@ -17,7 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
 			<body className="bg-gray-200">
-				<div className="overflow-hidden min-h-screen max-w-[640px] m-auto bg-white font-pretendard">
+				<div className="overflow-hidden min-h-screen max-w-[600px] m-auto bg-white font-pretendard">
 					<Header></Header>
 					<QueryClientProvider client={queryClient}>
 						{children}
