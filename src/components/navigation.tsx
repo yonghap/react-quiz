@@ -22,10 +22,10 @@ export default function Header() {
   return (
     <header id="header" className="border-b relative z-50">
       <div className="flex justify-between items-center"> 
-        <h1 className="p-4 text-xl font-bold text-center text-3xl"> 
+        <h1 className="p-4 font-bold text-center text-3xl"> 
           <Link href="/">ggYu</Link> 
         </h1> 
-        <button type="button" className="px-4 py-2 w-15 h-15" onClick={toggleMenu}> 
+        <button type="button" className="px-4 py-3 w-17 h-17" onClick={toggleMenu}> 
           <img src={MenuIcon.src} alt="MenuIcon" /> 
         </button> 
       </div>

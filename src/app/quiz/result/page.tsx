@@ -15,6 +15,7 @@ export default function QuizResult() {
     country: renderCountryQuiz,
     hanja: renderHanjaQuiz,
     capital: renderCapitalQuiz,
+    sense: renderSenseQuiz
   };
   const renderQuiz = renderByType[quizName];
 
@@ -22,6 +23,7 @@ export default function QuizResult() {
 		country : "country_eng_nm",
 		hanja : "meaning",
 		capital : "capital",
+    sense : "answer"
 	}
 
   const wrongLength = quizResult.filter(item => item.choiceName === item.selected[ANSWER_COLUMN[quizName]]).length;
@@ -135,6 +137,45 @@ export default function QuizResult() {
                   }
                 </div>
               ))}
+            </div>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+  // 상식 맞추기
+  function renderSenseQuiz(quiz) {
+    return (
+      <ul className="mx-4">
+        {quiz.map((quiz, quizIdx) => (
+          <li className="p-4 pl-10 border-b border-slate-200" key={quizIdx}>
+            <div className="relative text-md">
+              <div className="flex items-center">
+                <div className="relative inline-block w-[30px] text-lg">
+                  {quizIdx + 1}
+                    {
+                      quiz.selected.answer === quiz.choiceName ?
+                      <div className="absolute w-[44px] -bottom-3 -left-5 z-10">
+                        <img src={`${answerImage.src}`}></img>
+                      </div> :
+                      <div className="absolute w-[40px] -bottom-1 -left-3 z-10">
+                        <img src={`${wrongImage.src}`}></img>
+                      </div>
+                    }
+                </div>
+                <span className="text-md font-bold text-slate-700">{quiz.selected.question}</span>
+              </div>
+              <div className="mt-1 pl-[30px]">
+                <span className="mr-5">
+                  {quiz.selected.answer}
+                </span>
+                {
+                  quiz.choiceName !== quiz.selected.answer &&
+                  <span className="text-red-500 line-through opacity-80">
+                    {quiz.choiceName}
+                  </span>
+                }
+              </div>           
             </div>
           </li>
         ))}

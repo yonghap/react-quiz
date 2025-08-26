@@ -10,9 +10,9 @@ import IconGameSense from '@/assets/images/icon_game_sense.png'
 export default function Home() {
   return (
     <main id="main">        
-      <div className="py-8 px-10">
-        <ul className="flex gap-10 justify-center flex-wrap">
-          <li className="w-[35%]">
+      <div className="p-10">
+        <ul className="flex gap-12 justify-center flex-wrap">
+          <li className="w-[32%]">
              <Link href={{ pathname: '/quiz', query: { name: 'country' } }}>
               <button type="button">
                 <img src={IconGameNation.src} alt="IconGameNation" />
@@ -20,7 +20,7 @@ export default function Home() {
               </button>
             </Link>
           </li>  
-          <li className="w-[35%]">
+          <li className="w-[32%]">
             <Link href={{ pathname: '/quiz', query: { name: 'hanja' } }}>
               <button type="button">
                 <img src={IconGameHan.src} alt="IconGameHan" />     
@@ -28,7 +28,7 @@ export default function Home() {
               </button>
             </Link>
           </li>  
-          <li className="w-[35%]">
+          <li className="w-[32%]">
             <Link href={{ pathname: '/quiz', query: { name: 'capital' } }}>
               <button type="button">
                 <img src={IconGameCapital.src} alt="IconGameCapital" />     
@@ -36,7 +36,7 @@ export default function Home() {
               </button>
             </Link>
           </li>
-          <li className="w-[35%]">
+          <li className="w-[32%]">
             <Link href={{ pathname: '/quiz', query: { name: 'sense' } }}>
               <button type="button">
                 <img src={IconGameSense.src} alt="IconGameCapital" />     
