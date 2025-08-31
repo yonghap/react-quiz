@@ -77,7 +77,7 @@ export default function Quiz() {
 
 	if (isLoading) return <p className='py-5 text-center'>Loading...</p>;
 	if (error) return <p className='py-5 text-center'>에러 발생: {(error as Error).message}</p>;
-	if (!quizData) return <p className='py-5 text-center'>퀴즈 데이터를 불러오는 중입니다.</p>;
+	if (!quizData) return <p className='py-5 text-center'>퀴즈 데이터 로딩중 </p>;
 	// 채점해서 스토어에 집어 넣음
 	function gradingQuiz(name:string):void {
 		const resultData = {
