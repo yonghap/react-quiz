@@ -61,7 +61,7 @@ export default function Quiz() {
 		capital : "capital",
 	}
 	const GUIDE_TEXT = {
-		country : "어느 나라일까요?",
+		country : "나라를 맞춰보세요!",
 		hanja : "무슨 뜻일까요?",
 		capital : "수도는 어디일까요?"
 	}
