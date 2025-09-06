@@ -154,7 +154,7 @@ function renderCapitalQuiz(quizData) {
 function renderSenseQuiz(quizData) {
   return (
     <div>
-      <div className="mb-8 py-8 text-center text-2xl">
+      <div className="mb-8 py-8 px-2 text-center text-2xl">
 				{quizData.selected.question}
 			</div>
       <ul className="px-5 text-center">
