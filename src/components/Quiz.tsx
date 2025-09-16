@@ -178,14 +178,7 @@ const renderQuiz = renderByType[quizName];
 return (
 	<div>
 		<div className="flex items-center justify-between px-5 py-7 text-center">
-			<div className="relative pb-3 text-xl font-bold">
-				<div className="absolute inset-0 opacity-70" style={{
-					backgroundImage: `url(${scratch1.src})`,
-					backgroundSize: '100% auto',
-					backgroundRepeat: 'no-repeat',
-					backgroundPosition: 'bottom',
-				}}>
-				</div>
+			<div className="relative text-xl font-bold">
 				{GUIDE_TEXT[name]}
 			</div>
 			<div className="text-xs text-gray-400">

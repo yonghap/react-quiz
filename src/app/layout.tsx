@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
         />
-        <title>요덜이의 Next.js 앱</title>
+        <title>ggYu</title>
         <meta name="description" content="App Router 구조에서 메타데이터 설정 예제" />
       </head>
       <body className="bg-gray-200">

@@ -9,7 +9,6 @@ import wrongImage from 'src/assets/images/bg_scratch3.png'
 export default function QuizResult() {
   const router = useRouter();
 	const { quizResult, quizName, addQuiz } = useQuizStore();
-  console.log(quizResult)
   
   const renderByType = {
     country: renderCountryQuiz,
