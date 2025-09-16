@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import Header from "@/components/navigation";
 import Footer from "@/components/footer";
 import QueryProvider from '@/components/QueryProvider'; // 클라이언트 컴포넌트
+import { Suspense } from 'react';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -17,7 +18,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="bg-gray-200">
         <div className="overflow-hidden min-h-screen max-w-[600px] m-auto bg-white font-pretendard">
-          <Header />
+          <Suspense fallback={<div>헤더 로딩 중...</div>}>
+            <Header />
+          </Suspense>
           <QueryProvider>
             {children}
           </QueryProvider>

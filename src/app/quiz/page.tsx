@@ -1,9 +1,12 @@
 import QuizItem from '@/components/Quiz'
+import { Suspense } from "react";
 
 export default async function Quiz() {
   return (
-    <div>
-      <QuizItem></QuizItem>
-    </div>
+    <Suspense fallback={<div>결과를 불러오는 중...</div>}>
+      <div>
+        <QuizItem></QuizItem>
+      </div>
+    </Suspense>
   );
 }
