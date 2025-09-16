@@ -1,12 +1,13 @@
 import { create } from "zustand";
 import { persist, createJSONStorage  } from "zustand/middleware";
-import { countryQuizResult } from 'src/types/quiz';
+import { countryQuizResult } from '@/types/quiz';
 
 interface QuizState {
   quizName: string,
   quizResult: countryQuizResult[];
   addQuiz: (newResult:countryQuizResult) => void;
   resetQuiz: () => void;
+  setName: (newName: string) => void;
 }
 
 export const useQuizStore = create<QuizState>()(

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Link from "next/link";
-import { useQuizStore } from 'src/store/quiz';
+import { useQuizStore } from '@/store/quiz';
 import IconGameNation from '@/assets/images/icon_game_nation.png'
 import IconGameHan from '@/assets/images/icon_game_han.png'
 import IconGameCapital from '@/assets/images/icon_game_capital.png'

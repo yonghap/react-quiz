@@ -1,4 +1,4 @@
-import { countryQuizItem, hanjaQuizItem } from 'src/types/quiz';
+import { countryQuizItem, hanjaQuizItem } from '@/types/quiz';
 type QuizItem = countryQuizItem | hanjaQuizItem;
 
 export function generateMultipleQuiz(data: QuizItem[]): { selected: QuizItem, shuffled: QuizItem[] } {

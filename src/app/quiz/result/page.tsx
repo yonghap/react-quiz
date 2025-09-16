@@ -1,9 +1,9 @@
 "use client"
 import Link from "next/link";
 import { usePathname, useRouter  } from 'next/navigation';
-import { useQuizStore } from 'src/store/quiz';
-import answerImage from 'src/assets/images/bg_scratch2.png'
-import wrongImage from 'src/assets/images/bg_scratch3.png'
+import { useQuizStore } from '@/store/quiz';
+import answerImage from '@/assets/images/bg_scratch2.png'
+import wrongImage from '@/assets/images/bg_scratch3.png'
 
 // 퀴즈 결과 페이지
 export default function QuizResult() {

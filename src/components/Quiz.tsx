@@ -1,11 +1,11 @@
 'use client';
-import { countryQuizItem, hanjaQuizItem } from 'src/types/quiz';
+import { countryQuizItem, hanjaQuizItem } from '@/types/quiz';
 import { useQuery } from '@tanstack/react-query';
 import { useSearchParams , useRouter  } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { generateMultipleQuiz } from 'src/utils/common';
-import { COMMON_CODE } from 'src/constants/code';
-import { useQuizStore } from 'src/store/quiz';
+import { generateMultipleQuiz } from '@/utils/common';
+import { COMMON_CODE } from '@/constants/code';
+import { useQuizStore } from '@/store/quiz';
 import scratch1 from 'src/assets/images/bg_scratch1.png'
 
 // 데이터 받아오기
@@ -45,8 +45,8 @@ export default function Quiz() {
 
 	// 퀴즈 데이터 상태 추가
 	const [quizIndex , setQuizIndex] = useState(1); // 현재 퀴즈 번호
-	const [allQuizData, setAllQuizData] = useState<countryQuizItem[] | hanjaQuizItem[] | null>(null) // 모든 퀴즈 데이터
-	const [quizData, setCurrentQuizData] = useState<{ selected: countryQuizItem | hanjaQuizItem, shuffled: countryQuizItem[] | hanjaQuizItem[] } | null>(null) // 현재 퀴즈 데이터
+	const [allQuizData, setAllQuizData] = useState(null) // 모든 퀴즈 데이터
+	const [quizData, setCurrentQuizData] = useState(null) // 현재 퀴즈 데이터
 
 	// 퀴즈 데이터 가져오기
   const { data, error, isLoading } = useQuery({
