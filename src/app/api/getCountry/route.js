@@ -8,7 +8,7 @@ export async function GET(request) {
 
 			while(page < 4) {
 				const query = new URLSearchParams({
-						serviceKey: apiKey,
+						serviceKey: 'hhPRU4TihqC7sGrFL7uNTmty4I7Hng2A57yNkCPaRsb%2BbnlxyetnLDADCFy%2FDh0KshzZmRBEyFO1VEMKNHeuPg%3D%3D',
 						pageNo: page,
 						numOfRows: 100,
 						returnType: 'JSON'
