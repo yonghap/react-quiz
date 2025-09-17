@@ -29,9 +29,10 @@ async function fetchData(name: string | null) {
 		return data.data;
   }
   // 기본은 country
-  const result = await fetch('/api/getCountry');
-  if (!result.ok) throw new Error('국가 정보 로딩 실패');
-  return await result.json();
+  const result = await fetch('/assets/country.json');
+  if (!result.ok) throw new Error('country.json 로딩 실패');
+  const data = await result.json();
+  return data.data;
 }
 
 /**
