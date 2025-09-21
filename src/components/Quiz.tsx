@@ -110,7 +110,7 @@ function renderCountryQuiz(quizData) {
       <ul className="px-5 text-center">
         {quizData.shuffled.map((i,idx) => (
           <li key={idx}>
-            <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
+            <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md cursor-pointer hover:bg-blue-100" onClick={() => handleClick(i.country_eng_nm)}>{i.country_nm}</button>
           </li>
         ))}
       </ul>
@@ -127,7 +127,7 @@ function renderHanjaQuiz(quizData) {
       <ul className="px-5 text-center">
         {quizData.shuffled.map((i,idx) => (
           <li key={idx}>
-            <button className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
+            <button className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md cursor-pointer hover:bg-blue-100" onClick={() => handleClick(i.meaning)}>{i.meaning}</button>
           </li>
         ))}
       </ul>
@@ -145,7 +145,7 @@ function renderCapitalQuiz(quizData) {
       <ul className="px-5 text-center">
         {quizData.shuffled.map((i,idx) => (
           <li key={idx}>
-            <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i.capital)}>{i.capital}</button>
+            <button  className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md cursor-pointer hover:bg-blue-100" onClick={() => handleClick(i.capital)}>{i.capital}</button>
           </li>
         ))}
       </ul>
@@ -162,7 +162,7 @@ function renderSenseQuiz(quizData) {
       <ul className="px-5 text-center">
         {quizData.selected.options.map((i,idx) => (
           <li key={idx}>
-            <button className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md" onClick={() => handleClick(i)}>{i}</button>
+            <button className="w-full block py-2 my-5 text-xl text-center bg-slate-100 border border-slate-300 rounded-md shadow-md cursor-pointer hover:bg-blue-100" onClick={() => handleClick(i)}>{i}</button>
           </li>
         ))}
       </ul>

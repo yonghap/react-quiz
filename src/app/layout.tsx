@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <title>ggYu</title>
         <meta name="description" content="App Router 구조에서 메타데이터 설정 예제" />
       </head>
-      <body className="bg-gray-100 p-10">
+      <body className="bg-gray-100 p-5 sm:p-10">
         <div className="overflow-hidden max-w-[600px] m-auto bg-white font-pretendard rounded-2xl shadow-lg">
           <QueryProvider>
             {children}
