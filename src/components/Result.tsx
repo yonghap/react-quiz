@@ -147,17 +147,17 @@ export default function QuizResult() {
     return (
       <ul className="mx-4">
         {quiz.map((quiz, quizIdx) => (
-          <li className="p-4 pl-10 border-b border-slate-200" key={quizIdx}>
+          <li className="p-4 pr-0 sm:pl-10 border-b border-slate-200" key={quizIdx}>
             <div className="relative text-md">
               <div className="flex items-center">
                 <div className="relative inline-block w-[30px] text-lg">
                   {quizIdx + 1}
                     {
                       quiz.selected.answer === quiz.choiceName ?
-                      <div className="absolute w-[44px] -bottom-3 -left-5 z-10">
+                      <div className="absolute w-[44px] -bottom-4 -left-5 z-10">
                         <img src={`${answerImage.src}`}></img>
                       </div> :
-                      <div className="absolute w-[40px] -bottom-1 -left-3 z-10">
+                      <div className="absolute w-[40px] -bottom-3 -left-3 z-10">
                         <img src={`${wrongImage.src}`}></img>
                       </div>
                     }
