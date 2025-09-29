@@ -1,19 +1,20 @@
+"use client";
+
 import QuizItem from '@/components/Quiz'
-import Link from 'next/link';
 import { Suspense } from "react";
-import Home from '@/assets/images/home.svg'
+import { QUIZ_TITLE } from '@/constants/title';
+import { useQuizStore } from '@/store/quiz';
 
-
-export default async function Quiz() {
+export default function Quiz() {
+  const { quizName } = useQuizStore();
+  
   return (
-    <Suspense fallback={<div className="py-5 text-center">결과를 불러오는 중...</div>}>
-      <div className="text-center pt-8">
-        <Link href="/">
-          <img src={Home.src} className="inline-block max-w-12 opacity-80" alt="ggYu" />     
-        </Link> 
+    <Suspense fallback={<div className="py-5 text-center">퀴즈를 불러오는 중...</div>}>
+      <div className="text-center text-3xl pt-8 font-bold">
+        {QUIZ_TITLE[quizName]}
       </div>
       <div>
-        <QuizItem></QuizItem>
+        <QuizItem />
       </div>
     </Suspense>
   );
