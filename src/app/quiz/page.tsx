@@ -1,5 +1,4 @@
 "use client";
-
 import QuizItem from '@/components/Quiz'
 import { Suspense } from "react";
 import { QUIZ_TITLE } from '@/constants/title';

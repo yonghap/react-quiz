@@ -184,7 +184,7 @@ export default function QuizResult() {
   return (
     <div id="quizResult">      
         <div className="pt-4">
-          <div className="py-5 text-center text-2xl font-bold text-slate-600">
+          <div className="py-5 text-center text-2xl font-bold text-slate-700">
             10개중 <strong className="text-blue-700">{wrongLength}</strong>개를 맞췄어요!
           </div>        
           {renderQuiz ? renderQuiz(quizResult) : <p className='py-5 text-center'>퀴즈 타입이 올바르지 않습니다.</p>}      
