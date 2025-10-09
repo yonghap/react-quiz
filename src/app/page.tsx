@@ -7,7 +7,7 @@ import { QUIZ_LIST } from '@/constants/menu';
 export default function Home() {
   return (
     <main id="main">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="py-t text-center">Loading...</div>}>
         <Header />
       </Suspense>        
       <div className="p-6 sm:p-12">
