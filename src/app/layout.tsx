@@ -1,7 +1,8 @@
-import '@/styles/globals.css';
-import { ReactNode } from 'react';
+import React from "react";
+import "@/styles/globals.css";
+import { ReactNode } from "react";
 import Footer from "@/components/footer";
-import QueryProvider from '@/components/QueryProvider';
+import QueryProvider from "@/components/QueryProvider";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -16,9 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="bg-gray-100 p-5 sm:p-10">
         <div className="overflow-hidden max-w-[600px] m-auto bg-white font-pretendard rounded-2xl shadow-lg">
-          <QueryProvider>
-            {children}
-          </QueryProvider>
+          <QueryProvider>{children}</QueryProvider>
           <Footer />
         </div>
       </body>
