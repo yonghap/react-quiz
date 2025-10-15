@@ -6,7 +6,7 @@
 
 /** 나라 맞추기 퀴즈 */
 export type CountryQuizItem = {
-  content_ty: string;
+  content_ty: string | null;
   country_eng_nm: string;
   country_iso_alp2: string;
   country_nm: string;
@@ -30,8 +30,6 @@ export type HanjaQuizItem = {
   strokes: number;
   total_strokes: number;
 };
-
-
 
 export type HanjaQuizResult = {
   selected: HanjaQuizItem;
@@ -65,6 +63,12 @@ export type SenseQuizResult = {
   choiceName: string;
 };
 
+export type QuizDataMap = {
+  country: CountryQuizItem[];
+  hanja: HanjaQuizItem[];
+  capital: CapitalQuizItem[];
+  sense: SenseQuizItem[];
+};
 /**
  * ===========================
  * 통합 타입
@@ -85,8 +89,14 @@ export type QuizResult =
   | CapitalQuizResult
   | SenseQuizResult;
 
+export type QuizResultArr =
+  | CountryQuizResult[]
+  | HanjaQuizResult[]
+  | CapitalQuizResult[]
+  | SenseQuizResult[];
+
 /** 퀴즈 이름(파일명) */
-export type QuizName = 'country' | 'hanja' | 'capital' | 'sense';
+export type QuizName = "country" | "hanja" | "capital" | "sense";
 
 /**
  * 제너릭 퀴즈 데이터 구조 (공통 사용)
@@ -103,4 +113,3 @@ export type QuizData<T> = {
 export type QuizWithChoice<T> = QuizData<T> & {
   choiceName: string;
 };
-

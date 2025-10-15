@@ -10,6 +10,8 @@ import {
   QuizName,
   QuizResult,
   QuizData,
+  QuizItem,
+  QuizDataMap,
   CountryQuizItem,
   HanjaQuizItem,
   CapitalQuizItem,
@@ -29,7 +31,7 @@ const FILE_MAP: Record<QuizName, string> = {
 /** -------------------------------
  *  데이터 fetch 함수
  *  ------------------------------- */
-async function fetchData(name: QuizName): Promise<any[]> {
+async function fetchData<T extends QuizName>(name: T): Promise<QuizDataMap[T]> {
   const file = FILE_MAP[name];
   const res = await fetch(`/assets/${file}`);
   if (!res.ok) throw new Error(`${file} 로딩 실패`);
@@ -71,14 +73,14 @@ function renderQuizByType(
   quizData: QuizResult,
   handleClick: (choice: string) => void
 ) {
-  const { selected, shuffled } = quizData as QuizData<any>;
+  const { selected, shuffled } = quizData as QuizData<QuizItem>;
 
   const getLabel = {
     country: (i: CountryQuizItem) => i.country_nm,
     hanja: (i: HanjaQuizItem) => i.meaning,
     capital: (i: CapitalQuizItem) => i.capital,
     sense: (i: string) => i,
-  }[type] as (item: any) => string;
+  }[type] as (item: QuizItem | string) => string;
 
   const question = {
     country: (
@@ -130,7 +132,7 @@ function renderQuizByType(
  *  ------------------------------- */
 export default function Quiz() {
   const router = useRouter();
-  const { quizResult, quizName, setName, addQuiz, resetQuiz } = useQuizStore();
+  const { quizName, setName, addQuiz, resetQuiz } = useQuizStore();
   const searchParams = useSearchParams();
   const rawName = searchParams.get("name");
 
@@ -147,7 +149,7 @@ export default function Quiz() {
   }
 
   const [quizIndex, setQuizIndex] = useState(1);
-  const [allQuizData, setAllQuizData] = useState<any[] | null>(null);
+  const [allQuizData, setAllQuizData] = useState<QuizItem[] | null>(null);
   const [quizData, setCurrentQuizData] = useState<QuizResult | null>(null);
 
   const { data, error, isLoading } = useQuery({
@@ -161,7 +163,30 @@ export default function Quiz() {
     resetQuiz();
     setName(name);
     setAllQuizData(data);
-    setCurrentQuizData(generateMultipleQuiz(data));
+    if (!name || !data) return;
+
+    switch (name) {
+      case "country":
+        setCurrentQuizData(
+          generateMultipleQuiz(data as CountryQuizItem[]) as QuizResult
+        );
+        break;
+      case "hanja":
+        setCurrentQuizData(
+          generateMultipleQuiz(data as HanjaQuizItem[]) as QuizResult
+        );
+        break;
+      case "capital":
+        setCurrentQuizData(
+          generateMultipleQuiz(data as CapitalQuizItem[]) as QuizResult
+        );
+        break;
+      case "sense":
+        setCurrentQuizData(
+          generateMultipleQuiz(data as SenseQuizItem[]) as QuizResult
+        );
+        break;
+    }
   }, [data]);
 
   const handleClick = (choice: string) => {
@@ -171,7 +196,29 @@ export default function Quiz() {
       alert("퀴즈가 종료되었습니다.\n결과 화면으로 이동합니다.");
       router.push("/quiz/result");
     } else {
-      setCurrentQuizData(generateMultipleQuiz(allQuizData));
+      if (!name || !allQuizData) return;
+      switch (name) {
+        case "country":
+          setCurrentQuizData(
+            generateMultipleQuiz(allQuizData as CountryQuizItem[]) as QuizResult
+          );
+          break;
+        case "hanja":
+          setCurrentQuizData(
+            generateMultipleQuiz(allQuizData as HanjaQuizItem[]) as QuizResult
+          );
+          break;
+        case "capital":
+          setCurrentQuizData(
+            generateMultipleQuiz(allQuizData as CapitalQuizItem[]) as QuizResult
+          );
+          break;
+        case "sense":
+          setCurrentQuizData(
+            generateMultipleQuiz(allQuizData as SenseQuizItem[]) as QuizResult
+          );
+          break;
+      }
       setQuizIndex((i) => i + 1);
     }
   };

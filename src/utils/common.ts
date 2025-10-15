@@ -1,6 +1,8 @@
+import { QuizData } from "@/types/quiz";
+
 export function generateMultipleQuiz<T>(
   data: T[]
-): { selected: T; shuffled: T[]; choiceName: string } {
+): QuizData<T> & { choiceName: string } {
   const selected = data[Math.floor(Math.random() * data.length)];
   const sampled = new Set<T>([selected]);
 
@@ -10,5 +12,5 @@ export function generateMultipleQuiz<T>(
 
   const shuffled = [...sampled].sort(() => Math.random() - 0.5);
 
-  return { selected, shuffled, choiceName: '' };
+  return { selected, shuffled, choiceName: "" };
 }
