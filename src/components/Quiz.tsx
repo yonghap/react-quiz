@@ -1,10 +1,11 @@
-'use client';
-import { useQuery } from '@tanstack/react-query';
-import { useSearchParams, useRouter } from 'next/navigation';
-import { useState, useEffect } from 'react';
-import { generateMultipleQuiz } from '@/utils/common';
-import { COMMON_CODE } from '@/constants/code';
-import { useQuizStore } from '@/store/quiz';
+"use client";
+import React from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useSearchParams, useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import { generateMultipleQuiz } from "@/utils/common";
+import { COMMON_CODE } from "@/constants/code";
+import { useQuizStore } from "@/store/quiz";
 import {
   QuizName,
   QuizResult,
@@ -13,16 +14,16 @@ import {
   HanjaQuizItem,
   CapitalQuizItem,
   SenseQuizItem,
-} from '@/types/quiz';
+} from "@/types/quiz";
 
 /** -------------------------------
  *  파일 데이터 맵
  *  ------------------------------- */
 const FILE_MAP: Record<QuizName, string> = {
-  hanja: 'hanja.json',
-  capital: 'capital.json',
-  sense: 'sense.json',
-  country: 'country.json',
+  hanja: "hanja.json",
+  capital: "capital.json",
+  sense: "sense.json",
+  country: "country.json",
 };
 
 /** -------------------------------
@@ -83,7 +84,9 @@ function renderQuizByType(
     country: (
       <div
         className="mx-4 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200 rounded-md"
-        style={{ backgroundImage: `url(${(selected as CountryQuizItem).download_url})` }}
+        style={{
+          backgroundImage: `url(${(selected as CountryQuizItem).download_url})`,
+        }}
       />
     ),
     hanja: (
@@ -95,7 +98,9 @@ function renderQuizByType(
       <>
         <div
           className="mx-4 mb-8 pt-[55%] bg-size-[100%_100%] border border-slate-200 rounded-md"
-          style={{ backgroundImage: `url(${(selected as CapitalQuizItem).flag})` }}
+          style={{
+            backgroundImage: `url(${(selected as CapitalQuizItem).flag})`,
+          }}
         />
         <h2 className="block w-full my-6 text-3xl text-center">
           [{(selected as CapitalQuizItem).country}]
@@ -110,9 +115,7 @@ function renderQuizByType(
   }[type];
 
   const options =
-    type === 'sense'
-      ? (selected as SenseQuizItem).options
-      : shuffled || [];
+    type === "sense" ? (selected as SenseQuizItem).options : shuffled || [];
 
   return (
     <div>
@@ -129,10 +132,13 @@ export default function Quiz() {
   const router = useRouter();
   const { quizResult, quizName, setName, addQuiz, resetQuiz } = useQuizStore();
   const searchParams = useSearchParams();
-  const rawName = searchParams.get('name');
+  const rawName = searchParams.get("name");
 
-  const name: QuizName | null = 
-    rawName === 'country' || rawName === 'hanja' || rawName === 'capital' || rawName === 'sense'
+  const name: QuizName | null =
+    rawName === "country" ||
+    rawName === "hanja" ||
+    rawName === "capital" ||
+    rawName === "sense"
       ? rawName
       : null;
 
@@ -140,13 +146,12 @@ export default function Quiz() {
     return <p>잘못된 퀴즈 타입입니다.</p>;
   }
 
-
   const [quizIndex, setQuizIndex] = useState(1);
   const [allQuizData, setAllQuizData] = useState<any[] | null>(null);
   const [quizData, setCurrentQuizData] = useState<QuizResult | null>(null);
 
   const { data, error, isLoading } = useQuery({
-    queryKey: ['quizData', name],
+    queryKey: ["quizData", name],
     queryFn: () => fetchData(name!),
     enabled: !!name,
   });
@@ -163,8 +168,8 @@ export default function Quiz() {
     if (!quizData || !allQuizData) return;
     addQuiz({ ...quizData, choiceName: choice });
     if (quizIndex === COMMON_CODE.QUIZ_COUNT) {
-      alert('퀴즈가 종료되었습니다.\n결과 화면으로 이동합니다.');
-      router.push('/quiz/result');
+      alert("퀴즈가 종료되었습니다.\n결과 화면으로 이동합니다.");
+      router.push("/quiz/result");
     } else {
       setCurrentQuizData(generateMultipleQuiz(allQuizData));
       setQuizIndex((i) => i + 1);
@@ -172,18 +177,24 @@ export default function Quiz() {
   };
 
   if (isLoading) return <p className="py-5 text-center">Loading...</p>;
-  if (error) return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
+  if (error)
+    return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
   if (!quizData) return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
 
   const GUIDE_TEXT: Record<QuizName, string> = {
-    country: '나라를 맞춰보세요!',
-    hanja: '무슨 뜻일까요?',
-    capital: '수도는 어디일까요?',
-    sense: '정답을 맞춰보세요!',
+    country: "나라를 맞춰보세요!",
+    hanja: "무슨 뜻일까요?",
+    capital: "수도는 어디일까요?",
+    sense: "정답을 맞춰보세요!",
   };
 
   function isQuizName(name: string | null): name is QuizName {
-    return name === 'country' || name === 'hanja' || name === 'capital' || name === 'sense';
+    return (
+      name === "country" ||
+      name === "hanja" ||
+      name === "capital" ||
+      name === "sense"
+    );
   }
 
   // 사용
@@ -194,7 +205,9 @@ export default function Quiz() {
   return (
     <div>
       <div className="flex items-center justify-between px-5 py-7 text-center">
-        <div className="relative text-xl font-bold">{name && GUIDE_TEXT[name]}</div>
+        <div className="relative text-xl font-bold">
+          {name && GUIDE_TEXT[name]}
+        </div>
         <div className="text-xs text-gray-400">
           <strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
         </div>
