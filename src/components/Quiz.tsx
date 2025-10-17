@@ -29,6 +29,25 @@ const FILE_MAP: Record<QuizName, string> = {
 };
 
 /** -------------------------------
+ *  가이드 텍스트
+ *  ------------------------------- */
+const GUIDE_TEXT: Record<QuizName, string> = {
+  country: "나라를 맞춰보세요!",
+  hanja: "무슨 뜻일까요?",
+  capital: "수도는 어디일까요?",
+  sense: "정답을 맞춰보세요!",
+};
+
+/** -------------------------------
+ *  공통 퀴즈 옵션 렌더링
+ *  ------------------------------- */
+type QuizOptionsProps<T> = {
+  items: T[];
+  getLabel: (item: T) => string;
+  onSelect: (value: string) => void;
+};
+
+/** -------------------------------
  *  데이터 fetch 함수
  *  ------------------------------- */
 async function fetchData<T extends QuizName>(name: T): Promise<QuizDataMap[T]> {
@@ -40,13 +59,23 @@ async function fetchData<T extends QuizName>(name: T): Promise<QuizDataMap[T]> {
 }
 
 /** -------------------------------
- *  공통 퀴즈 옵션 렌더링
+ *  Helper: build QuizResult from raw data based on quiz name
+ *  Centralizes the type-casts to one place so callers stay small.
+ *  This keeps a single switch for type-safety while reducing duplicated
+ *  switch blocks elsewhere.
  *  ------------------------------- */
-type QuizOptionsProps<T> = {
-  items: T[];
-  getLabel: (item: T) => string;
-  onSelect: (value: string) => void;
-};
+function buildQuizFromData(name: QuizName, data: QuizItem[]): QuizResult {
+  switch (name) {
+    case "country":
+      return generateMultipleQuiz(data as CountryQuizItem[]) as QuizResult;
+    case "hanja":
+      return generateMultipleQuiz(data as HanjaQuizItem[]) as QuizResult;
+    case "capital":
+      return generateMultipleQuiz(data as CapitalQuizItem[]) as QuizResult;
+    case "sense":
+      return generateMultipleQuiz(data as SenseQuizItem[]) as QuizResult;
+  }
+}
 
 function QuizOptions<T>({ items, getLabel, onSelect }: QuizOptionsProps<T>) {
   return (
@@ -165,28 +194,7 @@ export default function Quiz() {
     setAllQuizData(data);
     if (!name || !data) return;
 
-    switch (name) {
-      case "country":
-        setCurrentQuizData(
-          generateMultipleQuiz(data as CountryQuizItem[]) as QuizResult
-        );
-        break;
-      case "hanja":
-        setCurrentQuizData(
-          generateMultipleQuiz(data as HanjaQuizItem[]) as QuizResult
-        );
-        break;
-      case "capital":
-        setCurrentQuizData(
-          generateMultipleQuiz(data as CapitalQuizItem[]) as QuizResult
-        );
-        break;
-      case "sense":
-        setCurrentQuizData(
-          generateMultipleQuiz(data as SenseQuizItem[]) as QuizResult
-        );
-        break;
-    }
+    setCurrentQuizData(buildQuizFromData(name, data));
   }, [data]);
 
   const handleClick = (choice: string) => {
@@ -197,28 +205,7 @@ export default function Quiz() {
       router.push("/quiz/result");
     } else {
       if (!name || !allQuizData) return;
-      switch (name) {
-        case "country":
-          setCurrentQuizData(
-            generateMultipleQuiz(allQuizData as CountryQuizItem[]) as QuizResult
-          );
-          break;
-        case "hanja":
-          setCurrentQuizData(
-            generateMultipleQuiz(allQuizData as HanjaQuizItem[]) as QuizResult
-          );
-          break;
-        case "capital":
-          setCurrentQuizData(
-            generateMultipleQuiz(allQuizData as CapitalQuizItem[]) as QuizResult
-          );
-          break;
-        case "sense":
-          setCurrentQuizData(
-            generateMultipleQuiz(allQuizData as SenseQuizItem[]) as QuizResult
-          );
-          break;
-      }
+      setCurrentQuizData(buildQuizFromData(name, allQuizData));
       setQuizIndex((i) => i + 1);
     }
   };
@@ -227,13 +214,6 @@ export default function Quiz() {
   if (error)
     return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
   if (!quizData) return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
-
-  const GUIDE_TEXT: Record<QuizName, string> = {
-    country: "나라를 맞춰보세요!",
-    hanja: "무슨 뜻일까요?",
-    capital: "수도는 어디일까요?",
-    sense: "정답을 맞춰보세요!",
-  };
 
   function isQuizName(name: string | null): name is QuizName {
     return (
