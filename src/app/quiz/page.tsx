@@ -2,7 +2,7 @@
 import React from "react";
 import QuizItem from "@/components/Quiz";
 import { Suspense } from "react";
-import { QUIZ_TITLE } from "@/constants/title";
+import QUIZ_TITLE from "@/constants/title";
 import { useQuizStore } from "@/store/quiz";
 
 export default function Quiz() {

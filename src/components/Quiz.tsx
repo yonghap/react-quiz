@@ -11,22 +11,13 @@ import {
   QuizResult,
   QuizData,
   QuizItem,
-  QuizDataMap,
   CountryQuizItem,
   HanjaQuizItem,
   CapitalQuizItem,
   SenseQuizItem,
 } from "@/types/quiz";
 
-/** -------------------------------
- *  파일 데이터 맵
- *  ------------------------------- */
-const fileMap: Record<QuizName, string> = {
-  hanja: "hanja.json",
-  capital: "capital.json",
-  sense: "sense.json",
-  country: "country.json",
-};
+import { fetchData } from "@/utils/quizData";
 
 /** -------------------------------
  *  가이드 텍스트
@@ -48,21 +39,7 @@ type QuizOptionsProps<T> = {
 };
 
 /** -------------------------------
- *  데이터 fetch 함수
- *  ------------------------------- */
-async function fetchData<T extends QuizName>(name: T): Promise<QuizDataMap[T]> {
-  const file = fileMap[name];
-  const res = await fetch(`/assets/${file}`);
-  if (!res.ok) throw new Error(`${file} 로딩 실패`);
-  const data = await res.json();
-  return data.data;
-}
-
-/** -------------------------------
- *  Helper: build QuizResult from raw data based on quiz name
- *  Centralizes the type-casts to one place so callers stay small.
- *  This keeps a single switch for type-safety while reducing duplicated
- *  switch blocks elsewhere.
+ *  데이터 > 퀴즈 생성 함수
  *  ------------------------------- */
 function buildQuizFromData(name: QuizName, data: QuizItem[]): QuizResult {
   switch (name) {
@@ -77,6 +54,9 @@ function buildQuizFromData(name: QuizName, data: QuizItem[]): QuizResult {
   }
 }
 
+/** -------------------------------
+ *  퀴즈 보기
+ *  ------------------------------- */
 function QuizOptions<T>({ items, getLabel, onSelect }: QuizOptionsProps<T>) {
   return (
     <ul className="px-5 text-center">
@@ -95,7 +75,7 @@ function QuizOptions<T>({ items, getLabel, onSelect }: QuizOptionsProps<T>) {
 }
 
 /** -------------------------------
- *  퀴즈 타입별 렌더러
+ *  퀴즈 문제 + 보기
  *  ------------------------------- */
 function renderQuizByType(
   type: QuizName,
@@ -111,6 +91,7 @@ function renderQuizByType(
     sense: (i: string) => i,
   }[type] as (item: QuizItem | string) => string;
 
+  // 문제
   const question = {
     country: (
       <div
