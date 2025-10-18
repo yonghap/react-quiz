@@ -21,7 +21,7 @@ import {
 /** -------------------------------
  *  파일 데이터 맵
  *  ------------------------------- */
-const FILE_MAP: Record<QuizName, string> = {
+const fileMap: Record<QuizName, string> = {
   hanja: "hanja.json",
   capital: "capital.json",
   sense: "sense.json",
@@ -31,7 +31,7 @@ const FILE_MAP: Record<QuizName, string> = {
 /** -------------------------------
  *  가이드 텍스트
  *  ------------------------------- */
-const GUIDE_TEXT: Record<QuizName, string> = {
+const guideText: Record<QuizName, string> = {
   country: "나라를 맞춰보세요!",
   hanja: "무슨 뜻일까요?",
   capital: "수도는 어디일까요?",
@@ -51,7 +51,7 @@ type QuizOptionsProps<T> = {
  *  데이터 fetch 함수
  *  ------------------------------- */
 async function fetchData<T extends QuizName>(name: T): Promise<QuizDataMap[T]> {
-  const file = FILE_MAP[name];
+  const file = fileMap[name];
   const res = await fetch(`/assets/${file}`);
   if (!res.ok) throw new Error(`${file} 로딩 실패`);
   const data = await res.json();
@@ -233,7 +233,7 @@ export default function Quiz() {
     <div>
       <div className="flex items-center justify-between px-5 py-7 text-center">
         <div className="relative text-xl font-bold">
-          {name && GUIDE_TEXT[name]}
+          {name && guideText[name]}
         </div>
         <div className="text-xs text-gray-400">
           <strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
