@@ -196,14 +196,14 @@ export default function Quiz() {
     return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
   if (!quizData) return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
 
-  function isQuizName(name: string | null): name is QuizName {
+  const isQuizName = (name: string | null): name is QuizName => {
     return (
       name === "country" ||
       name === "hanja" ||
       name === "capital" ||
       name === "sense"
     );
-  }
+  };
 
   // 사용
   if (!quizName || !isQuizName(quizName)) {
