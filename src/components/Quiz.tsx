@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import { generateMultipleQuiz } from "@/utils/common";
 import { COMMON_CODE } from "@/constants/code";
 import { useQuizStore } from "@/store/quiz";
+import { isQuizName } from "@/utils/userQuizType";
+
 import {
   QuizName,
   QuizResult,
@@ -41,7 +43,7 @@ type QuizOptionsProps<T> = {
 /** -------------------------------
  *  데이터 > 퀴즈 생성 함수
  *  ------------------------------- */
-function buildQuizFromData(name: QuizName, data: QuizItem[]): QuizResult {
+const BuildQuizFromData = (name: QuizName, data: QuizItem[]): QuizResult => {
   switch (name) {
     case "country":
       return generateMultipleQuiz(data as CountryQuizItem[]) as QuizResult;
@@ -52,12 +54,16 @@ function buildQuizFromData(name: QuizName, data: QuizItem[]): QuizResult {
     case "sense":
       return generateMultipleQuiz(data as SenseQuizItem[]) as QuizResult;
   }
-}
+};
 
 /** -------------------------------
  *  퀴즈 보기
  *  ------------------------------- */
-function QuizOptions<T>({ items, getLabel, onSelect }: QuizOptionsProps<T>) {
+const ShowOptions = <T,>({
+  items,
+  getLabel,
+  onSelect,
+}: QuizOptionsProps<T>) => {
   return (
     <ul className="px-5 text-center">
       {items.map((i, idx) => (
@@ -72,16 +78,16 @@ function QuizOptions<T>({ items, getLabel, onSelect }: QuizOptionsProps<T>) {
       ))}
     </ul>
   );
-}
+};
 
 /** -------------------------------
  *  퀴즈 문제 + 보기
  *  ------------------------------- */
-function renderQuizByType(
+const renderQuizByType = (
   type: QuizName,
   quizData: QuizResult,
   handleClick: (choice: string) => void
-) {
+) => {
   const { selected, shuffled } = quizData as QuizData<QuizItem>;
 
   const getLabel = {
@@ -132,10 +138,10 @@ function renderQuizByType(
   return (
     <div>
       {question}
-      <QuizOptions items={options} getLabel={getLabel} onSelect={handleClick} />
+      <ShowOptions items={options} getLabel={getLabel} onSelect={handleClick} />
     </div>
   );
-}
+};
 
 /** -------------------------------
  *  메인 컴포넌트
@@ -146,13 +152,7 @@ export default function Quiz() {
   const searchParams = useSearchParams();
   const rawName = searchParams.get("name");
 
-  const name: QuizName | null =
-    rawName === "country" ||
-    rawName === "hanja" ||
-    rawName === "capital" ||
-    rawName === "sense"
-      ? rawName
-      : null;
+  const name = isQuizName(rawName) ? rawName : null;
 
   if (!name) {
     return <p>잘못된 퀴즈 타입입니다.</p>;
@@ -175,7 +175,7 @@ export default function Quiz() {
     setAllQuizData(data);
     if (!name || !data) return;
 
-    setCurrentQuizData(buildQuizFromData(name, data));
+    setCurrentQuizData(BuildQuizFromData(name, data));
   }, [data]);
 
   const handleClick = (choice: string) => {
@@ -186,7 +186,7 @@ export default function Quiz() {
       router.push("/quiz/result");
     } else {
       if (!name || !allQuizData) return;
-      setCurrentQuizData(buildQuizFromData(name, allQuizData));
+      setCurrentQuizData(BuildQuizFromData(name, allQuizData));
       setQuizIndex((i) => i + 1);
     }
   };
@@ -195,15 +195,6 @@ export default function Quiz() {
   if (error)
     return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
   if (!quizData) return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
-
-  const isQuizName = (name: string | null): name is QuizName => {
-    return (
-      name === "country" ||
-      name === "hanja" ||
-      name === "capital" ||
-      name === "sense"
-    );
-  };
 
   // 사용
   if (!quizName || !isQuizName(quizName)) {
