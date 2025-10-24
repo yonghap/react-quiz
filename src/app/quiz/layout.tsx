@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import React from "react";
 import { ReactNode } from "react";
 import QueryProvider from "@/components/QueryProvider"; // 클라이언트 컴포넌트
