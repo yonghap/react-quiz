@@ -15,7 +15,7 @@ export default function Quiz() {
       <div className="text-center text-3xl pt-8 font-bold">
         {QUIZ_TITLE[quizName]}
       </div>
-      <div>
+      <div id="main">
         <QuizItem />
       </div>
     </Suspense>

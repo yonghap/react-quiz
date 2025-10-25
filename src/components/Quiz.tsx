@@ -24,16 +24,21 @@ const guideText: Record<QuizName, string> = {
  *  ------------------------------- */
 export default function Quiz() {
   const searchParams = useSearchParams();
-  const rawName = searchParams.get("name");
-  const name = isQuizName(rawName) ? rawName : null;
+  const rawQuizName = searchParams.get("name");
+  const currentQuizName = isQuizName(rawQuizName) ? rawQuizName : null;
 
-  if (!name) return <p>잘못된 퀴즈 타입입니다.</p>;
+  /* 현재 퀴즈 이름 체크 */
+  if (!currentQuizName)
+    return (
+      <p className="py-10 text-center text-gray-500">잘못된 퀴즈 타입입니다.</p>
+    );
 
-  const { quizName } = useQuizStore();
   const { quizData, allQuizData, isLoading, error, setQuizData } =
-    useQuizData(name);
+    useQuizData(currentQuizName);
+  const { quizName } = useQuizStore();
+
   const { quizIndex, handleClick } = useQuizProgress(
-    name,
+    currentQuizName,
     allQuizData,
     quizData,
     setQuizData
@@ -50,7 +55,7 @@ export default function Quiz() {
     <div>
       <div className="flex items-center justify-between px-5 py-7 text-center">
         <div className="relative text-xl font-bold">
-          {name && guideText[name]}
+          {currentQuizName && guideText[currentQuizName]}
         </div>
         <div className="text-xs text-gray-400">
           <strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
