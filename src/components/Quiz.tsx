@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
+import { COMMON_CODE } from "@/constants/code";
 import { useSearchParams } from "next/navigation";
 import { useQuizStore } from "@/store/quiz";
 import { isQuizName } from "@/utils/userQuizType";
-import { COMMON_CODE } from "@/constants/code";
 import { renderQuizByType } from "@/components/QuizRenderer";
 import { useQuizData } from "@/hooks/useQuizData";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
@@ -33,21 +33,21 @@ export default function Quiz() {
       <p className="py-10 text-center text-gray-500">잘못된 퀴즈 타입입니다.</p>
     );
 
-  const { quizData, allQuizData, isLoading, error, setQuizData } =
+  const { currentQuizData, allQuizData, isLoading, error, setCurrentQuizData } =
     useQuizData(currentQuizName);
   const { quizName } = useQuizStore();
-
   const { quizIndex, handleClick } = useQuizProgress(
     currentQuizName,
     allQuizData,
-    quizData,
-    setQuizData
+    currentQuizData,
+    setCurrentQuizData
   );
 
   if (isLoading) return <p className="py-5 text-center">Loading...</p>;
   if (error)
     return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
-  if (!quizData) return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
+  if (!currentQuizData)
+    return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
   if (!quizName || !isQuizName(quizName))
     return <p>올바른 퀴즈 타입이 아닙니다.</p>;
 
@@ -61,7 +61,7 @@ export default function Quiz() {
           <strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
         </div>
       </div>
-      {quizName && renderQuizByType(quizName, quizData, handleClick)}
+      {quizName && renderQuizByType(quizName, currentQuizData, handleClick)}
     </div>
   );
 }

@@ -13,22 +13,22 @@ const BuildQuizFromData = (name: QuizName, data: QuizItem[]): QuizResult => {
 export const useQuizProgress = (
   name: QuizName,
   allQuizData: QuizItem[] | null,
-  quizData: QuizResult | null,
-  setQuizData: (data: QuizResult) => void
+  currentQuizData: QuizResult | null,
+  setCurrentQuizData: (data: QuizResult) => void
 ) => {
   const router = useRouter();
   const { addQuiz } = useQuizStore();
   const [quizIndex, setQuizIndex] = useState(1);
 
   const handleClick = (choice: string) => {
-    if (!quizData || !allQuizData) return;
-    addQuiz({ ...quizData, choiceName: choice });
+    if (!currentQuizData || !allQuizData) return;
+    addQuiz({ ...currentQuizData, choiceName: choice });
 
     if (quizIndex === COMMON_CODE.QUIZ_COUNT) {
       alert("퀴즈가 종료되었습니다.\n결과 화면으로 이동합니다.");
       router.push("/quiz/result");
     } else {
-      setQuizData(BuildQuizFromData(name, allQuizData));
+      setCurrentQuizData(BuildQuizFromData(name, allQuizData));
       setQuizIndex((i) => i + 1);
     }
   };
