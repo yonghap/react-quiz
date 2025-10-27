@@ -54,7 +54,7 @@ export default function Quiz() {
   return (
     <div>
       <div className="flex items-center justify-between px-5 py-7 text-center">
-        <div className="relative text-xl font-bold">
+        <div className="text-xl font-bold">
           {currentQuizName && guideText[currentQuizName]}
         </div>
         <div className="text-xs text-gray-400">
