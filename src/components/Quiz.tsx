@@ -8,15 +8,34 @@ import { renderQuizByType } from "@/components/QuizRenderer";
 import { useQuizData } from "@/hooks/useQuizData";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
 import { QuizName } from "@/types/quiz";
+import { guideText } from "@/constants/guideText";
 
-/** -------------------------------
- *  가이드 텍스트
- *  ------------------------------- */
-const guideText: Record<QuizName, string> = {
-  country: "나라를 맞춰보세요!",
-  hanja: "무슨 뜻일까요?",
-  capital: "수도는 어디일까요?",
-  sense: "정답을 맞춰보세요!",
+const renderState = ({
+  isLoading,
+  error,
+  currentQuizData,
+  quizName,
+  currentQuizName,
+}: {
+  isLoading: boolean;
+  error: unknown;
+  currentQuizData: object;
+  quizName: string | null;
+  currentQuizName: QuizName | null;
+}) => {
+  if (!currentQuizName)
+    return (
+      <p className="py-10 text-center text-gray-500">잘못된 퀴즈 타입입니다.</p>
+    );
+  if (isLoading) return <p className="py-5 text-center">Loading...</p>;
+  if (error)
+    return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
+  if (!currentQuizData)
+    return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
+  if (!quizName || !isQuizName(quizName))
+    return <p>올바른 퀴즈 타입이 아닙니다.</p>;
+
+  return null;
 };
 
 /** -------------------------------
@@ -43,25 +62,24 @@ export default function Quiz() {
     setCurrentQuizData
   );
 
-  if (isLoading) return <p className="py-5 text-center">Loading...</p>;
-  if (error)
-    return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
-  if (!currentQuizData)
-    return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
-  if (!quizName || !isQuizName(quizName))
-    return <p>올바른 퀴즈 타입이 아닙니다.</p>;
+  const state = renderState({
+    isLoading,
+    error,
+    currentQuizData,
+    quizName,
+    currentQuizName,
+  });
+  if (state) return state;
 
   return (
     <div>
-      <div className="flex items-center justify-between px-5 py-7 text-center">
-        <div className="text-xl font-bold">
-          {currentQuizName && guideText[currentQuizName]}
-        </div>
+      <div className="flex items-center justify-between px-5 py-7">
+        <div className="text-xl font-bold">{guideText[currentQuizName]}</div>
         <div className="text-xs text-gray-400">
           <strong>{quizIndex}</strong> / {COMMON_CODE.QUIZ_COUNT}
         </div>
       </div>
-      {quizName && renderQuizByType(quizName, currentQuizData, handleClick)}
+      {quizName && renderQuizByType(quizName!, currentQuizData, handleClick)}
     </div>
   );
 }
