@@ -62,6 +62,7 @@ export default function Quiz() {
     setCurrentQuizData
   );
 
+  /** 퀴즈 로딩 상태  */
   const state = renderState({
     isLoading,
     error,
