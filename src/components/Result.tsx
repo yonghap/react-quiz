@@ -193,7 +193,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  console.log("quizResult=", quizResult);
+
   return (
     <div id="quizResult">
       <div className="pt-4">
