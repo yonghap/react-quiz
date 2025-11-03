@@ -1,16 +1,16 @@
+/** -------------------------------
+ *  공통 퀴즈 보기 렌더링 컴포넌트
+ *  ------------------------------- */
 "use client";
 import React from "react";
 
-/** -------------------------------
- *  공통 퀴즈 옵션 렌더링 컴포넌트
- *  ------------------------------- */
 export type QuizOptionsProps<T> = {
   items: T[];
   getLabel: (item: T) => string;
   onSelect: (value: string) => void;
 };
 
-export const ShowOptions = <T,>({
+export const Options = <T,>({
   items,
   getLabel,
   onSelect,

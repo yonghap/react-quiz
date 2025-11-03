@@ -1,7 +1,7 @@
 import "./globals.css";
 import React from "react";
 import { ReactNode } from "react";
-import Footer from "@/components/footer";
+import Footer from "@/components/layout/Footer";
 import QueryProvider from "@/components/QueryProvider";
 
 export const metadata = {

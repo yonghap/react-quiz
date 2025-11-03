@@ -15,7 +15,7 @@ import {
 /** -------------------------------
  *  퀴즈 문제 + 보기 렌더링
  *  ------------------------------- */
-export const renderQuizByType = (
+export const quizRenderer = (
   type: QuizName,
   quizData: QuizResult,
   handleClick: (choice: string) => void
