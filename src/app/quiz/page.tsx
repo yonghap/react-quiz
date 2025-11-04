@@ -79,7 +79,7 @@ export default function Quiz() {
       fallback={<div className="py-5 text-center">퀴즈를 불러오는 중...</div>}
     >
       <div className="text-center text-3xl pt-8 font-bold">
-        {QUIZ_TITLE[quizName]}
+        {QUIZ_TITLE[currentQuizName]}
       </div>
       <div id="main">
         <div>
