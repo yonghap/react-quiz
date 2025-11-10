@@ -28,7 +28,7 @@ export default function QuizResult() {
   const wrongLength = quizResult.filter(
     (item) => item.choiceName === item.selected[ANSWER_COLUMN[quizName]]
   ).length;
-  // 나라 맞추기
+  // 나라 퀴즈 결과
   function renderCountryQuiz(quiz) {
     return (
       <ul className="mx-4">
@@ -73,7 +73,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 한자 맞추기
+  // 한자 퀴즈 결과
   function renderHanjaQuiz(quiz) {
     return (
       <ul className="mx-4">
@@ -107,7 +107,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 수도 맞추기
+  // 수도 퀴즈 결과
   function renderCapitalQuiz(quiz) {
     return (
       <ul className="mx-4">
@@ -153,7 +153,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 상식 맞추기
+  // 상식 퀴즈 결과
   function renderSenseQuiz(quiz) {
     return (
       <ul className="mx-4">
