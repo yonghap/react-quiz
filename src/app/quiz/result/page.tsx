@@ -153,7 +153,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 상식 퀴즈 결과
+  // 상식 퀴즈 결과test
   function renderSenseQuiz(quiz) {
     return (
       <ul className="mx-4">
