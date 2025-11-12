@@ -25,7 +25,7 @@ export default function QuizResult() {
     sense: "answer",
   };
 
-  const wrongLength = quizResult.filter(
+  const correctLength = quizResult.filter(
     (item) => item.choiceName === item.selected[ANSWER_COLUMN[quizName]]
   ).length;
   // 나라 퀴즈 결과
@@ -202,8 +202,8 @@ export default function QuizResult() {
       <div id="quizResult">
         <div className="pt-4">
           <div className="py-5 text-center text-2xl font-bold text-slate-700">
-            10개중 <strong className="text-blue-700">{wrongLength}</strong>개를
-            맞췄어요!
+            10개중 <strong className="text-blue-700">{correctLength}</strong>
+            개를 맞췄어요!
           </div>
           {renderQuiz ? (
             renderQuiz(quizResult)
