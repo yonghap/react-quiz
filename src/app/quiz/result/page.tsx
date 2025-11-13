@@ -73,7 +73,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 한자 퀴즈 결과
+  // 한자 퀴즈 결과222
   function renderHanjaQuiz(quiz) {
     return (
       <ul className="mx-4">
