@@ -1,12 +1,10 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import Link from "next/link";
 import { useQuizStore } from "@/store/quiz";
 import answerImage from "@/assets/images/bg_scratch2.png";
 import wrongImage from "@/assets/images/bg_scratch3.png";
-import { Suspense } from "react";
 
-// 퀴즈 결과 페이지
 export default function QuizResult() {
   const { quizResult, quizName } = useQuizStore();
 
@@ -19,7 +17,7 @@ export default function QuizResult() {
   const renderQuiz = renderByType[quizName];
 
   const ANSWER_COLUMN = {
-    country: "country_eng_nm",
+    country: "country_nm",
     hanja: "meaning",
     capital: "capital",
     sense: "answer",
@@ -28,15 +26,16 @@ export default function QuizResult() {
   const correctLength = quizResult.filter(
     (item) => item.choiceName === item.selected[ANSWER_COLUMN[quizName]]
   ).length;
+  console.log(quizResult);
   // 나라 퀴즈 결과
-  function renderCountryQuiz(quiz) {
+  function renderCountryQuiz(resultList) {
     return (
       <ul className="mx-4">
-        {quiz.map((quiz, quizIdx) => (
+        {resultList.map((item, quizIdx) => (
           <li className="py-2 border-b border-slate-200" key={quizIdx}>
             <div className="flex flex-1 justify-between relative items-center">
               <div className="relative w-[50px] text-center">
-                {quiz.selected.country_eng_nm === quiz.choiceName ? (
+                {item.selected[ANSWER_COLUMN[quizName]] === item.choiceName ? (
                   <div className="absolute w-[48px] -bottom-4 -left-1 z-10">
                     <img src={`${answerImage.src}`}></img>
                   </div>
@@ -47,21 +46,21 @@ export default function QuizResult() {
                 )}
                 {quizIdx + 1}
               </div>
-              {quiz.shuffled.map((option, optionIdx) => (
+              {item.shuffled.map((option, optionIdx) => (
                 <div
                   className="relative w-[33%] py-4 text-center text-sm"
                   key={optionIdx}
                 >
                   <span
-                    className={`relative z-10 ${option.country_eng_nm === quiz.selected.country_eng_nm && "text-white text-shadow-sm text-shadow-black"} ${quiz.choiceName === option.country_eng_nm && "text-red-500"}`}
+                    className={`relative z-10 ${option.country_eng_nm === item.selected.country_eng_nm && "text-white text-shadow-sm text-shadow-black"} ${item.choiceName === option.country_eng_nm && "text-red-500"}`}
                   >
                     {option.country_nm}
                   </span>
-                  {option.country_eng_nm === quiz.selected.country_eng_nm && (
+                  {option.country_eng_nm === item.selected.country_eng_nm && (
                     <div
                       className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%] h-[100%] bg-size-[100%_auto] rounded-md bg-no-repeat bg-center"
                       style={{
-                        backgroundImage: `url(${quiz.selected.download_url})`,
+                        backgroundImage: `url(${item.selected.download_url})`,
                       }}
                     />
                   )}
@@ -73,7 +72,7 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 한자 퀴즈 결과222
+  // 한자 퀴즈 결과
   function renderHanjaQuiz(quiz) {
     return (
       <ul className="mx-4">
