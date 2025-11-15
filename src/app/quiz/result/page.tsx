@@ -26,7 +26,6 @@ export default function QuizResult() {
   const correctLength = quizResult.filter(
     (item) => item.choiceName === item.selected[ANSWER_COLUMN[quizName]]
   ).length;
-  console.log(quizResult);
   // 나라 퀴즈 결과
   function renderCountryQuiz(resultList) {
     return (
@@ -37,11 +36,11 @@ export default function QuizResult() {
               <div className="relative w-[50px] text-center">
                 {item.selected[ANSWER_COLUMN[quizName]] === item.choiceName ? (
                   <div className="absolute w-[48px] -bottom-4 -left-1 z-10">
-                    <img src={`${answerImage.src}`}></img>
+                    <img src={`${answerImage.src}`} alt="맞혔어요!"></img>
                   </div>
                 ) : (
                   <div className="absolute w-[42px] -bottom-2 left-2 z-10">
-                    <img src={`${wrongImage.src}`}></img>
+                    <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
                   </div>
                 )}
                 {quizIdx + 1}
@@ -73,15 +72,15 @@ export default function QuizResult() {
     );
   }
   // 한자 퀴즈 결과
-  function renderHanjaQuiz(quiz) {
+  function renderHanjaQuiz(resultList) {
     return (
       <ul className="mx-4">
-        {quiz.map((quiz, quizIdx) => (
+        {resultList.map((item, quizIdx) => (
           <li className="p-3 pl-10 border-b border-slate-200" key={quizIdx}>
             <div className="relative text-md">
               <div className="relative inline-block w-[40px] text-lg pr-2">
                 {quizIdx + 1}
-                {quiz.selected.meaning === quiz.choiceName ? (
+                {item.selected.meaning === item.choiceName ? (
                   <div className="absolute w-[44px] -bottom-3 -left-4 z-10">
                     <img src={`${answerImage.src}`}></img>
                   </div>
@@ -92,12 +91,12 @@ export default function QuizResult() {
                 )}
               </div>
               <span className="text-4xl font-bold text-slate-700">
-                {quiz.selected.hanja}
+                {item.selected.hanja}
               </span>
-              <span className="mx-5">{quiz.selected.meaning}</span>
-              {quiz.choiceName !== quiz.selected.meaning && (
+              <span className="mx-5">{item.selected.meaning}</span>
+              {item.choiceName !== item.selected.meaning && (
                 <span className="text-red-500 line-through opacity-80">
-                  {quiz.choiceName}
+                  {item.choiceName}
                 </span>
               )}
             </div>
@@ -107,17 +106,17 @@ export default function QuizResult() {
     );
   }
   // 수도 퀴즈 결과
-  function renderCapitalQuiz(quiz) {
+  function renderCapitalQuiz(resultList) {
     return (
       <ul className="mx-4">
-        {quiz.map((quiz, quizIdx) => (
+        {resultList.map((item, quizIdx) => (
           <li className="py-4 border-b border-slate-200" key={quizIdx}>
             <div className="mb-2 text-center text-xl underline">
-              {quiz.selected.country}
+              {item.selected.country}
             </div>
             <div className="flex flex-1 justify-between relative items-center">
               <div className="relative w-[50px] text-center">
-                {quiz.selected.capital === quiz.choiceName ? (
+                {item.selected.capital === item.choiceName ? (
                   <div className="absolute w-[48px] -bottom-4 -left-1 z-10">
                     <img src={`${answerImage.src}`}></img>
                   </div>
@@ -128,20 +127,20 @@ export default function QuizResult() {
                 )}
                 {quizIdx + 1}
               </div>
-              {quiz.shuffled.map((option, optionIdx) => (
+              {item.shuffled.map((option, optionIdx) => (
                 <div
                   className="relative w-[33%] py-4 text-center text-sm"
                   key={optionIdx}
                 >
                   <span
-                    className={`relative z-10 ${option.country === quiz.selected.country && "text-white text-shadow-sm text-shadow-black"} ${quiz.choiceName === option.capital && "text-red-500"}`}
+                    className={`relative z-10 ${option.country === item.selected.country && "text-white text-shadow-sm text-shadow-black"} ${item.choiceName === option.capital && "text-red-500"}`}
                   >
                     {option.capital}
                   </span>
-                  {option.country === quiz.selected.country && (
+                  {option.country === item.selected.country && (
                     <div
                       className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%] h-[100%] bg-size-[100%_auto] rounded-md bg-no-repeat bg-center"
-                      style={{ backgroundImage: `url(${quiz.selected.flag})` }}
+                      style={{ backgroundImage: `url(${item.selected.flag})` }}
                     />
                   )}
                 </div>
@@ -152,11 +151,11 @@ export default function QuizResult() {
       </ul>
     );
   }
-  // 상식 퀴즈 결과test
-  function renderSenseQuiz(quiz) {
+  // 상식 퀴즈 결과
+  function renderSenseQuiz(resultList) {
     return (
       <ul className="mx-4">
-        {quiz.map((quiz, quizIdx) => (
+        {resultList.map((item, quizIdx) => (
           <li
             className="p-4 pr-0 sm:pl-10 border-b border-slate-200"
             key={quizIdx}
@@ -165,7 +164,7 @@ export default function QuizResult() {
               <div className="flex items-center">
                 <div className="relative inline-block w-[30px] text-lg">
                   {quizIdx + 1}
-                  {quiz.selected.answer === quiz.choiceName ? (
+                  {item.selected.answer === item.choiceName ? (
                     <div className="absolute w-[44px] -bottom-4 -left-5 z-10">
                       <img src={`${answerImage.src}`}></img>
                     </div>
@@ -176,14 +175,14 @@ export default function QuizResult() {
                   )}
                 </div>
                 <span className="text-md font-bold text-slate-700">
-                  {quiz.selected.question}
+                  {item.selected.question}
                 </span>
               </div>
               <div className="mt-1 pl-[30px]">
-                <span className="mr-5">{quiz.selected.answer}</span>
-                {quiz.choiceName !== quiz.selected.answer && (
+                <span className="mr-5">{item.selected.answer}</span>
+                {item.choiceName !== item.selected.answer && (
                   <span className="text-red-500 line-through opacity-80">
-                    {quiz.choiceName}
+                    {item.choiceName}
                   </span>
                 )}
               </div>
