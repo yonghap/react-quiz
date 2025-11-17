@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useQuizStore } from "@/store/quiz";
 import answerImage from "@/assets/images/bg_scratch2.png";
 import wrongImage from "@/assets/images/bg_scratch3.png";
+import type { QuizResult } from "@/types/quiz";
 
 export default function QuizResult() {
   const { quizResult, quizName } = useQuizStore();
@@ -27,7 +28,7 @@ export default function QuizResult() {
     (item) => item.choiceName === item.selected[ANSWER_COLUMN[quizName]]
   ).length;
   // 나라 퀴즈 결과
-  function renderCountryQuiz(resultList) {
+  function renderCountryQuiz(resultList): JSX.Element {
     return (
       <ul className="mx-4">
         {resultList.map((item, quizIdx) => (
@@ -72,7 +73,7 @@ export default function QuizResult() {
     );
   }
   // 한자 퀴즈 결과
-  function renderHanjaQuiz(resultList) {
+  function renderHanjaQuiz(resultList): JSX.Element {
     return (
       <ul className="mx-4">
         {resultList.map((item, quizIdx) => (
@@ -82,11 +83,11 @@ export default function QuizResult() {
                 {quizIdx + 1}
                 {item.selected.meaning === item.choiceName ? (
                   <div className="absolute w-[44px] -bottom-3 -left-4 z-10">
-                    <img src={`${answerImage.src}`}></img>
+                    <img src={`${answerImage.src}`} alt="맞혔어요"></img>
                   </div>
                 ) : (
                   <div className="absolute w-[40px] -bottom-1 -left-3 z-10">
-                    <img src={`${wrongImage.src}`}></img>
+                    <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
                   </div>
                 )}
               </div>
@@ -106,7 +107,7 @@ export default function QuizResult() {
     );
   }
   // 수도 퀴즈 결과
-  function renderCapitalQuiz(resultList) {
+  function renderCapitalQuiz(resultList): JSX.Element {
     return (
       <ul className="mx-4">
         {resultList.map((item, quizIdx) => (
@@ -118,11 +119,11 @@ export default function QuizResult() {
               <div className="relative w-[50px] text-center">
                 {item.selected.capital === item.choiceName ? (
                   <div className="absolute w-[48px] -bottom-4 -left-1 z-10">
-                    <img src={`${answerImage.src}`}></img>
+                    <img src={`${answerImage.src}`} alt="맞혔어요"></img>
                   </div>
                 ) : (
                   <div className="absolute w-[42px] -bottom-2 left-2 z-10">
-                    <img src={`${wrongImage.src}`}></img>
+                    <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
                   </div>
                 )}
                 {quizIdx + 1}
@@ -152,7 +153,7 @@ export default function QuizResult() {
     );
   }
   // 상식 퀴즈 결과
-  function renderSenseQuiz(resultList) {
+  function renderSenseQuiz(resultList): JSX.Element {
     return (
       <ul className="mx-4">
         {resultList.map((item, quizIdx) => (
@@ -166,11 +167,11 @@ export default function QuizResult() {
                   {quizIdx + 1}
                   {item.selected.answer === item.choiceName ? (
                     <div className="absolute w-[44px] -bottom-4 -left-5 z-10">
-                      <img src={`${answerImage.src}`}></img>
+                      <img src={`${answerImage.src}`} alt="맞혔어요"></img>
                     </div>
                   ) : (
                     <div className="absolute w-[40px] -bottom-3 -left-3 z-10">
-                      <img src={`${wrongImage.src}`}></img>
+                      <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
                     </div>
                   )}
                 </div>
