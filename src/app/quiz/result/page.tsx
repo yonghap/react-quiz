@@ -9,6 +9,27 @@ import type { QuizResult } from "@/types/quiz";
 export default function QuizResult() {
   const { quizResult, quizName } = useQuizStore();
 
+  // 퀴즈 데이터가 없거나 타입이 잘못된 경우 처리
+  if (!quizResult || quizResult.length === 0) {
+    return (
+      <Suspense
+        fallback={<div className="text-center py-5">결과를 불러오는 중...</div>}
+      >
+        <div className="text-center py-10">
+          <p className="text-lg text-slate-600">
+            퀴즈 결과를 찾을 수 없습니다.
+          </p>
+          <Link
+            className="inline-block mt-4 rounded-sm bg-slate-500 text-white text-sm py-3 px-5 hover:bg-slate-600 transition-colors"
+            href="/"
+          >
+            홈으로 돌아가기
+          </Link>
+        </div>
+      </Suspense>
+    );
+  }
+
   const renderByType = {
     country: renderCountryQuiz,
     hanja: renderHanjaQuiz,
@@ -37,11 +58,14 @@ export default function QuizResult() {
               <div className="relative w-[50px] text-center">
                 {item.selected[ANSWER_COLUMN[quizName]] === item.choiceName ? (
                   <div className="absolute w-[48px] -bottom-4 -left-1 z-10">
-                    <img src={`${answerImage.src}`} alt="맞혔어요!"></img>
+                    <img
+                      src={`${answerImage.src}`}
+                      alt="정답 표시 아이콘"
+                    ></img>
                   </div>
                 ) : (
                   <div className="absolute w-[42px] -bottom-2 left-2 z-10">
-                    <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
+                    <img src={`${wrongImage.src}`} alt="오답 표시 아이콘"></img>
                   </div>
                 )}
                 {quizIdx + 1}
@@ -83,11 +107,14 @@ export default function QuizResult() {
                 {quizIdx + 1}
                 {item.selected.meaning === item.choiceName ? (
                   <div className="absolute w-[44px] -bottom-3 -left-4 z-10">
-                    <img src={`${answerImage.src}`} alt="맞혔어요"></img>
+                    <img
+                      src={`${answerImage.src}`}
+                      alt="정답 표시 아이콘"
+                    ></img>
                   </div>
                 ) : (
                   <div className="absolute w-[40px] -bottom-1 -left-3 z-10">
-                    <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
+                    <img src={`${wrongImage.src}`} alt="오답 표시 아이콘"></img>
                   </div>
                 )}
               </div>
@@ -119,11 +146,14 @@ export default function QuizResult() {
               <div className="relative w-[50px] text-center">
                 {item.selected.capital === item.choiceName ? (
                   <div className="absolute w-[48px] -bottom-4 -left-1 z-10">
-                    <img src={`${answerImage.src}`} alt="맞혔어요"></img>
+                    <img
+                      src={`${answerImage.src}`}
+                      alt="정답 표시 아이콘"
+                    ></img>
                   </div>
                 ) : (
                   <div className="absolute w-[42px] -bottom-2 left-2 z-10">
-                    <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
+                    <img src={`${wrongImage.src}`} alt="오답 표시 아이콘"></img>
                   </div>
                 )}
                 {quizIdx + 1}
@@ -167,11 +197,17 @@ export default function QuizResult() {
                   {quizIdx + 1}
                   {item.selected.answer === item.choiceName ? (
                     <div className="absolute w-[44px] -bottom-4 -left-5 z-10">
-                      <img src={`${answerImage.src}`} alt="맞혔어요"></img>
+                      <img
+                        src={`${answerImage.src}`}
+                        alt="정답 표시 아이콘"
+                      ></img>
                     </div>
                   ) : (
                     <div className="absolute w-[40px] -bottom-3 -left-3 z-10">
-                      <img src={`${wrongImage.src}`} alt="틀렸어요!"></img>
+                      <img
+                        src={`${wrongImage.src}`}
+                        alt="오답 표시 아이콘"
+                      ></img>
                     </div>
                   )}
                 </div>
@@ -201,7 +237,8 @@ export default function QuizResult() {
       <div id="quizResult">
         <div className="pt-4">
           <div className="py-5 text-center text-2xl font-bold text-slate-700">
-            10개중 <strong className="text-blue-700">{correctLength}</strong>
+            {quizResult.length}개중{" "}
+            <strong className="text-blue-700">{correctLength}</strong>
             개를 맞췄어요!
           </div>
           {renderQuiz ? (
@@ -211,14 +248,16 @@ export default function QuizResult() {
           )}
           <div className="flex justify-center text-center mt-8 gap-2">
             <Link
-              className="rounded-sm bg-slate-300 text-slate-500 text-sm py-3 px-5"
+              className="rounded-sm bg-slate-300 text-slate-500 text-sm py-3 px-5 hover:bg-slate-400 transition-colors"
               href="/"
+              aria-label="홈으로 돌아가기"
             >
               HOME
             </Link>
             <Link
-              className="rounded-sm bg-slate-500 text-white text-sm py-3 px-5"
+              className="rounded-sm bg-slate-500 text-white text-sm py-3 px-5 hover:bg-slate-600 transition-colors"
               href={{ pathname: "/quiz", query: { name: quizName } }}
+              aria-label="퀴즈 다시 시작하기"
             >
               다시하기
             </Link>
