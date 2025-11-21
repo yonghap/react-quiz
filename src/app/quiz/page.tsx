@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { COMMON_CODE } from "@/constants/code";
 import { Suspense } from "react";
+import { COMMON_CODE } from "@/constants/code";
 import { useSearchParams } from "next/navigation";
 import { useQuizStore } from "@/store/quiz";
 import { isQuizName } from "@/utils/userQuizType";
@@ -11,6 +11,13 @@ import { useQuizProgress } from "@/hooks/useQuizProgress";
 import { QuizName } from "@/types/quiz";
 import QUIZ_TITLE from "@/constants/title";
 import { guideText } from "@/constants/guideText";
+
+// 에러 메시지 상수
+const ERROR_MESSAGES = {
+  INVALID_QUIZ_TYPE: "잘못된 퀴즈 타입입니다.",
+  LOADING: "퀴즈를 불러오는 중...",
+  INVALID_QUIZ_NAME: "올바른 퀴즈 타입이 아닙니다.",
+};
 
 const renderState = ({
   isLoading,
@@ -24,18 +31,23 @@ const renderState = ({
   currentQuizData: object;
   quizName: string | null;
   currentQuizName: QuizName | null;
-}) => {
+}): JSX.Element | null => {
   if (!currentQuizName)
     return (
-      <p className="py-10 text-center text-gray-500">잘못된 퀴즈 타입입니다.</p>
+      <p className="py-10 text-center text-gray-500">
+        {ERROR_MESSAGES.INVALID_QUIZ_TYPE}
+      </p>
     );
-  if (isLoading) return <p className="py-5 text-center">Loading...</p>;
+  if (isLoading)
+    return <p className="py-5 text-center">{ERROR_MESSAGES.LOADING}</p>;
   if (error)
     return <p className="py-5 text-center">에러: {(error as Error).message}</p>;
   if (!currentQuizData)
-    return <p className="py-5 text-center">퀴즈 데이터 로딩중</p>;
+    return <p className="py-5 text-center">{ERROR_MESSAGES.LOADING}</p>;
   if (!quizName || !isQuizName(quizName))
-    return <p>올바른 퀴즈 타입이 아닙니다.</p>;
+    return (
+      <p className="py-5 text-center">{ERROR_MESSAGES.INVALID_QUIZ_NAME}</p>
+    );
 
   return null;
 };
@@ -51,7 +63,9 @@ export default function Quiz() {
   /* 현재 퀴즈 이름 체크 */
   if (!currentQuizName)
     return (
-      <p className="py-10 text-center text-gray-500">잘못된 퀴즈 타입입니다.</p>
+      <p className="py-10 text-center text-gray-500">
+        {ERROR_MESSAGES.INVALID_QUIZ_TYPE}
+      </p>
     );
 
   const { currentQuizData, allQuizData, isLoading, error, setCurrentQuizData } =
@@ -76,7 +90,9 @@ export default function Quiz() {
 
   return (
     <Suspense
-      fallback={<div className="py-5 text-center">퀴즈를 불러오는 중...</div>}
+      fallback={
+        <div className="py-5 text-center">{ERROR_MESSAGES.LOADING}</div>
+      }
     >
       <div className="text-center text-3xl pt-8 font-bold">
         {QUIZ_TITLE[currentQuizName]}
