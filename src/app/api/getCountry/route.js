@@ -18,7 +18,6 @@ export async function GET() {
         `http://apis.data.go.kr/1262000/CountryFlagService2/getCountryFlagList2?${query}`
       );
       if (!res.ok) {
-        console.log("API 오류 발생:", await res.text());
         throw new Error(`API 요청 실패 - HTTP 상태 코드: ${res.status}`);
       }
       const data = await res.json();
